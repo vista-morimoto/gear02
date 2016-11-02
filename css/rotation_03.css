@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*--------------------------------
+rotation_03
+----------------------------------*/
+
+.rotation_03 {
+	-webkit-animation: rotation_03 15s linear infinite;
+	-moz-animation: rotation_03 15s linear infinite;
+	-ms-animation: rotation_03 15s linear infinite;
+	-o-animation: rotation_03 15s linear infinite;
+	animation: rotation_03 15s linear infinite;
+}
+
+
+@-webkit-keyframes rotation_03 {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotation_03 {
+	0% {-moz-transform: rotate(0deg);}
+	100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes rotation_03 {
+	0% {-ms-transform: rotate(0deg);}
+	100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes rotation_03 {
+	0% {-o-transform: rotate(0deg);}
+	100% {-o-transform: rotate(360deg);}
+}
+@keyframes rotation_03 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}

@@ -1,0 +1,2058 @@
+/* -----------------------------------------------------------------------
+## variables #############################################################
+----------------------------------------------------------------------- */
+/* colors */
+/* easings */
+/* breakpoints */
+/* -----------------------------------------------------------------------
+## mixins ################################################################
+----------------------------------------------------------------------- */
+/* background */
+.ticketReserved,
+.ticketSeat,
+.ticketPrivilege,
+.ticketCastSchedule,
+.ticketIndex {
+	background: url(/img/img01.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* @media screen and (min-width: 769px){
+	.contents {
+		padding: 20px 0 100px;
+		border-top: 1px solid #ccc;
+		clear: both;
+}
+	.contents > div {
+		width: 960px;
+		margin: 0 auto;
+}
+} */
+
+/* -----------------------------------------------------------------------
+## index #################################################################
+----------------------------------------------------------------------- */
+#ticket {
+	padding-bottom: 0;
+}
+#ticket #calenderArea {
+	padding-bottom:50px;
+	min-height:600px;
+}
+#ticket .contentsTitle span {
+	display: inline;
+	width: auto;
+	border-bottom:none;
+	margin: 0;
+	font-size:18px;
+}
+.ticket .nowon {
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 40px 0;
+	margin-top: 45px;
+	display: block;
+	text-align: center;
+	color: #333;
+	font-size: 1.125rem;
+	background: rgba(255,255,255,0.8);	
+}
+#ticket .nowon:hover,
+#ticket .contents .zaseki p a:hover {
+	background: #333;
+	color: #fff;
+	-webkit-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+			transition: all 0.4s;
+}
+.ticket .nowon img {
+	margin: -3px 0 0 7px;
+}
+#ticket .schedule {
+	margin-bottom: 100px;
+}
+/* カレンダー */
+#ticket .accordionWrapper {
+	display: none;
+}
+#ticket .calenderWrapper .calender_month {
+	background: rgba(0,0,0,0.2);
+	padding:5px;
+	font-size:24px !important;
+	margin:30px 0 20px;	
+}
+#ticket .calenderWrapper .sat {	color:#06C;}
+#ticket .calenderWrapper .sun { color:#F00;}
+
+#ticket .calenderWrapper .calender_body li {
+	background: rgba(255,255,255,0.5);	
+}
+#ticket .calenderWrapper .calender_body li.otherday {
+	background: rgba(170,170,170,0.3) !important;	
+}
+#ticket .calenderNavi {
+	display: none;
+}
+#ticket .calenderNavi_item {
+	text-align: center;
+}
+#ticket .navi .selectWrapper select {
+	padding:0 0 0 38%;
+	line-height: 30px;
+	color:#FFF;
+}
+#ticket .calenderNavi .selectWrapper:after {
+	color: #FFF !important;
+}
+#ticket .loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: auto;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
+#ticket .loader .fa {
+	font-size: 3em;
+}
+#ticket .loader .fa-spin {
+	-webkit-animation: fa-spin 4s infinite linear;
+			animation: fa-spin 4s infinite linear;
+}
+#ticket .loader {
+	height:200px;
+}
+#ticket .ani-reverseBtn {
+	background:none;
+}
+#ticket .navi a {
+	border:none;
+}
+
+/*料金*/
+#ticket .contents .zaseki a {
+	display: block;
+	/* color: #333; */
+	border: 1px solid #333;
+	border-radius: 5px;
+	text-align: center;
+	background-color:#FFF;
+}
+#ticket .contents .zaseki a:hover {
+	background-color:#333;
+}
+#ticket .contents .zaseki .notes {
+	background: #fff794;
+	padding: 20px;
+	font-size: 14px;
+}
+#ticket .contents .caution > div {
+	width: 450px;
+	height: 450px;
+	padding: 30px 20px;
+	margin-top: 20px;
+	background: #eee;
+	float: left;
+}
+#ticket .contents .caution > div:nth-child(1) {
+	clear: both;
+	margin-right: 60px;
+}
+#ticket .contents .caution h4 {
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#ticket .contents .caution h4 img {
+	margin-right: 10px;
+}
+#ticket .contents .caution p {
+	font-size: 14px;
+	font-size: .875rem;
+}
+#ticket .fee table th {
+	background: rgba(0,0,0,0.2) !important;
+}
+#ticket .fee table th, #ticket .fee table td {
+	background: rgba(255,255,255,0.5);
+}
+/*前売り*/
+#ticket .prereserve h4 {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 35px;
+	clear: both;
+}
+#ticket .prereserve h4 img {
+	margin-bottom: 10px;
+}
+
+#ticket .prereserve .leftBox .img,
+#ticket .prereserve .rightBox .img,
+#ticket .theday .leftBox .img {
+	border: 1px solid #333;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 15px;
+	display: block;
+	background-color:#FFF;
+}
+#ticket .prereserve .leftBox .img {
+	padding-top: 60px;
+}
+#ticket .prereserve .rightBox .img {
+	padding-top: 53px;
+}
+#ticket .prereserve p.tel span, 
+#ticket .theday p.tel span {
+	font-size: 22px;
+}
+#ticket .prereserve p.tel img,
+#ticket .theday p.tel img {
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+#ticket .prereserve .ltike_cord {
+	width: 100%;
+	background: #eee;
+	padding: 20px;
+	margin-top: 25px;
+}
+#ticket .prereserve .ltike_cord dl dt {
+	width:100px;
+	float:left;
+}
+/*当日チケット*/
+#ticket .theday .leftBox,
+#ticket .theday .rightBox {
+	margin-top: 20px;
+}
+#ticket .theday .leftBox p:nth-child(2) {
+	font-size: 24px;
+}
+#ticket .theday .leftBox .img {
+	padding-top: 40px;
+}
+#ticket .theday .rightBox p {
+	padding: 20px;
+	background: #eee;
+}
+#ticket .contents .caution > div ,
+#ticket .prereserve .ltike_cord ,
+#ticket .theday .rightBox p {
+	background: rgba(0,0,0,0.2);
+}
+#ticket .prereserve .ani-reverseBtn:hover {
+	background-color:#FFF;
+}
+#ticket .calendarBtn {
+	display:none;	
+}
+#ticket .caution a {
+	color:#A28500;
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#ticket .caution a:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 769px){
+#ticket .f14 {
+	font-size: .875rem;
+}
+#ticket .calenderWrapper .calender_month {
+	padding:15px 0;
+}
+#ticket .contents .zaseki a {
+	width: 450px;
+	height: 190px;
+	padding-top: 80px;
+	margin-right: 60px;
+	float: left;
+}
+#ticket .contents .zaseki .notes {
+	width: 450px;
+	float: left;
+}
+#ticket .fee p.tc {
+	margin: 25px 0;
+}
+#ticket .fee table {
+	width: 100%;
+	text-align: center;
+}
+#ticket .fee table th {
+	background: #eee;
+}
+#ticket .fee table th,
+#ticket .fee table td {
+	border: 1px solid #ccc;
+	padding: 12px;
+}
+#ticket .fee table .area {
+	font-weight: bold;
+	width: 180px;
+}
+#ticket .fee table .area:nth-of-type(1) {		background: #ef93bb;	}
+#ticket .fee table .area:nth-of-type(3) {		background: #fff794;	}
+#ticket .fee table .theday {
+	padding: 0;
+}
+#ticket .fee table .tl th {
+	text-align: left;
+}
+#ticket .fee table .underline {
+	text-decoration: underline;
+}
+/*前売り*/
+#ticket .prereserve .leftBox,
+#ticket .prereserve .rightBox,
+#ticket .theday .leftBox,
+#ticket .theday .rightBox {
+	width: 450px;
+	float: left;
+}
+#ticket .prereserve .leftBox,
+#ticket .theday .leftBox {
+	margin-right: 60px;
+}
+#ticket .prereserve .leftBox .img,
+#ticket .prereserve .rightBox .img,
+#ticket .theday .leftBox .img {
+	width: 450px;
+	height: 160px;
+}
+#ticket .prereserve h4 img {
+	width: 100px;
+	margin-bottom: 10px;
+}
+#ticket .theday .rightBox p {
+	height: 310px;
+}
+
+
+/* en */
+#ticket .link_form {
+	display:block;
+	color:#333;
+	text-align:center;
+	margin: 60px 0 0;
+	padding: 40px 0;
+	width: 100%;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	background: rgba(255,255,255,0.8);	
+	
+}
+#ticket .link_form:hover {
+	background: #333;
+	color:#FFF;
+}
+
+}
+@media screen and (max-width: 768px) {
+#ticket {
+	margin-top:-25px;		
+}
+#ticket .schedule .ad,
+#ticket .fee .ad,
+#ticket .prereserve .ad,
+#ticket .theday .ad {
+	display: none;
+	margin-bottom:50px;
+}
+#ticket #calenderArea {
+	min-height: 0;
+	padding-bottom: 0;
+}
+#ticket #calenderArea .ad {
+	min-height:300px;
+}
+#ticket .loader {
+	margin-top:100px;
+}
+#ticket .contentsTitle {	
+	background: url("../img/ico_arrow_down.png")  98% center/20px no-repeat;
+}
+#ticket .contentsTitle.open {
+	background: url("../img/ico_arrow_up.png")  98% center/20px no-repeat;
+}
+#ticket .contentsTitle {
+	margin:25px 0 0;
+}
+#ticket .schedule {
+	margin-bottom: 0px;
+}
+#ticket .calenderWrapper .calender_month {
+	font-size: 20px !important;
+	padding:10px 0;
+	margin:30px 10px 20px;	
+}
+#ticket .contentsTitle span {
+	font-size:14px;
+}
+#ticket .nowon {
+	background: #a28500 url(../ticket/img/icon_arrow.png) 94% center/1em no-repeat;
+	color: #fff;
+	border: none;
+	padding: 15px 0;
+	margin-top: 10px;
+	font-size: 1.14rem;
+}
+#ticket .nowon img {
+	display: none;
+}
+	
+/*▽料金*/
+#ticket .fee table tr:nth-of-type(3):before {
+	content: "【前売料金】";
+	display: block;
+	margin-top:10px;
+}
+#ticket .fee table th {
+	text-align: left;
+	font-weight: normal;
+}
+#ticket .fee table th br {
+	content: "";
+}
+#ticket .fee br:after {
+	content: "・";
+}
+#ticket .fee table tr,
+#ticket .fee table th,
+#ticket .fee table td {
+	display: block;
+	padding:5px;
+}
+#ticket .fee table tr {
+	margin-bottom: 20px;
+}
+#ticket .fee table .tl td:before {
+	content: attr(data-label);
+	margin-right: 1em;
+}
+#ticket .fee table .child td:before {
+	margin-right: 0;
+}
+#ticket .fee table .tl td:nth-of-type(1):first-letter { color: #ef93bb; }
+#ticket .fee table .tl td:nth-of-type(3):first-letter { color: #fff794; }	
+#ticket .fee p.tc {
+	text-align: left;
+}
+/*△料金*/
+
+#ticket .contents .zaseki a {
+	width: 100%;
+	padding: 15px 0;
+	margin-top: 25px;
+}
+#ticket .contents .zaseki .notes {
+	padding: 15px;
+	font-size: 1rem;
+	margin: 15px 0;
+}
+/*注意事項*/
+#ticket .fee .caution > div:first-child {
+	border-top:1px solid #a28500;
+}
+#ticket .fee .caution > div {
+	width: 100%;
+	height: auto;
+	padding: 15px 0 15px 5px;
+	margin: 0;
+	background:none;
+	border-bottom: 1px solid #a28500;
+	float: none;
+}
+#ticket .fee .caution > div h4 {
+	color: #996600;
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 0;
+	background: url("../img/ico_arrow_down.png")  98% center/20px no-repeat;
+}
+#ticket .fee .caution > div h4.open {
+	background: url("../img/ico_arrow_up.png")  98% center/20px no-repeat;
+}
+#ticket .fee .caution > div h4 img {
+	width: 1em;
+}
+#ticket .contents .caution p {
+	padding-top: 15px;
+	display: none;
+}
+	
+/*前売り*/
+#ticket .prereserve {
+	margin-top: 0px;
+}
+#ticket .prereserve h4 {
+	margin-bottom: 25px;
+}
+#ticket .prereserve h4 img {
+	width: 35%;
+}
+#ticket .prereserve .leftBox .img,
+#ticket .prereserve .rightBox .img {
+	margin-bottom: 5px;
+}
+#ticket .prereserve .leftBox .img {
+	padding: 35px 0;
+}
+#ticket .prereserve .rightBox .img {
+	padding: 30px 0;
+}
+#ticket .prereserve .leftBox .tel span:nth-of-type(2) {
+	margin-top: 20px;
+	display: inline-block;		
+}
+#ticket .prereserve .mb100 {
+	margin-bottom: 35px;
+}
+#ticket .prereserve h4{
+	margin-top: 20px;
+}
+#ticket .prereserve h4:nth-of-type(2) {
+	margin-top: 50px;
+}
+#ticket .prereserve .ltike_cord {
+	padding: 15px;
+	margin: 15px 0 50px;
+}
+#ticket .prereserve p.tel img,
+#ticket .theday p.tel img {
+	width: 1em;
+}
+#ticket .theday .leftBox p:nth-child(2),
+#ticket .prereserve p.tel span, 
+#ticket .theday p.tel span {
+	font-size: 1.28rem;
+}
+#ticket  .theday {
+	margin-top: 0px;
+}
+#ticket .theday .leftBox .img {
+	padding: 30px 0;
+}
+#ticket .theday .leftBox .img img {
+	width: 75px;
+}
+#ticket .theday .rightBox p {
+	padding: 15px;
+}
+#ticket .contents .zaseki a:hover {
+	background-color:#FFF;
+	color:#333;
+}
+
+}
+
+/* -----------------------------------------------------------------------
+## cast_schedule #########################################################
+----------------------------------------------------------------------- */
+#castSchedule {
+	padding-bottom: 0;
+}
+.castSchedule {
+	padding-top: 16px;
+}
+.castScheduleNavi {
+	display: none;
+	margin-top: 16px;
+}
+.castScheduleNavi_item {
+	text-align: center;
+}
+.castScheduleNavi .prev {
+	float: left;
+	text-align: left;
+}
+.castScheduleNavi .next {
+	float: right;
+	text-align: right;
+}
+.castScheduleNavi .prev.show,
+.castScheduleNavi .next.show {
+	visibility: visible;
+}
+.castScheduleNavi .prev.hide,
+.castScheduleNavi .next.hide {
+	visibility: hidden;
+}
+.castScheduleNavi .selectWrapper {
+	position: relative;
+	display: inline-block;
+	border-radius: 1000px;
+	background: #fff;
+}
+.castScheduleNavi .selectWrapper:after {
+	position: absolute;
+	top: 0;
+	right: 8px;
+	bottom: 0;
+	z-index: 1;
+	display: block;
+	margin: auto;
+	width: 1em;
+	height: 1em;
+	color: #281f1c;
+	content: '\f078';
+	text-align: center;
+	font-family: FontAwesome;
+	line-height: 1;
+}
+.castScheduleNavi select {
+	position: relative;
+	z-index: 2;
+	padding: 0 40px 0 20px;
+	color: #281f1c;
+	/* line-height: 44px; */
+	cursor: pointer;
+}
+#castSchedule .navi .selectWrapper select {
+	padding-left: 38%;
+}
+.castSchedule .castScheduleTable {
+	display: none;
+}
+.castSchedule .castScheduleTable_header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 10px;
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+}
+.castSchedule .castScheduleTable_header .date {
+	padding: 1.3em 0;
+	text-align: center;
+	line-height: 1;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+.castSchedule .castScheduleTable_header .players {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 3;
+			-ms-flex: 3;
+				flex: 3;
+}
+.castSchedule .castScheduleTable_header .players_item {
+	font-weight: bold;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.castSchedule .castScheduleTable_header .players .selectWrapper {
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	border-radius: 1000px;
+	background: #fff;
+	font-weight: normal;
+}
+.castSchedule .castScheduleTable_header .players .selectWrapper:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	margin-top: -3px;
+	width: 7px;
+	height: 6px;
+	background: url(../ticket/img/icon_select.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.castSchedule .castScheduleTable_header .players select {
+	padding: 5px 16px;
+	width: 100%;
+	text-align: left;
+	border-radius: 50px;
+	color: #fff;
+}
+.castSchedule .castScheduleTable_header .players select#mime 		 	{	background: #cc0000; }
+.castSchedule .castScheduleTable_header .players select#breakin  	 { background: #ff9933; }
+.castSchedule .castScheduleTable_header .players select#magic  	 	 { background: #0099ff; }
+.castSchedule .castScheduleTable_header .players select#jaggling   { background: #669900; }
+.castSchedule .castScheduleTable_header .players select#dall 				 { background:  #adb6c1; }
+
+
+.castSchedule .castScheduleTable_header .mime,
+.castSchedule .castScheduleTable .castScheduleList .players_item.mime {
+	 color: #cc0000;
+}
+.castSchedule .castScheduleTable_header .breakin,
+.castSchedule .castScheduleTable .castScheduleList .players_item.breakin {
+	color: #ff9933;
+}
+.castSchedule .castScheduleTable_header .magic,
+.castSchedule .castScheduleTable .castScheduleList .players_item.magic {
+	color: #0099ff;
+}
+.castSchedule .castScheduleTable_header .jaggling,
+.castSchedule .castScheduleTable .castScheduleList .players_item.jaggling {
+	color: #669900;
+}
+.castSchedule .castScheduleTable_header .dall,
+.castSchedule .castScheduleTable .castScheduleList .players_item.dall {
+	color: #adb6c1;
+}
+.castSchedule .castScheduleTable .castScheduleList {
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	table-layout: fixed;
+	margin-bottom: 30px;
+}
+.castSchedule .castScheduleTable .castScheduleList th {
+	font-weight: normal;
+}
+.castSchedule .castScheduleTable .castScheduleList tr {
+	border-bottom: 1px solid #ccc;
+}
+.castSchedule .castScheduleTable .castScheduleList th,
+.castSchedule .castScheduleTable .castScheduleList td {
+	padding: 1em 0;
+}
+.castSchedule .castScheduleTable .castScheduleList .noData[v-cloak] {
+	display: none;
+}
+.castSchedule .castScheduleTable .castScheduleList .noData td {
+	padding: 3em 0;
+	text-align: center;
+}
+.castSchedule .castScheduleTable .castScheduleList .date_item.day {
+	width: 81.75px;
+}
+.castSchedule .castScheduleTable .castScheduleList .date_item.weeks {
+	width: 27px;
+}
+.castSchedule .castScheduleTable .castScheduleList .date_item.start {
+	width: 110px;
+}
+.castSchedule .castScheduleTable .castScheduleList .players_item {
+	position: relative;
+	width: 15%;
+	font-weight: bold;
+}
+.castSchedule .castScheduleTable .castScheduleList .players_item img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 1px;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+}
+.castSchedule .castScheduleTable .castScheduleList .suspend td {
+	text-align: center;
+}
+.castSchedule .castScheduleTable .castScheduleList_item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1px 0;
+	border-top: 1px solid #fff;
+	line-height: 1;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .date {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .date_item {
+	padding: 1em 0;
+	text-align: center;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .date .day {
+	-webkit-box-flex: 3;
+			-ms-flex: 3;
+				flex: 3;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .date .weeks {
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .date .start {
+	-webkit-box-flex: 4;
+			-ms-flex: 4;
+				flex: 4;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .players {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 14px;
+	-webkit-box-flex: 3;
+			-ms-flex: 3;
+				flex: 3;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .players_item {
+	margin-left: 1px;
+	padding: 1em 8px 1em 30px;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .players .suspendText {
+	padding: 1em 8px;
+	text-align: center;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+.castSchedule .resetBtn {
+	margin: 28px 0 0;
+	padding: 40px 0;
+	width: 100%;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+}
+.castSchedule .resetBtn:hover {
+	background: #333;
+	color: #fff;
+}
+.castSchedule .resetBtn.loading {
+	margin-top: 10em;
+}
+.castSchedule .loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: auto;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
+.castSchedule .loader .fa {
+	font-size: 3em;
+}
+.castSchedule .loader .fa-spin {
+	-webkit-animation: fa-spin 4s infinite linear;
+			animation: fa-spin 4s infinite linear;
+}
+
+
+.loader {
+	height:200px;
+}
+.castSchedule .castScheduleTable_header {
+	margin-top:20px;	
+}
+.castScheduleNavi select {
+	color: #FFF;
+}
+.castScheduleNavi .selectWrapper:after {
+	color: #FFF;
+}
+
+#castSchedule .ani-reverseBtn {
+	background:none;
+}
+#castSchedule .navi a {
+	border:none;
+}
+.castSchedule .resetBtn {
+	background: rgba(255,255,255,0.8);
+}
+
+#castSchedule .sat { color: #06C;}
+#castSchedule .sun { color: #F00;}
+#castSchedule .no_cast { display:none; text-align:center;}
+
+
+@media screen and (min-width: 769px){
+.castSchedule .castScheduleTable_header .players_item {
+	padding-left: 4px;
+	font-size: 0.875rem;
+}
+.castSchedule .castScheduleTable_header .players select {
+	padding: 0 16px;
+	height:30px;
+}
+.castSchedule .castScheduleTable .castScheduleList .date_item.weeks {
+	padding-left: 1.3em;
+}
+.castSchedule .castScheduleTable_header .players .selectWrapper {
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+.castSchedule .castScheduleTable .castScheduleList {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+.castSchedule .castScheduleTable .castScheduleList .players_item {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+.castSchedule .castScheduleTable .castScheduleList_item { 
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+.castSchedule .castScheduleTable .castScheduleList_item .players_item {  
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+}
+@media screen and (max-width: 768px) {
+.castScheduleNavi .prev a,
+.castScheduleNavi .next a {
+	border: 1px solid #fff;
+}
+.castScheduleNavi .selectWrapper {
+	margin-top: 16px;
+}
+.castSchedule .castScheduleTable_header {
+	display: block;
+	border-bottom: 1px solid #a28500;
+	margin-top: 0;
+}
+.castSchedule .castScheduleTable_header .date {
+	display: none;
+}
+.castSchedule .castScheduleTable_header .players {
+	display: block;
+}
+/**/
+.castSchedule .castScheduleTable_header .players_item {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	margin-bottom: 10px;
+}
+.castSchedule .castScheduleTable_header .players_item span {
+	width: 8em;
+	padding-top: 2px;
+	font-weight: normal;
+}
+.castSchedule .castScheduleTable_header .players_item .selectWrapper {
+	width: calc(100% - 8em);
+	margin: 0;
+}
+.castSchedule .castScheduleTable_header .players_item .selectWrapper {
+	font-size:16px;
+}
+/**/
+.castSchedule .castScheduleTable .castScheduleList {
+	display: block;
+	margin-bottom: 20px;
+}
+.castSchedule .castScheduleTable .castScheduleList tbody {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList tr {
+	display: block;
+	clear: both;
+	overflow: hidden;
+		border-bottom: 1px solid #a28500;
+		background: url("../img/ico_arrow_down.png") no-repeat 98% 15px/20px;
+}
+.castSchedule .castScheduleTable .castScheduleList tr.open {
+	background: url("../img/ico_arrow_up.png") no-repeat 98% 15px/20px;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .date_item {
+	color: #996600;
+}
+.castSchedule .castScheduleTable .castScheduleList td {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList_item {
+	display: block;
+	padding-bottom: 1em;
+}
+.castSchedule .castScheduleTable .castScheduleList .suspend td {
+	padding: 0 0 15px;
+	clear: both;
+}
+.castSchedule .castScheduleTable .castScheduleList .date {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList .date_item {
+	display: inline-block;
+	padding: 15px 0;
+	text-align: left;
+	float: left;
+}	
+.castSchedule .castScheduleTable .castScheduleList th {
+	-webkit-tap-highlight-color:rgba(0,0,0,0); 
+}
+.castSchedule .castScheduleTable .castScheduleList .date_item.day		 {	width: 6.5em;	} /*日付*/
+.castSchedule .castScheduleTable .castScheduleList .date_item.weeks {	width: 1.5em;	} /*曜日*/
+.castSchedule .castScheduleTable .castScheduleList .date_item.time		 {	width: calc(100% - 8em); min-height: calc(1em + 30px);	} /*時間*/
+
+.castSchedule .castScheduleTable .castScheduleList th,
+.castSchedule .castScheduleTable .castScheduleList td {
+	padding: 0;
+}
+.castSchedule .castScheduleTable .castScheduleList .players {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList .players_item {
+	width: 100%;
+	padding-top: 12px;
+	margin-left: 0;
+	line-height: 1;
+	font-weight: normal;
+	clear: both;
+}	
+.castSchedule .castScheduleTable .castScheduleList .players_item.dall { padding-bottom: 15px; }
+
+.castSchedule .castScheduleTable .castScheduleList .players_item.mime:before, 		 
+.castSchedule .castScheduleTable .castScheduleList .players_item.breakin:before,  
+.castSchedule .castScheduleTable .castScheduleList .players_item.magic:before,
+.castSchedule .castScheduleTable .castScheduleList .players_item.jaggling:before, 
+.castSchedule .castScheduleTable .castScheduleList .players_item.dall:before {
+	width: 8em;
+	display: inline-block;
+}
+
+.castSchedule .resetBtn {
+	padding: 15px 0;
+	margin-top: 15px;
+	background: #a28500;
+	color: #fff;
+	border: none;
+	font-size: 1.14rem;
+}
+}
+
+/* .castSchedule {
+	padding-top: 16px;
+}
+
+.castScheduleNavi {
+	display: none;
+	margin-top: 16px;
+}
+
+.castScheduleNavi_item {
+	text-align: center;
+}
+
+.castScheduleNavi .prev {
+	float: left;
+	text-align: left;
+}
+
+.castScheduleNavi .next {
+	float: right;
+	text-align: right;
+}
+
+.castScheduleNavi .prev.show,
+.castScheduleNavi .next.show {
+	visibility: visible;
+}
+
+.castScheduleNavi .prev.hide,
+.castScheduleNavi .next.hide {
+	visibility: hidden;
+}
+
+.castScheduleNavi .selectWrapper {
+	position: relative;
+	display: inline-block;
+	border-radius: 1000px;
+	background: #fff;
+}
+
+.castScheduleNavi .selectWrapper:after {
+	position: absolute;
+	top: 0;
+	right: 8px;
+	bottom: 0;
+	z-index: 1;
+	display: block;
+	margin: auto;
+	width: 1em;
+	height: 1em;
+	color: #281f1c;
+	content: '\f078';
+	text-align: center;
+	font-family: FontAwesome;
+	line-height: 1;
+}
+
+.castScheduleNavi select {
+	position: relative;
+	z-index: 2;
+	padding: 0 40px 0 20px;
+	color: #281f1c;
+	line-height: 44px;
+	cursor: pointer;
+}
+
+.castSchedule .castScheduleTable {
+	display: none;
+}
+
+.castSchedule .castScheduleTable_header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 32px;
+	padding: 8px 0;
+	border-top: 1px solid #fff;
+}
+
+.castSchedule .castScheduleTable_header .date {
+	padding: 1.3em 0;
+	text-align: center;
+	line-height: 1;
+
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.castSchedule .castScheduleTable_header .players {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-flex: 3;
+			-ms-flex: 3;
+				flex: 3;
+}
+
+.castSchedule .castScheduleTable_header .players_item {
+	padding: 0 8px;
+	text-align: center;
+	font-weight: bold;
+
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.castSchedule .castScheduleTable_header .players .selectWrapper {
+	position: relative;
+	display: block;
+	margin-top: 4px;
+	border-radius: 1000px;
+	background: #fff;
+	font-weight: normal;
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+
+.castSchedule .castScheduleTable_header .players .selectWrapper:after {
+	position: absolute;
+	top: 0;
+	right: 4px;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	height: 1em;
+	color: #281f1c;
+	content: '\f078';
+	font-family: FontAwesome;
+	line-height: 1;
+}
+
+.castSchedule .castScheduleTable_header .players select {
+	padding: 8px 16px;
+	width: 100%;
+	color: #281f1c;
+	text-align: center;
+}
+
+.castSchedule .castScheduleTable_header .mime {
+	color: #e5001a;
+}
+
+.castSchedule .castScheduleTable_header .breakin {
+	color: #f9be02;
+}
+
+.castSchedule .castScheduleTable_header .magic {
+	color: #008fd8;
+}
+
+.castSchedule .castScheduleTable_header .jaggling {
+	color: #00994c;
+}
+
+.castSchedule .castScheduleTable_header .dall {
+	color: #9e9e9f;
+}
+
+.castSchedule .castScheduleTable .castScheduleList {
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	table-layout: fixed;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.castSchedule .castScheduleTable .castScheduleList th {
+	font-weight: normal;
+}
+
+.castSchedule .castScheduleTable .castScheduleList tr {
+	border-top: 1px solid #fff;
+}
+
+.castSchedule .castScheduleTable .castScheduleList th,
+.castSchedule .castScheduleTable .castScheduleList td {
+	padding: 1em 0;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .noData[v-cloak] {
+	display: none;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .noData td {
+	padding: 3em 0;
+	text-align: center;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .date_item.day {
+	width: 81.75px;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .date_item.weeks {
+	width: 27px;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .date_item.start {
+	width: 110px;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .players_item {
+	position: relative;
+	padding-left: 35px;
+	width: 15%;
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .players_item.mime {
+	background-color: #e5001a;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .players_item.breakin {
+	background-color: #f9be02;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .players_item.magic {
+	background-color: #008fd8;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .players_item.jaggling {
+	background-color: #00994c;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .players_item.dall {
+	background-color: #9e9e9f;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .players_item img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 1px;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+}
+
+.castSchedule .castScheduleTable .castScheduleList .suspend td {
+	text-align: center;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1px 0;
+	border-top: 1px solid #fff;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 1;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .date {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .date_item {
+	padding: 1em 0;
+	text-align: center;
+
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .date .day {
+	-webkit-box-flex: 3;
+			-ms-flex: 3;
+				flex: 3;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .date .weeks {
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .date .start {
+	-webkit-box-flex: 4;
+			-ms-flex: 4;
+				flex: 4;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .players {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 14px;
+
+	-webkit-box-flex: 3;
+			-ms-flex: 3;
+				flex: 3;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .players_item {
+	margin-left: 1px;
+	padding: 1em 8px 1em 30px;
+	font-size: 13px;
+	font-size: 0.8125rem;
+
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.castSchedule .castScheduleTable .castScheduleList_item .players .suspendText {
+	padding: 1em 8px;
+	text-align: center;
+
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.castSchedule .resetBtn {
+	margin: 32px 0 0;
+	padding: 16px;
+	width: 100%;
+	border: 2px solid #fff;
+	cursor: pointer;
+	-webkit-transition: all 0.6s ease;
+			transition: all 0.6s ease;
+}
+
+.castSchedule .resetBtn:hover {
+	background: #fff;
+	color: #281f1c;
+}
+
+.castSchedule .resetBtn.loading {
+	margin-top: 10em;
+}
+
+.castSchedule .loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: auto;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
+
+.castSchedule .loader .fa {
+	font-size: 3em;
+}
+
+.castSchedule .loader .fa-spin {
+	-webkit-animation: fa-spin 4s infinite linear;
+			animation: fa-spin 4s infinite linear;
+}
+
+@media screen and (max-width: 768px) {
+.castScheduleNavi .prev a,
+.castScheduleNavi .next a {
+	border: 1px solid #fff;
+}
+.castScheduleNavi .selectWrapper {
+	margin-top: 16px;
+}
+.castSchedule .castScheduleTable_header {
+	display: block;
+}
+.castSchedule .castScheduleTable_header .date {
+	display: none;
+}
+.castSchedule .castScheduleTable_header .players {
+	display: block;
+}
+.castSchedule .castScheduleTable_header .players_item {
+	float: left;
+	margin-top: 8px;
+	width: 50%;
+
+	-webkit-box-flex: 0;
+			-ms-flex: 0;
+				flex: 0;
+}
+.castSchedule .castScheduleTable_header .players_item:nth-child(even) {
+	float: right;
+}
+.castSchedule .castScheduleTable .castScheduleList {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList tbody {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList tr {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 1em;
+}
+.castSchedule .castScheduleTable .castScheduleList td {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList_item {
+	display: block;
+	padding-bottom: 1em;
+}
+.castSchedule .castScheduleTable .castScheduleList .suspend td {
+	padding: 0 0 1em;
+}
+.castSchedule .castScheduleTable .castScheduleList .date {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList .date_item {
+	display: inline-block;
+	margin-right: 8px;
+	text-align: left;
+}
+.castSchedule .castScheduleTable .castScheduleList .players {
+	display: block;
+}
+.castSchedule .castScheduleTable .castScheduleList .players_item {
+	float: left;
+	margin-left: 0;
+	padding: 1em 8px 1em 48px;
+	width: 50%;
+}
+.castSchedule .castScheduleTable .castScheduleList .players_item:nth-child(odd) {
+	float: right;
+}
+} */
+
+/* -----------------------------------------------------------------------
+## seat ##################################################################
+----------------------------------------------------------------------- */
+#seat {
+	padding-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+	#seat .sectionInner img {
+		width: 100%;
+	}
+}
+
+/* -----------------------------------------------------------------------
+## privilege #############################################################
+----------------------------------------------------------------------- */
+#privilege {
+	padding-bottom: 0;
+}
+#privilege .box_03 {
+	clear: both;
+	margin: 0 auto;
+}
+#privilege h4 {
+	font-size: 1.375rem;
+	font-weight: normal;
+	margin: 30px 0;
+	line-height: 1.4;
+}
+#privilege .box_01 {
+	margin-bottom: 50px;
+}
+#privilege .box_01 .img {
+	margin: 20px 0;	
+}
+#privilege .box_02 .fz14 {
+	margin-top: 30px;
+}
+#privilege .caution {
+	padding: 50px 20px;
+	margin-top: 30px;
+	text-align: center;
+	background: rgba(0,0,0,0.2);
+}
+
+
+@media screen and (min-width: 769px){
+#privilege .sectionInner {
+	margin-top:20px;		
+}
+#privilege .contentsTitle {
+	margin-bottom: 70px;
+}
+#privilege .box_01, #privilege .box_02, #privilege .box_03 {
+	width: 450px;
+}	
+}
+
+@media screen and (max-width: 768px) {
+#privilege img {
+	width: 100%;
+}
+#privilege .fleft,
+#privilege .fright {
+	float: none;
+}
+#privilege h4 {
+	font-size: 1.28rem;
+	margin: 15px 0 10px;
+	line-height: 1.4;
+}
+#privilege h4 br {
+	display: none;
+}
+#privilege .fz14 {
+	font-size: 1rem;
+}
+#privilege .box_03 {
+	margin-top: 50px;
+}
+#privilege .caution {
+	text-align: left;
+	padding: 15px;
+}
+
+}
+
+/* -----------------------------------------------------------------------
+## reserved ##############################################################
+----------------------------------------------------------------------- */
+
+#reserved {
+	padding-bottom: 0;
+}
+#reserved .contents:last-child {
+	padding-bottom: 0;
+}
+#reserved .case {
+	width: 100%;
+	padding: 40px;
+	margin: 35px 0 100px;
+	background: rgba(0,0,0,0.2);
+}
+#reserved p.mb {
+	margin-bottom:80px;
+}
+#reserved .Inquiry .formBox {
+	border: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+#reserved .Inquiry .formBox .required {
+	color: #996600;
+}
+#reserved .Inquiry .formBox > div {
+	border-bottom: 1px solid #ccc;
+}
+#reserved .Inquiry .formBox > div:last-child {
+	border: 0;
+}
+/*フォーム*/
+#reserved .Inquiry input[type="text"],
+#reserved .Inquiry input[type="tel"] {
+	width: 100%;
+	height: 30px;
+	padding: 10px;	
+	background: #eee;
+}
+#reserved .Inquiry textarea {
+	width: 100%;
+	height: 230px;
+	padding: 10px;	
+	background: #eee;
+}
+#reserved .Inquiry select {
+	width: 180px;
+	padding: 2px 13px;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 0.875rem;
+	background: #a28500 url(../ticket/img/icon_select.png) no-repeat 95% center/7px;
+}
+#reserved .Inquiry input[type="checkbox"] {
+	display: none;
+}
+#reserved .Inquiry .check {
+	position: relative;
+	padding: 0 0 0 53px;
+	cursor: pointer;
+}
+#reserved .Inquiry .check:after {
+	-webkit-transition: border-color 0.2s linear;
+	transition: border-color 0.2s linear;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	display: block;
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #a28500;
+	content: '';
+}
+#reserved .Inquiry input[type="checkbox"]:checked + .check:after  {
+	background: #a28500;
+}
+#reserved .Inquiry input[type="submit"] {
+	width: 100%;
+	padding: 25px 0;
+	margin-top: 50px;
+	color: #996600;
+	background: #fff;
+	border: 1px solid #996600;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+#reserved .Inquiry input[type="submit"]:hover {
+	background: #960;
+	color: #fff;
+	opacity:1;
+}
+#reserved .Inquiry .year {
+	background-position: 90% center;
+}
+#reserved .Inquiry .month,
+#reserved .Inquiry .day	 {
+	background-position: 82% center;
+}
+#reserved .Inquiry .year 		 { width: 105px; }
+#reserved .Inquiry .month { width: 65px; }
+#reserved .Inquiry .day 		 { width: 65px; }
+
+@media screen and (min-width: 769px){	
+#reserved .case h4 {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+#reserved .case ul {
+	text-align: center;
+	padding-right: 25px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+			justify-content: space-between;
+}
+/*お問合せ*/
+#reserved .Inquiry .small {
+	font-size: 0.95rem;
+}
+#reserved .Inquiry .formBox {
+	width: 960px;
+	padding-bottom: 15px;
+	margin-top:45px;
+}
+#reserved .Inquiry .formBox > div {
+	width: 660px;
+	margin: 0 auto;
+	padding: 45px 0;
+}
+#reserved .Inquiry .formBox > div:last-child {
+	border: 0;
+}
+#reserved .Inquiry .formBox h4 {
+	margin-bottom: 30px;
+}
+
+#reserved .Inquiry dl.formArea {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+#reserved .Inquiry .formArea dt {
+	width: 240px;
+	margin-bottom: 20px;
+}
+#reserved .Inquiry .formArea dd {
+	width: 420px;
+}
+#reserved .contents {
+	padding-bottom:0;
+}
+#reserved .link_form {
+	display:block;
+	color:#333;
+	text-align:center;
+	margin: 60px 0 0;
+	padding: 40px 0;
+	width: 100%;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	background: rgba(255,255,255,0.8);	
+	
+}
+#reserved .link_form:hover {
+	background: #333;
+	color:#FFF;
+}
+}
+@media screen and (max-width: 768px) {
+#reserved .about .fz14 {
+	font-size: 1rem;
+}
+#reserved .case {
+	padding: 15px;
+	margin-bottom: 50px;
+}
+#reserved p.mb {
+	margin-bottom: 40px;
+}
+#reserved .case br {
+	display: none;
+}
+#reserved .case h4 {
+	text-align: center;
+}
+#reserved .case li {
+	margin-top: 15px;
+	text-align: center;
+}
+#reserved .qaBox_list_q:first-child {
+	border-top: none;
+	margin-top: -15px;
+}
+#reserved .Inquiry {
+	margin-top: 50px;
+}
+#reserved .Inquiry .formBox {
+	padding: 0 15px;
+	margin-top: 20px;
+}
+#reserved .Inquiry .formBox p.fz12 {
+	font-size: 1rem;
+	margin: 0 0 20px;
+}
+#reserved .Inquiry .formBox > div {
+	padding: 20px 0;
+}
+#reserved .Inquiry .formBox h4 {
+	margin-bottom: 10px;
+}
+#reserved .Inquiry .formArea dt {
+	margin-bottom: 5px;
+}
+#reserved .Inquiry .formArea dt br {
+	display: none;
+}
+#reserved .Inquiry .formArea dd {
+	margin-bottom: 12px;
+}
+/*フォーム*/
+#reserved .Inquiry .check {
+	padding-left: 25px;
+}
+#reserved .Inquiry .check:after {
+	left: 0;
+	margin-top: -9px;
+	width: 18px;
+	height: 18px;
+}
+#reserved .Inquiry select {
+	width: 100%;
+	font-size: 1rem;
+}
+#reserved .Inquiry input[type="submit"] {
+	margin-top: 0;
+	background: #a28500;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	padding: 15px 0;
+	font-size: 1.14rem;
+}
+	
+#reserved .link_form {
+	display:block;
+	width: 100%;
+	border: 1px solid #333;
+	padding: 15px 0;
+	margin-top: 40px;
+	background: #FFF;
+	color: #333;
+	text-align:center;
+	font-size: 1.14rem;
+	border-radius: 5px;
+	
+}
+#reserved .link_form:hover {
+	color: #333;
+}
+
+}
+
+/* -----------------------------------------------------------------------
+## reserved form ########################################################
+----------------------------------------------------------------------- */
+#reserved form {
+	-webkit-appearance: none;
+}
+.form_confirm #reserved  .contents {
+	border-top: none;
+}
+.form_confirm #reserved .form_confirm_none {
+	display:none;
+}
+#reserved .Inquiry input[type="text"],
+#reserved .Inquiry input[type="tel"],
+#reserved .Inquiry input[type="email"] {
+	width: 100%;
+	height: 35px;
+	padding: 5px;
+	line-height:1.4;
+	background: rgba(255,255,255,0.8);
+}
+#reserved .Inquiry input:-ms-input-placeholder {
+	color: #A9A9A9;
+}
+#reserved .Inquiry textarea {
+	background: rgba(255,255,255,0.8);	
+}
+#reserved .mw_wp_form_complete {
+	text-align:center;	
+}
+#reserved .formArea dd {
+	word-break: break-all;
+}
+#reserved .Inquiry input[name="submitBack"] {
+	margin-top:20px;	
+}
+#reserved .Inquiry .formBox form > div:nth-child(4) {
+	border: 0;
+}
+#reserved .mw_wp_form .error {
+	margin-bottom:10px;
+	font-size:14px;
+	color:#C00;
+}
+
+#reserved .group_detail_check {
+	margin:10px 0 20px;
+}
+#reserved .group_detail_check p {
+	font-size:14px;
+	line-height:1.6;
+	margin-bottom:10px;
+}
+#reserved .group_detail_check .group_detail_check_box .horizontal-item , #reserved .group_detail_check .group_detail_check_box input {
+	float:left;
+}
+#reserved .mw_wp_form .horizontal-item + .horizontal-item {
+	margin-left:0;	
+}
+#reserved .group_detail_check .group_detail_check_box .horizontal-item {
+	width:180px;
+	float:left;
+	margin-right:0;
+}
+#reserved .Inquiry .group_detail_check input[type="text"]{
+	width:80px;
+	float:left;
+}
+#reserved .Inquiry .group_detail_check span {
+	margin-left:5px;	
+}
+
+#reserved .form_confirm .name_none span {
+	display:none;
+}
+#reserved .Inquiry input[type="text"][disabled]{
+	background:#BBB;
+}
+
+/* ラベルのスタイル　*/
+#reserved .Inquiry label {
+	padding-left: 36px;
+	margin-right:20px;
+	margin-bottom:5px;
+	margin-left:0;
+	line-height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+} 
+
+/* ボックスのスタイル */
+#reserved .Inquiry label:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border:2px solid #A28500;
+	position: absolute;
+	left: 0;
+	background: rgba(255,255,255,0.6);	
+}
+#reserved .Inquiry label.input_checked:before {
+	background-color:#A28500;
+	
+}
+/* 元のチェックボックスを表示しない */
+#reserved .Inquiry input[type=checkbox],
+#reserved .Inquiry input[type=radio] {
+	display:none;
+}
+.mw_wp_form .horizontal-item + .horizontal-item {
+	margin-left:0;	
+}
+
+/* チェックした時のスタイル */
+/* #reserved .Inquiry input[type=checkbox]:checked {
+	display:block;
+} */
+
+/* 入力不可状態のスタイル */
+#reserved .inputbox.none {
+	background-color: #ddd;
+}
+
+/* フォーカスされた時のスタイル */
+#reserved .inputbox.active {
+	background-color:#FFF8E1;
+	color: #000;
+	box-shadow:0px 0px 5px rgba(84,189,245,1);
+}
+
+@media screen and (min-width: 769px){
+#reserved.reserved_form .Inquiry {
+	margin-top:30px;
+}
+#reserved .mw_wp_form_complete {
+	width: 660px;
+	margin: 0 auto;
+	padding: 45px 0;
+}
+#reserved .mw_wp_form_complete a {
+	display:block;
+	color:#333;
+	text-align:center;
+	margin: 60px 0 0;
+	padding: 40px 0;
+	width: 100%;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	background: rgba(255,255,255,0.8);	
+}
+#reserved .mw_wp_form_complete a:hover {
+	background: #333;
+	color: #fff;
+}
+}
+
+@media screen and (max-width: 768px) {
+#reserved.reserved_form .Inquiry {
+	margin-top:10px;
+}
+#reserved .Inquiry label {
+	padding-left:24px;
+	margin-right:10px;
+	line-height:18px;
+	display:inline-block;
+	cursor:pointer;
+	position:relative;
+} 
+#reserved .Inquiry label:before {
+	content:'';
+	width:18px;
+	height:18px;
+	display:inline-block;
+	border:2px solid #A28500;
+	position:absolute;
+	left:0;
+	background-color:#fff;
+}
+#reserved .mw_wp_form_complete {
+	width: 100%;
+	margin: 0 auto;
+	padding: 45px 0;
+}
+
+#reserved .Inquiry input,
+#reserved .Inquiry select,
+#reserved .Inquiry textarea {
+	font-size:16px;
+}
+
+#reserved .mw_wp_form_complete a {
+	display:block;
+	width: 100%;
+	border: 1px solid #333;
+	padding: 15px 0;
+	margin-top: 20px;
+	background: #FFF;
+	color: #333;
+	text-align:center;
+	font-size: 1.14rem;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.8);	
+	
+}
+#reserved .group_detail_check_box.check_box1 {
+	margin-bottom:5px;	
+}
+
+}
+
+
+/*# sourceMappingURL=maps/ticket.css.map */
+
+
+

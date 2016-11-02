@@ -1,0 +1,199 @@
+/* -----------------------------------------------------------------------
+## variables #############################################################
+----------------------------------------------------------------------- */
+/* colors */
+/* easings */
+/* breakpoints */
+/* -----------------------------------------------------------------------
+## mixins ################################################################
+----------------------------------------------------------------------- */
+/* background */
+.accessMap,
+.accessAreainfo,
+.accessTheatre {
+	background: url(/img/img01.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+img {
+	width: 100%;
+}
+}
+/* ################# accessMap ################# */
+#maps {
+	padding-top: 16px;
+}
+#maps .rightBox h3 {
+	margin-top: 0;
+}
+#maps .map {
+	clear: both;
+	padding-top: 60px;
+	margin-bottom:50px;
+}
+#maps .map p span {
+	background: #ef332d;
+	color: #fff;
+	padding: 0 4px;
+}
+#maps #gmap {
+	height: 600px;
+}
+#maps .gMap {
+	position: relative;
+	/* margin-top: 50px;
+	padding-top: 50%; */
+	height: 600px;
+}
+#maps .gMap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+#maps .leftBox {
+	width: 450px;
+	float: left;
+}
+#maps .rightBox {
+	width: 450px;
+	float: right;
+}
+}
+
+@media screen and (max-width: 768px) {
+section#maps {
+	padding-bottom:0;
+}
+#maps .mt50 {
+		margin-top: 30px;
+}
+#maps .rightBox {
+	padding-top: 10px;
+}
+#maps .map {
+	padding-top:30px;
+}
+#maps #gmap {
+	height:350px;	  
+}
+#maps .gMap {
+	/* margin-top: 30px;
+	padding-top: 70%; */
+	height:300px;
+}
+}
+
+/* ################# areainfo ################# */
+#areainfo {
+	margin-top: 20px;
+	padding-bottom: 0;
+}
+
+#areainfo h4 {
+	font-size: 1.5rem;
+	font-weight: normal;
+	text-align: center;
+	margin: 20px 0;
+}
+#areainfo .info iframe {
+	width: 100%;
+	height: 200px;
+	margin-top:20px;
+}
+
+@media screen and (min-width: 769px){
+#areainfo h3 {
+	margin-bottom: 50px;
+}
+#areainfo .leftBox {
+	width: 450px;
+	float: left;
+}
+#areainfo .rightBox {
+	width: 450px;
+	float: right;
+}
+#areainfo .inns {
+}
+#areainfo .inns a {
+	width: 450px;
+	height: 160px;
+	display: block;
+	text-align: center;
+	border: 1px solid #ccc;
+	background-color:#FFF;
+}
+#areainfo a.logo_okura {	 padding-top: 65px; }
+#areainfo a.logo_monterey {	 padding-top: 10px; }
+}
+@media screen and (max-width: 768px) {
+#areainfo .info p br {
+	display: none;
+}
+#areainfo .mb70 {
+	margin-bottom: 50px;
+}
+#areainfo h4 {
+	margin: 13px 0;
+	font-size:1.28rem;
+}	
+#areainfo a {
+	display:block;
+	border:solid 1px #000;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	text-align:center;
+	background-color:#FFF;
+}
+#areainfo a.logo_okura img {
+	padding:40px 3px;	
+	width:90%;
+}
+#areainfo a.logo_monterey img {
+	padding:5px 3px;	
+	width:35%;
+}
+#areainfo .inns {
+	padding-top:50px;
+}
+#areainfo .inns .rightBox {
+	margin-top: 50px;
+}
+}
+
+/* ################# theatre ################# */
+#theatre {
+	margin-top: 16px;
+	padding-bottom: 0;
+}
+#theatre .building .rightBox img {
+	margin-bottom: 10px;
+}
+@media screen and (min-width: 769px){
+#theatre  .building .leftBox {
+	width: 630px;
+	float: left;
+}
+#theatre .building .rightBox {
+	width: 300px;
+	float: right;
+}
+#theatre .building .leftBox p {
+	margin-bottom: 45px;
+}
+}
+@media screen and (max-width: 768px) {
+#theatre .building .leftBox img {
+	margin-top:10px;
+	margin-bottom:30px;
+}
+}
+
+
+/*# sourceMappingURL=maps/access.css.map */

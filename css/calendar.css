@@ -1,0 +1,375 @@
+/* -----------------------------------------------------------------------
+## calendar #############################################################
+----------------------------------------------------------------------- */
+
+#ticket .calenderWrapper {
+	/*margin-top: 10px;*/
+	text-align: center;
+}
+#ticket .calenderWrapper .pc {
+	display: inline-block;
+}
+#ticket .calenderWrapper .sp {
+	display: none;
+}
+#ticket .calenderNavi {
+	margin-top: 16px;
+}
+#ticket .calenderNavi_item {
+	text-align: center;
+}
+#ticket .calenderNavi .prev {
+	float: left;
+	text-align: left;
+}
+#ticket .calenderNavi .next {
+	float: right;
+	text-align: right;
+}
+#ticket .calenderNavi .prev.show,
+#ticket .calenderNavi .next.show {
+	visibility: visible;
+}
+#ticket .calenderNavi .prev.hide,
+#ticket .calenderNavi .next.hide {
+	visibility: hidden;
+}
+#ticket .calenderNavi .selectWrapper {
+	position: relative;
+	display: inline-block;
+	border-radius: 1000px;
+	background: #fff;
+}
+#ticket .calenderNavi .selectWrapper:after {
+	position: absolute;
+	top: 0;
+	right: 8px;
+	bottom: 0;
+	z-index: 1;
+	display: block;
+	margin: auto;
+	width: 1em;
+	height: 1em;
+	color: #281f1c;
+	content: '\f078';
+	text-align: center;
+	font-family: FontAwesome;
+	line-height: 1;
+}
+#ticket .calenderNavi select {
+	position: relative;
+	z-index: 2;
+	padding: 0 40px 0 20px;
+	color: #281f1c;
+	line-height: 44px;
+	cursor: pointer;
+}
+#ticket .calenderWrapper .update {
+	text-align: right;
+}
+#ticket .calenderWrapper:first-child .calender {
+	margin-top: 0;
+}
+#ticket .calenderWrapper .calender {
+	width: 100%;
+}
+#ticket .calenderWrapper .calender_month {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-family: Avenir Next, Verdana, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	/* margin-bottom: 5px; */
+}
+#ticket .calenderWrapper .calender_head {
+	/*border-top: 1px solid #fff;
+	border-left: 1px solid #fff;*/
+	font-weight: bold;
+	padding: 3px 0;
+}
+#ticket .calenderWrapper .calender_body {
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+#ticket .calenderWrapper .calender li {
+	float: left;
+	width: 14.285%;
+	/* border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;*/
+}
+#ticket .calenderWrapper .calender_body li {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	height:106px;
+	line-height: 1.5;
+}
+#ticket .calenderWrapper .calender_body li.otherday {
+	background:#eee;
+}
+#ticket .calenderWrapper .calender .day {
+	display: block;
+	padding: 8px;
+	font-size: 16px;
+	font-size: 1rem;
+	text-align: left;
+	font-weight: normal;
+}
+
+#ticket .calenderWrapper .calender .week {
+	display: none;
+}
+
+#ticket .calenderWrapper .calender .matinee,
+#ticket .calenderWrapper .calender .soiree {
+	display: block;
+	padding: 4px 8px;
+}
+#ticket .calenderWrapper .calender .discount,
+#ticket .calenderWrapper .calender .kids {
+	width: 98%;
+	margin: 0 1px 0 1px;
+}
+#ticket .calenderWrapper .calender .discount {  background: #66ccff; }
+#ticket .calenderWrapper .calender .kids {  background: #ffcce8; }
+#ticket .calenderWrapper .calender .kids.soiree  {  background: none; }
+
+#ticket .calenderWrapper .calender .inner {
+	display: block;
+	padding: 4px 8px;
+}
+#ticket .calenderWrapper .calender .haveToSpace,
+#ticket .calenderWrapper .calender .few,
+#ticket .calenderWrapper .calender .noRoom,
+#ticket .calenderWrapper .calender .full {
+	padding: 0 8px;
+	border-radius: 1000px;
+	color: #fff;
+	display: block;
+}
+/* #ticket .calenderWrapper .calender .haveToSpace:hover,
+#ticket .calenderWrapper .calender .few:hover,
+#ticket .calenderWrapper .calender .noRoom:hover,
+#ticket .calenderWrapper .calender .full:hover {
+	opacity: 0.5;
+	-webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+} */
+#ticket .calenderWrapper .calender .haveToSpace {  background: #00cc00; }
+#ticket .calenderWrapper .calender .noRoom {  background: #ff9900; }
+#ticket .calenderWrapper .calender .few {  background: #ff0000; }
+#ticket .calenderWrapper .calender .full {  background: #666; }
+
+#ticket .legend {
+	margin-top: 10px;
+	text-align: left;
+}
+#ticket .legend li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 13px;
+}
+#ticket .legend li span {
+	font-size:12px;
+}
+#ticket .legend .haveToSpace,
+#ticket .legend .few,
+#ticket .legend .noRoom,
+#ticket .legend .full,
+#ticket .legend .kids,
+#ticket .legend .daytime {
+	font-size: 18px;
+	font-size: 1.125rem;
+	margin-right: 5px;
+}
+#ticket .legend .haveToSpace {  color: #00cc00; }
+#ticket .legend .noRoom {  color: #ff9900; }
+#ticket .legend .few {  color: #ff0000; }
+#ticket .legend .full {  color: #666666; }
+#ticket .legend .daytime {  color: #66ccff; }
+#ticket .legend .kids {  color: #ffcce8; }
+
+@media screen and (max-width: 768px) {
+#ticket .calenderWrapper {
+	margin: 0 -10px;
+}
+#ticket .calenderWrapper iframe {
+	margin: 0 auto;
+	width: 320px;
+}
+#ticket .calenderWrapper .pc {
+	display: none;
+}
+#ticket .calenderWrapper .sp {
+	display: inline-block;
+}
+#ticket .calenderWrapper .calender_head {
+	display: none;
+}
+	
+#ticket .calenderWrapper .calender_body {
+	border: none;
+	text-align: left;
+	margin: 0 10px;
+}
+#ticket .calenderWrapper .calender li {
+	float: none;
+	width: 100%;
+	height: auto;
+	padding: 4px 0;
+	display: flex;
+	display: -webkit-flex;
+	border-right: none;
+	border-bottom: 1px solid #a28500;
+}
+#ticket .calenderWrapper .calender li:first-child {
+	border-top: none;
+}
+#ticket .calenderWrapper .calender .padding {
+	display: none;
+}
+#ticket .calenderWrapper .calender .day {
+	display: inline-block;
+	width: 2em;
+	text-align: center;
+}
+#ticket .calenderWrapper .calender .week {
+	display: inline-block;
+	margin-right: 3px;
+	/* width: 1.5em;*/
+}
+#ticket .calenderWrapper .calender .day,
+#ticket .calenderWrapper .calender .week {	
+	padding: 11px 5px;
+	line-height: 1;
+}
+#ticket .calenderWrapper .calender .matinee {
+	display: inline-block;
+	padding: 4px 24px;
+}
+#ticket .calenderWrapper .calender .soiree {
+	display: inline-block;
+	padding: 4px 24px;
+}
+#ticket .calenderWrapper .calender_body li.otherday {
+	padding: 15px 15px 15px 0;
+	line-height: 1;
+}
+#ticket .calenderWrapper .calender_body li.otherday .day,
+#ticket .calenderWrapper .calender_body li.otherday .week {
+	padding: 0 5px;
+}
+#ticket .legend {
+	padding: 0 10px;
+	/* display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center; */
+}
+#ticket .legend.pc_none {
+	padding: 0 0;
+}
+#ticket .legend li {
+	margin-right:15px;
+	
+}
+/*#ticket .legend li {
+	width: 46%;
+	margin: 0;
+	list-style: none;
+	text-align: left;
+	font-size: .857rem;
+}
+#ticket .legend .kids {
+	width: 47%;
+	text-align: center;
+}
+#ticket .legend .daytime {
+	width: 47%;
+	text-align: center;
+} */
+
+#ticket .legend .haveToSpace,
+#ticket .legend .few,
+#ticket .legend .noRoom,
+#ticket .legend .full,
+#ticket .legend .kids,
+#ticket .legend .daytime {
+	margin-right: 3px;
+}
+
+#ticket .castSchedule {
+	display: block;
+	padding: 0;
+}
+#ticket .nextStage {
+	width: auto;
+}
+#ticket .nextStage_date {
+	margin-top: 0;
+}
+#ticket .nextStage .weeks {
+	margin-top: 0;
+}
+#ticket .nextStage .otherBtn a {
+	display: block;
+	margin: 32px auto;
+	width: auto;
+	height: 44px;
+	background: #fff;
+	color: #281f1c;
+	line-height: 44px;
+}
+#ticket .nextCast {
+	overflow: hidden;
+	margin-top: 32px;
+	width: 100%;
+}
+#ticket .nextCast dl {
+	display: block;
+	float: left;
+	margin-top: 16px;
+	width: 49%;
+}
+#ticket .nextCast dl:nth-child(even) {
+	float: right;
+}
+#ticket .nextCast dt {
+	width: auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25rem;
+	font-family: 'Archivo Black', sans-serif;
+	line-height: 1;
+}
+#ticket .nextCast dd {
+	display: block;
+	margin-top: 4px;
+	padding: 10px;
+	background: #000;
+	font-size: 1.125rem;
+}
+/* #ticket .nextCast_name img {
+	width: 100%;
+}*/
+#ticket .nextCast dd {
+	display: block;
+	margin-top: 8px;
+	margin-left: 0;
+	text-align: center;
+}
+#ticket .calenderWrapper .calender .haveToSpace, #ticket .calenderWrapper .calender .few, #ticket .calenderWrapper .calender .noRoom, #ticket .calenderWrapper .calender .full {
+	padding: 5px;
+	display: block;
+	width: 100%;
+	line-height: 1;
+}
+#ticket .calenderWrapper .calender .matinee,
+#ticket .calenderWrapper .calender .soiree {
+	width: 45%;
+	display: inline-block;
+	padding: 6px 10px;
+	text-align: center;
+}
+}

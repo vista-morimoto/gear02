@@ -1,0 +1,468 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Body - not related to megamenu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu-container {
+	/*width: 80%;*/
+	/*margin: 0 auto;*/
+	/*background: #e9e9e9;*/
+}
+
+.menu-mobile {
+	display: none;
+	padding: 20px;
+}
+.menu-mobile:after {
+	content: "\f394";/*モバイル用メニューに表示するアイコン*/
+	font-family: "Ionicons";
+	font-size: 2.5rem;
+	padding: 0;
+	float: right;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-25%);
+			transform: translateY(-25%);
+}
+.menu-dropdown-icon:before {
+	content: "\f489";/*モバイル用メニューに表示するアイコン*/
+	font-family: "Ionicons";
+	display: none;
+	cursor: pointer;
+	float: right;
+	padding: 1.5em 2em;
+	background: #fff;
+	color: #333;
+}
+.gNavi > ul {
+	margin: 0 auto;
+	width: 960px;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.gNavi > ul:before,
+.gNavi > ul:after {
+	content: "";
+	display: table;
+}
+.gNavi > ul:after {
+	clear: both;
+}
+.gNavi > ul > li {
+	/*float: left;*/
+	background: none !important;
+	/*padding: 0;*/
+	/*margin: 0;*/
+}
+.gNavi > ul > li a {
+	text-decoration: none;
+	/*padding: 1.5em 3em;*/
+	display: block;
+}
+.gNavi > ul > li:hover {
+	/* background: #f0f0f0; */
+	/* background-color:#000; */
+}
+.gNavi > ul > li > div.gNaviList_ul_box {
+	display: none;
+	width: 100%;
+	background: #a28500;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.gNavi > ul > li > div.gNaviList_ul_box:before,
+.gNavi > ul > li > div.gNaviList_ul_box:after {
+	content: "";
+	display: table;
+}
+.gNavi > ul > li > div.gNaviList_ul_box:after {
+	clear: both;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul {
+	width: 960px;
+	margin: 0 auto;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.gNavi_two_items {
+	width: 384px;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.gNavi_three_items {
+	width: 576px;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li {
+	margin: 0;
+	padding-bottom: 0;
+	list-style: none;
+	background: none;
+	float: left;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a {
+	color: #FFF;
+	padding: .2em 0;
+	border: none!important;
+	padding-bottom: 40px;
+	max-height: 183px;
+	line-height: 1.6;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a span {
+	clear: both;
+	display: block;
+	font-weight: 100;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a:hover {
+	background: #8A7200;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul {
+	display: block;
+	padding: 0;
+	margin: 10px 0 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul:before,
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul:after {
+	content: "";
+	display: table;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul:after {
+	clear: both;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul > li {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	margin: 0;
+	font-size: .8em;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul > li a {
+	border: 0;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.normal-sub {
+	width: 300px;
+	left: auto;
+	padding: 10px 20px;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.normal-sub > li {
+	width: 100%;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.normal-sub > li a {
+/*	border: 0;
+	padding: 1em 0;*/
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+PC用
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*サイズは任意で。js側の設定と合わせる*/
+@media screen and (min-width: 769px){
+.pc_none {
+	display: none!important;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn {
+	font-weight: 100;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	/* padding:5px 0; */
+	background:none;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn:hover {
+	border-bottom: 5px solid #a28500;
+	color: #cc9966!important;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn:after {
+	content: url("../img/gnavi/gnavi_arrow.png") ;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn:hover:after {
+	content: url("../img/gnavi/gnavi_arrow_on.png") ;
+}
+.gNavi li.gNaviList_item a.gNaviList_ul_box_hover {
+	color: #cc9966!important;
+	border-bottom: 5px solid #a28500;
+}
+.gNavi li.gNaviList_item a.gNaviList_ul_box_hover:after {
+	content: url("../img/gnavi/gnavi_arrow_on.png") ;
+}
+.underlayerHeader.float .gNavi a.gNaviList_ul_box_hover {
+	/*border-bottom: 1px solid #333;*/
+}
+*,
+::before,
+::after {
+	border-style: none;
+	border-width: 0;
+}
+
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+モバイル用
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*サイズは任意で。js側の設定と合わせる*/
+@media only screen and (max-width: 768px) {
+#animatedModal_500.wrapModal {
+	background-color: rgb(0, 0, 0)!important;
+}
+#animatedModal_500.wrapModal .modal-content {
+	padding: 0 4%;
+	margin-top: 10px; 
+}
+#btn-close-modal {
+	z-index: 9999;
+}
+a#modalOpen_500 {
+	background: #fff;
+	border-radius: 3px;
+	position: fixed;
+	top:2%;
+	right:4%;
+	padding: 1% 2%;
+	background: rgba(255,255,255,0.6);
+}
+a#modalOpen_500 i.fa {
+	color: #a28500;
+	font-size: 2.0rem;
+} 
+body.onMenu {
+	overflow: auto;
+}
+.modal-content .underlayerHeader .titleBox {
+	padding: 0;
+}
+.modal-content .gNaviList .logo {
+	width: 40%;
+	margin: 0 auto 10px auto;
+	display: block;
+}
+.modal-content .gNaviList .logo img {
+	width: 100%;
+	/*min-height: 94px;*/
+	/*min-width: 144px;*/
+	max-height: 84px;
+	max-width: 128px;
+}
+.modal-content .underlayerHeader {
+	border-bottom: none;
+}
+.modal-content .snsBtns {
+	padding-top: 20px;
+}
+.modal-content .snsBtns_item {
+}
+.modal-content .snsBtns_item a {
+	border-radius: 1000px;
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	text-align: center;
+}
+.modal-content .snsBtns_item .fa {
+	font-size: 1.3rem;
+	margin-top: -3px;
+}
+.menu-container {
+	width: 100%;
+}
+.menu-mobile {
+	display: block;
+}
+.menu-dropdown-icon:before {
+	display: block;
+}
+.gNavi > ul {
+	/*display: none;*/
+}
+.gNavi > ul > li {
+	width: 100%;
+	float: none;
+	display: block;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn:after {
+	content: "\f107";
+	font-family: FontAwesome;
+	float: right;
+	color: #a28500;
+	z-index: 9999;
+	font-size: 2.0rem;
+}
+.gNavi li.gNaviList_item.open a.ani-reverseBtn:after {
+	content: "\f106";
+	font-family: FontAwesome;
+	float: right;
+	color: #a28500;
+	z-index: 9999;
+	font-size: 2.0rem;
+}
+.menuBtn:after {
+	content: "\f0c9";
+	font-family: FontAwesome;
+	text-align: center;
+	color: #a28500;
+	z-index: 9999;
+	font-size: 2.0rem;
+}
+.menuBtn.menuBtnon:after {
+	content: "×";
+	text-align: center;
+	color: #a28500;
+	z-index: 9999;
+	font-size: 2.5rem;
+}
+.gNaviList p a,
+.gNavi > ul > li a {
+	padding: 1.5em;
+	width: 100%;
+	display: block;
+}
+
+.gNavi > ul > li > ul {
+	position: relative;
+}
+.gNavi > ul > li > ul.normal-sub {
+	width: 100%;
+}
+.gNavi > ul > li > ul > li {
+	float: none;
+	width: 100%;
+	margin-top: 20px;
+}
+.gNavi > ul > li > ul > li:first-child {
+	margin: 0;
+}
+.gNavi > ul > li > ul > li > ul {
+	position: relative;
+}
+.gNavi > ul > li > ul > li > ul > li {
+	float: none;
+}
+.gNavi .show-on-mobile {
+	display: block;
+}
+
+.gNavi ul.gNaviList {
+	/*overflow-y: scroll!important;*/
+}
+.gNavi li.gNaviList_item {
+	border-bottom: 1px solid #444;
+}
+.gNavi li.gNaviList_item a {
+	background: none !important;
+	color: #FFF!important;
+	padding: 5px 20px;
+}
+.gNavi div.gNaviList p a {
+	background: #000!important;
+	color: #FFF!important;
+	padding: 15px 20px;
+}
+	a.ani-reverseBtn:hover {
+	border: none;
+}
+.gNavi > ul > li > div.gNaviList_ul_box {
+	display: none;
+	width: 100%;
+	background: #000;
+	position: relative;
+	/*z-index: 15000!important;*/
+	left: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.gNavi > ul > li > div.gNaviList_ul_box img {
+	display: none;
+}
+.gNavi > ul > li > div.gNaviList_ul_box:before,
+.gNavi > ul > li > div.gNaviList_ul_box:after {
+	content: "";
+	display: table;
+}
+.gNavi > ul > li > div.gNaviList_ul_box:after {
+	clear: both;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.gNavi_two_items {
+	/*width: 384px;*/
+	width: 100%;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.gNavi_three_items {
+	/*width: 576px;*/
+	width: 100%;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li {
+	margin: 0;
+	padding: 3px 0 5px 35px;
+	list-style: none;
+	background: none;
+	width: 100%;
+	border-bottom: 1px solid #444;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li:first-child {
+	border-top: 1px solid #444;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li:last-child {
+	border-bottom: none;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a {
+	color: #FFF;
+	padding: 10px 0;
+	border: none!important;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 9999;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a span {
+	clear: both;
+	display: block;
+}
+.animatedModal_500-off {
+	display:none;
+}
+
+}
+
+/* edit */
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li.current a {
+	background: #8A7200;
+}
+
+@media screen and (min-width: 769px){
+.gNavi li.gNaviList_item.current a.ani-reverseBtn {
+	border-bottom: 5px solid #a28500;
+	color:#a28500;
+}
+.gNavi li.gNaviList_item.current a.ani-reverseBtn:after {
+	content: url("../img/gnavi/gnavi_arrow_on.png") ;
+}
+}
+@media only screen and (max-width: 768px) {
+
+
+}

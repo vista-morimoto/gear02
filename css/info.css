@@ -1,0 +1,183 @@
+/* -----------------------------------------------------------------------
+## variables #############################################################
+----------------------------------------------------------------------- */
+/* colors */
+/* easings */
+/* breakpoints */
+/* -----------------------------------------------------------------------
+## mixins ################################################################
+----------------------------------------------------------------------- */
+/* background */
+.infoFaq,
+.infoContact {
+	background: url(/img/img01.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* -----------------------------------------------------------------------
+## faq ###################################################################
+----------------------------------------------------------------------- */
+#faq {
+	padding-bottom: 0;
+}
+#faq .contents:last-child {
+	padding-bottom: 0;
+}
+.faq_categoryList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 16px 0 50px;
+}
+.faq .categoryList {
+	margin-left: -32px;
+}
+.faq .categoryList_item {
+	margin-left: 32px;
+	text-align: center;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+.faq .categoryList a {
+	display: block;
+	padding: 8px 0;
+	border: 1px solid #333;
+	color: #333;
+	background-color:#FFF;
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+	-webkit-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+			transition: all 0.4s;
+}
+.faq .categoryList a:hover {
+	background: #333;
+	color: #fff;
+}
+.faq .qaBox {
+	margin: 32px 0 100px;
+	padding-top: 30px;
+}
+.faq .qaBox:last-of-type {
+	margin-bottom: 0;
+}
+#cat1,
+#cat2,
+#cat3 {
+	width: 960px;
+	margin: 0 auto;
+}
+h4.h4_title {
+	font-weight: normal;
+	font-size: 1.125rem;
+	margin: 50px 0 25px 0;
+}
+#faq .qaBox_list .qaBox_list_a a {
+	color: #A28500;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+ #faq .qaBox_list .qaBox_list_a a:hover {
+	opacity: 0.5;
+}
+
+
+/*ONLY PC*/
+@media screen and (min-width: 769px) {
+
+.faq .qaBox_list {
+	font-size: 1.0rem;
+}
+
+.faq .qaBox_list_q {
+	float: left;
+	clear: both;
+	padding: 10px 16px 10px 0;
+	width: 100%;
+	text-align: left;
+}
+.faq .qaBox_list_a {
+	float: right;
+	padding: 0 0 36px 0;
+	width: 100%;
+	text-align: left;
+}
+.faq .categoryList a {
+	padding: 45px 0;
+	font-size: 1.125rem;
+}
+
+}
+
+
+/*ONLY SP*/
+@media screen and (max-width: 768px) {
+#cat1,
+#cat2,
+#cat3 {
+	width:100%;
+	margin:-21% auto 0 auto;
+	padding-top:21%;
+}
+#cat1 .qaBox_list:nth-of-type(1),
+#cat2 .qaBox_list:nth-of-type(1),
+#cat3 .qaBox_list:nth-of-type(1) {
+	margin-top: -15px;
+}
+.faq_categoryList {
+	margin: 6px 0 0;
+	flex-wrap:wrap;
+}
+.faq .categoryList {
+	margin-left: -8px;
+}
+.faq .categoryList_item {
+	margin-left: 8px;
+	margin-bottom:8px;
+	width:100%;
+	-webkit-box-flex: auto;
+			-ms-flex: auto;
+				flex: auto;
+}
+.faq .categoryList_item a {
+	padding:15px 0;
+	width:100%;
+}
+.faq .qaBox {
+	margin: 16px 0;
+}
+.faq .qaBox_list dt.noline{
+	border-top:none;
+}
+h4.h4_title {
+	font-weight: bold;
+	font-size: 1rem;
+	margin: 40px 0 10px 0;
+}
+section.contents{
+	margin-top:50px;
+}
+}
+
+/* -----------------------------------------------------------------------
+## contact ###############################################################
+----------------------------------------------------------------------- */
+#contacts {
+	padding-top: 16px;
+	padding-bottom: 0;
+	min-height: auto;
+}
+#contacts p {
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+	#contacts p {
+		text-align: left;
+}
+}
+
+
+/*# sourceMappingURL=maps/info.css.map */

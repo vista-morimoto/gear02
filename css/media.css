@@ -1,0 +1,562 @@
+/* -----------------------------------------------------------------------
+## variables #############################################################
+----------------------------------------------------------------------- */
+/* colors */
+/* easings */
+/* breakpoints */
+/* -----------------------------------------------------------------------
+## mixins ################################################################
+----------------------------------------------------------------------- */
+/* background */
+.mediaPress,
+.mediaPublished,
+.mediaLibrary,
+.mediaNewsList,
+.mediaNewsDetail {
+	background: url(/img/img01.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* -----------------------------------------------------------------------
+## press #################################################################
+----------------------------------------------------------------------- */
+.press {
+	padding-top: 16px;
+}
+
+.press_contact .col2Box {
+	margin-top: 16px;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.press_contact_tels {
+	margin-top: 1em;
+}
+
+.press_release .col2Box {
+	margin-top: 16px;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+}
+
+.press_release .col2Box_item {
+	margin-top: 32px;
+	padding-top: 16px;
+	border-top: 1px solid #fff;
+	-webkit-box-flex: 40%;
+			-ms-flex: 40%;
+				flex: 40%;
+}
+
+.press_release .col2Box .btn.pdf {
+	margin-top: 16px;
+}
+
+.press_release .col2Box .btn.pdf a {
+	border: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+.press_contact_address {
+	margin-top: 1em;
+}
+}
+
+/* -----------------------------------------------------------------------
+## library ###############################################################
+----------------------------------------------------------------------- */
+.library {
+	padding-top: 16px;
+}
+
+.library_overview {
+	margin-top: 16px;
+}
+
+.library .col2Box {
+	margin-top: 32px;
+}
+
+.library .col2Box_item .youtube {
+	position: relative;
+	padding-top: 51.26%;
+}
+
+.library .col2Box_item iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.library .photoBox {
+	margin-top: 32px;
+	margin-left: -16px;
+}
+
+.library .photoBox_item {
+	float: left;
+	margin-top: 16px;
+	margin-left: 16px;
+}
+
+.library .btn {
+	margin-top: 32px;
+	text-align: center;
+}
+
+.library .btn a {
+	border: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+.library .col2Box_item {
+	margin-top: 16px;
+}
+.library .col2Box_item .youtube {
+	position: relative;
+	padding-top: 51.26%;
+}
+.library .photoBox {
+	margin-left: 0;
+}
+.library .photoBox_item {
+	margin-left: 0;
+	width: 47.5%;
+}
+.library .photoBox_item:nth-child(even) {
+	float: right;
+	width: 47.5%;
+}
+.library .photoBox img {
+	width: 100%;
+}
+}
+
+/* -----------------------------------------------------------------------
+## published #############################################################
+----------------------------------------------------------------------- */
+.published {
+	padding-top: 16px;
+}
+
+.published .selectBox {
+	margin-top: 16px;
+	text-align: center;
+}
+
+.published .selectBox select {
+	padding: 14px 32px;
+	border-radius: 1000px;
+	background: #fff;
+	color: #281f1c;
+	text-align: center;
+	line-height: 1;
+}
+
+.published .publishedList {
+	margin-left: -32px;
+}
+
+.published .publishedList_item {
+	float: left;
+	margin: 64px 0 0 32px;
+	width: 29.7%;
+	border-top: 2px solid #fff;
+	text-align: center;
+}
+
+.published .publishedList time {
+	display: block;
+	margin-top: 8px;
+	font-weight: bold;
+}
+
+.published .publishedList_category {
+	display: inline-block;
+	margin-top: 8px;
+	padding: 4px 32px;
+	border-radius: 1000px;
+	background: #fff;
+	color: #281f1c;
+}
+
+.published .publishedList_img {
+	margin-top: 8px;
+}
+
+.published .publishedList_text {
+	margin-top: 8px;
+	text-align: left;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.published .pager {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 64px;
+}
+
+.published .pager .pagenation {
+	text-align: center;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.published .pager .pagenation_item {
+	display: inline-block;
+}
+
+.published .pager .pagenation_item a {
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid #fff;
+	border-radius: 0;
+	line-height: inherit;
+}
+
+.published .pager .pagenation_item.active span {
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid #fff;
+	background: #fff;
+	color: #281f1c;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+.published .publishedList {
+	margin-left: 0;
+}
+.published .publishedList_item {
+	margin-left: 0;
+	width: 48%;
+}
+.published .publishedList_item img {
+	width: 100%;
+}
+.published .publishedList_item:nth-child(even) {
+	float: right;
+}
+.published .publishedList_text {
+	font-size: 0.875rem;
+}
+.published .pager {
+	display: block;
+}
+.published .pager_prev,
+.published .pager_next {
+	text-align: center;
+}
+.published .pager_prev a,
+.published .pager_next a {
+	display: block;
+	border: 1px solid #fff;
+}
+.published .pager .pagenation {
+	display: block;
+	padding: 8px 0;
+}
+}
+
+/* -----------------------------------------------------------------------
+## news list #############################################################
+----------------------------------------------------------------------- */
+.newsList .mainSubBox {
+	margin-top: 32px;
+}
+
+.newsList .mainSubBox_main {
+	padding-right: 16px;
+}
+
+.newsList .mainSubBox_sub {
+	margin-left: 16px;
+	padding: 8px;
+	border-top: 1px solid #fff;
+}
+
+.newsList .categoryList,
+.newsList .archiveList {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #fff;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.newsList .categoryList_item,
+.newsList .archiveList_item {
+	margin-top: 8px;
+}
+
+.newsList .categoryList {
+	margin-bottom: 8px;
+	padding-bottom: 32px;
+}
+
+.newsList .mainSubBox_block {
+	margin-top: 32px;
+	border-top: 1px solid #fff;
+}
+
+.newsList .mainSubBox_block:first-child {
+	margin-top: 0;
+}
+
+.newsList .block_title {
+	margin-top: 16px;
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+.newsList .block_date {
+	margin-top: 8px;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.newsList .block_category {
+	display: inline-block;
+	margin-top: 8px;
+	padding: 8px 16px;
+	border-radius: 1000px;
+	background: #fff;
+	color: #281f1c;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+}
+
+.newsList .pager {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 64px;
+}
+
+.newsList .pager .pagenation {
+	text-align: center;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.newsList .pager .pagenation_item {
+	display: inline-block;
+}
+
+.newsList .pager .pagenation_item a {
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid #fff;
+	border-radius: 0;
+	line-height: inherit;
+}
+
+.newsList .pager .pagenation_item.active span {
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid #fff;
+	background: #fff;
+	color: #281f1c;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+.newsList .mainSubBox {
+	margin-top: 16px;
+}
+.newsList .mainSubBox_main {
+	padding-right: 0;
+}
+.newsList .mainSubBox_sub {
+	margin-top: 16px;
+	margin-left: 0;
+	padding: 0;
+}
+.newsList .mainSubBox_block {
+	margin-top: 32px;
+}
+.newsList .asideTitle {
+	padding-top: 4px;
+}
+.newsList .pager {
+	display: block;
+}
+.newsList .pager_prev,
+.newsList .pager_next {
+	text-align: center;
+}
+.newsList .pager_prev a,
+.newsList .pager_next a {
+	display: block;
+	border: 1px solid #fff;
+}
+.newsList .pager .pagenation {
+	display: block;
+	padding: 8px 0;
+}
+}
+
+/* -----------------------------------------------------------------------
+## news detail ###########################################################
+----------------------------------------------------------------------- */
+.newsDetail .mainSubBox {
+	margin-top: 32px;
+}
+
+.newsDetail .mainSubBox_main {
+	padding-right: 16px;
+}
+
+.newsDetail .mainSubBox_sub {
+	margin-left: 16px;
+	padding: 8px;
+	border-top: 1px solid #fff;
+}
+
+.newsDetail .categoryList,
+.newsDetail .archiveList {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #fff;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.newsDetail .categoryList_item,
+.newsDetail .archiveList_item {
+	margin-top: 8px;
+}
+
+.newsDetail .categoryList {
+	margin-bottom: 8px;
+	padding-bottom: 32px;
+}
+
+.newsDetail .mainSubBox_block {
+	margin-top: 32px;
+	border-top: 1px solid #fff;
+}
+
+.newsDetail .mainSubBox_block:first-child {
+	margin-top: 0;
+}
+
+.newsDetail .block_title {
+	margin-top: 16px;
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+.newsDetail .block_date {
+	margin-top: 8px;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.newsDetail .block_category {
+	display: inline-block;
+	margin-top: 8px;
+	padding: 8px 16px;
+	border-radius: 1000px;
+	background: #fff;
+	color: #281f1c;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+}
+
+.newsDetail .block_body {
+	margin-top: 32px;
+}
+
+.newsDetail .block_body p {
+	margin-top: 1.5em;
+}
+
+.newsDetail .block_body img {
+	display: block;
+	margin-top: 1.5em;
+}
+
+.newsDetail .pager {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 64px;
+}
+
+.newsDetail .pager .pagenation {
+	text-align: center;
+	-webkit-box-flex: 1;
+			-ms-flex: 1;
+				flex: 1;
+}
+
+.newsDetail .pager .pagenation_item {
+	display: inline-block;
+}
+
+.newsDetail .pager .pagenation_item a {
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid #fff;
+	border-radius: 0;
+	line-height: inherit;
+}
+
+.newsDetail .pager .pagenation_item.active span {
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid #fff;
+	background: #fff;
+	color: #281f1c;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+.newsDetail .mainSubBox {
+	margin-top: 16px;
+}
+.newsDetail .mainSubBox_main {
+	padding-right: 0;
+}
+.newsDetail .mainSubBox_sub {
+	margin-top: 16px;
+	margin-left: 0;
+	padding: 0;
+}
+.newsDetail .mainSubBox_block {
+	margin-top: 32px;
+}
+.newsDetail .block_body img {
+	width: 100%;
+}
+.newsDetail .asideTitle {
+	padding-top: 4px;
+}
+.newsDetail .pager {
+	display: block;
+}
+.newsDetail .pager_prev,
+.newsDetail .pager_next {
+	text-align: center;
+}
+.newsDetail .pager_prev a,
+.newsDetail .pager_next a {
+	display: block;
+	border: 1px solid #fff;
+}
+.newsDetail .pager .pagenation {
+	display: block;
+	padding: 8px 0;
+}
+}
+
+/*# sourceMappingURL=maps/media.css.map */

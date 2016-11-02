@@ -1,0 +1,181 @@
+/* -----------------------------------------------------------------------
+## variables #############################################################
+----------------------------------------------------------------------- */
+/* colors */
+/* easings */
+/* breakpoints */
+/* -----------------------------------------------------------------------
+## mixins ################################################################
+----------------------------------------------------------------------- */
+/* background */
+.recruitIndex {
+	background: url(/img/img01.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* -----------------------------------------------------------------------
+## recruit ###############################################################
+----------------------------------------------------------------------- */
+#recruit {
+	padding-bottom: 0;
+}
+#recruit .contents:last-child {
+	padding-bottom: 0;
+}
+.recruitSec_navi {
+	margin: 40px 0 100px;
+	text-align: center;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+			justify-content: space-between;
+}
+.recruitSec_navi a {
+	width: 310px;
+	padding: 45px 0;
+	border-radius: 5px;
+	border: 1px solid #333;
+	color: #333;
+	background-color:#FFF;
+	text-align: center;
+	font-size: 1.125rem;
+	display: block;
+	-webkit-transition: all 0.2s ease;
+			transition: all 0.2s ease;
+}
+.recruitSec_navi a:hover {
+	color: #fff;
+	background: #333;
+}
+.recruitSec_table {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	table-layout: fixed;
+}
+.recruitSec_table th,
+.recruitSec_table td {
+	padding: 15px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	line-height: 1.5;
+	background: rgba(255,255,255,0.4);
+	
+}
+.recruitSec_table th {
+	width: 200px;
+	background-color: rgba(0,0,0,0.2);
+}
+
+#recruit .slick-prev,
+#recruit .slick-next/*,
+#recruit .slick-dots*/ {
+	display:none!important;
+}
+#recruit.recruitSec .sectionInner .recruit_logo {
+	position:absolute; top:16px; left:0; z-index:9999;
+}
+#recruit.recruitSec .sectionInner .recruit_logo img {
+	width:100%;
+}
+#recruit .recruitSec_table td a {
+	color:#996600;
+}
+#recruit .recruitSec_table td a:hover {
+	color:#cc9966;
+}
+#recruit .recruitSec_table td span {
+	font-size:14px;
+}
+
+
+@media screen and (min-width: 769px) {
+.recruitSec_table th {
+	text-align: left;
+	vertical-align: top;
+}
+.recruitSec_navi a {
+	height:120px;
+}
+.recruitSec_navi li:nth-child(2) a {
+	padding-top:25px;
+}
+#recruit #recruitSec_contact p {
+	text-align:center;	
+}
+}
+
+@media screen and (max-width: 768px) {
+.recruitSec .visualBox_copy {
+	text-align: left;
+}
+.recruitSec .visualBox_copy br {
+	display: none;
+}
+.recruitSec_navi {
+	margin: 30px 0 0;
+	flex-wrap:wrap;
+	-webkit-flex-wrap: wrap;
+}
+.recruitSec_navi li {
+	width: 100%;
+}
+.recruitSec_navi a {
+	width: 100%;
+	padding:10px 0;
+	margin-bottom:10px;
+	font-size: 1rem;
+}
+.recruitSec_table {
+	display: block;
+}
+.recruitSec_table th,
+.recruitSec_table td {
+	display: block;
+}
+.recruitSec_table td {
+	padding-bottom:25px;
+}
+.recruitSec_table th {
+	padding: 8px 16px;
+	width: auto;
+	background-color: rgba(0,0,0,0.2);
+	color: #281f1c;
+text-align:left;
+	font-weight:normal;
+}
+#recruit .contentsTitle {
+	padding-top:60px;
+	padding-bottom:8px;
+}
+#recruit .visualBox .contentsTitle:first-child {
+	padding-top:0px;
+}
+#recruit .slick-slider{
+	margin-bottom:10px;
+}
+#recruit .sectionInner {
+	margin-top:0;
+}
+#recruit .sectionTitle {
+	padding: 23% 0 10px;
+}
+}
+
+/*# sourceMappingURL=maps/recruit.css.map */
+
+/* edit */
+@media screen and (min-width: 769px) {
+#recruitSec_cast, #recruitSec_staff , #recruitSec_contact {
+	margin-top: -15px;
+	padding-top: 15px;
+}
+}
+@media screen and (max-width: 768px) {
+#recruitSec_cast, #recruitSec_staff , #recruitSec_contact{
+	width: 100%;
+	margin-top: -15px;
+	padding-top: 15px;
+}
+}
