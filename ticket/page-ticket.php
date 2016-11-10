@@ -141,7 +141,12 @@ $(function() {
 
 <div class="loader"><i class="fa fa-cog fa-spin fa-fw"></i><br><span>Loading...</span></div>
 
-<p>あかさたな</p>
+<dl class="legend pl0 pc_none">
+    <dt><span class="daytime">■</span>ギアの日割</dt>
+    <dd>毎週月曜日（祝日を除く）は14時、19時公演共に500円OFF！</dd>
+    <dt><span class="kids">■</span>キッズデー</dt>
+    <dd>毎月第1・3土曜日12時公演は普段ご入場いただけない4歳未満のお子さまも一緒にご入場いただけます（要予約）</dd>
+</dl>
 
 </div>
 </div>
