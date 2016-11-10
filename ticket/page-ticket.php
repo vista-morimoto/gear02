@@ -140,6 +140,9 @@ $(function() {
 </ul>
 
 <div class="loader"><i class="fa fa-cog fa-spin fa-fw"></i><br><span>Loading...</span></div>
+
+<p>あかさたな</p>
+
 </div>
 </div>
 
