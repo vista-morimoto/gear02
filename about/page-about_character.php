@@ -80,7 +80,8 @@ get_header();
 <section id="msgFromProducer">
 <div class="producerProf">
 <div class="img"><img src="<?php echo THEME_URI; ?>/about/img/character/yamada.jpg" alt="山田章博"></div>
-<h3>山田章博<br><span>Yamada Akihiro</span></h3>
+<h3><small>『ギア-GEAR-』<br class="pc_none" />イメージイラスト描き下ろし</small><br />
+山田章博<br><span>Yamada Akihiro</span></h3>
 <p>
 マンガ家、イラストレーター。1957年高知県生まれ、京都府在住。1981年デビュー。美しく繊細な筆致が特徴で、読者を陶酔させるような世界観のある作品を得意とし、国内外を問わず多くのファンを持つ人気作家。<br>
 代表作にマンガ「BEAST of EAST」、「ロードス島戦記 ファリスの聖女」、小説挿絵「十二国記」、アニメのキャラクターデザイン「ラーゼフォン」、実写映画「SHINOBI」コンセプトデザイン等、その活動は幅広い。京都精華大学マンガ学部で客員教授も務める。
