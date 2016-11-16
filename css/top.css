@@ -413,10 +413,11 @@ body.top .sectionInner {
 }
 #mainVisual .actions  li a {
 	width:190px;
+	height: 28px;
 	box-sizing:border-box;
 	position: relative;
 	display: inline-block;
-	padding: 7px 20px 7px 20px;
+	/* padding: 7px 20px 7px 20px; */
 	border-radius: 1000px;
 	background: #000;
 	color: #f6e5cb;
@@ -427,6 +428,7 @@ body.top .sectionInner {
 	/* font-family: Avenir Next, Verdana, sans-serif; */
 	font-weight: bold;
 }
+
 #mainVisual .actions li a:after {
 	position: absolute;
 	top: 0;
@@ -444,6 +446,35 @@ body.top .sectionInner {
 #mainVisual .actions li:first-child a:after {
 	content: '\f144';
 }
+
+#mainVisual .actions .actions_en , #mainVisual .actions .actions_jp {
+	display: block; /* position指定がある時は無くても可 */
+	width: 100%;
+	position: absolute;
+	top: 7px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+#mainVisual .actions .actions_en {
+	opacity: 1;
+	color: #FFF;
+}
+#mainVisual .actions .actions_jp {
+	opacity: 0;
+	color: #FFF;
+}
+#mainVisual .actions a:hover .actions_en {
+	opacity: 0;
+}
+#mainVisual .actions a:hover .actions_jp {
+	opacity: 1;
+}
+#mainVisual .actions a.ani-opacity:hover {
+	background-color:#A28500;
+	opacity: 1.0;
+}
+
 /*モーダル*/
 .top .modal-content .youtube {
 	position: relative;
@@ -556,6 +587,76 @@ body.top .sectionInner {
 	width: 100%;
 }*/
 
+/*scroll*/
+#mainVisual .sectionInner .scroll {
+	position:fixed;
+	left:50%;
+	bottom:15%;
+	margin-left:-12px;
+	text-align: center;
+	color: #000;
+	
+	z-index: 1;
+
+	-webkit-animation-name:scroll;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-timing-function:ease;
+	
+	-moz-animation-name:scroll;
+	-moz-animation-duration:2s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	-moz-animation-timing-function:ease;
+}
+
+@-webkit-keyframes scroll {
+	0% {-webkit-transform:translate(0, 0);}
+	50% {-webkit-transform:translate(0, -10px);}
+	100% {-webkit-transform:translate(0, 0);}
+}
+@-moz-keyframes scroll {
+	0% {-moz-transform:translate(0, 0);}
+	50% {-moz-transform:translate(0, -10px);}
+	100% {-moz-transform:translate(0, 0);}
+}
+.scroll span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+#mainVisual .sectionInner .scroll {
+	position: absolute;
+	bottom:44px;
+}	
+}
+
+@media screen and (min-width: 769px) {
+@media screen and (min-height: 560px) and (max-height: 660px){
+#mainVisual .sectionInner .scroll {
+	bottom:44px;
+}	
+}
+@media screen and (max-height: 559px){
+#mainVisual .sectionInner .scroll {
+	display:none;
+}
+}
+}
+
+
+
+
 
 @media screen and (min-width: 769px) {
 #mainVisual .bnrs li {
@@ -602,6 +703,7 @@ body.top .sectionInner {
 }
 #mainVisual .actions li a {
 	display: block;
+	height:30px;
 	padding: 8px 0 8px;		
 }
 	
@@ -1214,14 +1316,14 @@ body.top .sectionInner {
 	color: #fff;
 	display: block;
 }
-/* #ticket .calenderWrapper .calender .haveToSpace:hover,
+#ticket .calenderWrapper .calender .haveToSpace:hover,
 #ticket .calenderWrapper .calender .few:hover,
 #ticket .calenderWrapper .calender .noRoom:hover,
 #ticket .calenderWrapper .calender .full:hover {
 	opacity: 0.5;
 	-webkit-transition: all 0.4s ease;
 								transition: all 0.4s ease;
-} */
+}
 #ticket .calenderWrapper .calender .haveToSpace {  background: #00cc00; }
 #ticket .calenderWrapper .calender .noRoom {  background: #ff9900; }
 #ticket .calenderWrapper .calender .few {  background: #ff0000; }
@@ -1253,7 +1355,7 @@ body.top .sectionInner {
 #ticket .legend .haveToSpace	{  color: #00cc00; }
 #ticket .legend .noRoom	{  color: #ff9900; }
 #ticket .legend .few	{  color: #ff0000; }
-#ticket .legend .full	{  color: #666666; }
+#ticket .legend .full	{  color: #EEE; }
 #ticket .legend .daytime	{  color: #66ccff; }
 #ticket .legend .kids	{  color: #ffcce8; }
 
@@ -1432,6 +1534,15 @@ body.top .sectionInner {
 .top #ticket .slick-next {	background: url(./lib/slickArrowRight_ticket.png) left center no-repeat; }
 /*△TOP用*/
 
+.top #ticket .ticketBox .calenderNavi {
+	position: relative;	
+}
+.top #ticket .ticketBox .calenderNavi .calenderNavi_item_select {
+	display:none;	
+}
+.top #ticket .ticketBox .calenderNavi li {
+	position: absolute;	
+}
 
 @media screen and (min-width: 769px) {
 #ticket .nextStage .otherBtn a:hover {
@@ -1440,12 +1551,40 @@ body.top .sectionInner {
 	color: #fff;
 }
 .top #ticket .box > div {
-	min-height: 730px;
+	min-height: 700px;/* 730px */
 }
 .top #ticket .ticketBox .navi li a:hover {
 	color: #ff9933;
 	background: url(lib/slickArrowRight_ticket_over.png) no-repeat right center/22px;
 }
+
+/* calendar view */
+#ticket .calender_view {
+	min-height:479px;
+}
+/* Unsold seat */
+#ticket .calenderWrapper .calender .haveToSpace:before	{ content:'●'; }
+#ticket .calenderWrapper .calender .noRoom:before	{ content:'▲'; }
+#ticket .calenderWrapper .calender .few:before	{ content:'▼'; }
+#ticket .calenderWrapper .calender .full:before	{ content:'×'; }
+
+/* next prev */
+.top #ticket .ticketBox .calenderNavi li a , .top #ticket .ticketBox .calenderNavi li a:hover {
+	background:none;
+}
+.top #ticket .ticketBox .calenderNavi li.prev {
+	left:0;
+	top:30px;	
+}
+.top #ticket .ticketBox .calenderNavi li.next {
+	right:0;
+	top:30px;	
+}
+.top #ticket .ticketBox .calenderNavi li.next a {
+	padding: 3px 0 3px 30px;
+}
+
+
 }
 @media screen and (max-width: 768px) {
 #ticket {
@@ -1543,6 +1682,22 @@ body.top .sectionInner {
 }
 .top #ticket .ticketBox .navi li.wide a::after {
 	content: "";
+}
+
+/* next prev */
+.top #ticket .ticketBox .calenderNavi li.prev {
+	left:0;
+	top:-17px;	
+}
+.top #ticket .ticketBox .calenderNavi li.next {
+	right:0;
+	top:-17px;
+}
+.top #ticket .ticketBox .calenderNavi li.next a {
+	    padding: 3px 0 3px 30px;
+}
+.top #ticket .ticketBox .calenderNavi li a::after {
+	content:'';	
 }
 	
 /*キャストスケジュール*/

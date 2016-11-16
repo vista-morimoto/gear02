@@ -126,8 +126,8 @@ $(function() {
 	<li><span class="noRoom">●</span>少なくなっています</li>
 	<li><span class="few">●</span>残りわずか!!</li>
 	<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>
-	<li class="tooltip tipdaytime"><span class="daytime">■</span><strong>ギアの日割</strong><em>毎週月曜日（祝日を除く）は14時、19時公演共に500円OFF！</em></li>
-	<li class="tooltip tipkids"><span class="kids">■</span><strong>キッズデー</strong><em>毎月第1・3土曜日12時公演は普段ご入場いただけない4歳未満のお子さまも一緒にご入場いただけます（要予約）</em></li>
+	<li class="tooltip tipdaytime"><span class="daytime">■</span>ギアの日割<em>毎週月曜日（祝日を除く）は14時、19時公演共に500円OFF！</em></li>
+	<li class="tooltip tipkids"><span class="kids">■</span>キッズデー<em>毎月第1・3土曜日12時公演は普段ご入場いただけない4歳未満のお子さまも一緒にご入場いただけます（要予約）</em></li>
 </ul>
 </div>
 </template>

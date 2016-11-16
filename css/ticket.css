@@ -130,6 +130,13 @@
 #ticket .navi a {
 	border:none;
 }
+#ticket li.tooltip strong {
+	font-weight:normal;
+}
+	#ticket li.tooltip em {
+		font-style:normal;
+		display:block;
+		}
 
 /*料金*/
 #ticket .contents .zaseki a {
@@ -308,6 +315,10 @@
 #ticket .fee table .underline {
 	text-decoration: underline;
 }
+#ticket li.tooltip em:before {
+	content:"…";
+	}
+
 /*前売り*/
 #ticket .prereserve .leftBox,
 #ticket .prereserve .rightBox,
@@ -334,57 +345,6 @@
 	height: 310px;
 }
 
-#ticket li.tooltip {
-  position:relative;
-}
-#ticket li.tooltip em {
-  display: none;
-  position: absolute;
-  top:3em;
-  /*bottom: -2.8em;*/
-  right: 0;
-  z-index: 9999;
-  padding: 0.3em 0.5em;
-  color: #000;
-  width:20em;
-  font-style:normal;
-  line-height:1.4;
-  padding:10px;
-}
-#ticket li.tooltip em:after {
-  width: 0px;
-  height: 0px;
-  content: "";
-  display: block;
-  position: absolute;
-  right: 1em;
-  top: -8px;
-  
-  border-style: solid;
-  border-width: 0 8px 8px 8px;
-}
-#ticket li.tooltip:hover em {
-  display: block;
-}
-#ticket li.tooltip strong {
-	text-decoration:underline;
-	font-weight:normal;
-	}
-	#ticket li.tooltip strong:hover {
-		opacity:0.5;
-		}
-#ticket li.tipdaytime em {
-	background:#66CCFF;
-	}
-	#ticket li.tipdaytime em:after {
-	  border-color: transparent transparent #66CCFF transparent;
-	}
-#ticket li.tipkids em {
-	background:#FFCCE8;
-	}
-	#ticket li.tipkids em:after {
-	  border-color: transparent transparent #FFCCE8 transparent;
-	}
 /* en */
 #ticket .link_form {
 	display:block;
@@ -461,13 +421,6 @@
 #ticket .nowon img {
 	display: none;
 }
-#ticket li.tooltip strong {
-	font-weight:normal;
-}
-#ticket li.tooltip em {
-	font-style:normal;
-	display:block;
-	}
 
 
 /*▽料金*/
