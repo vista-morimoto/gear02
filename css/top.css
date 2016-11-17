@@ -1316,14 +1316,14 @@ body.top .sectionInner {
 	color: #fff;
 	display: block;
 }
-#ticket .calenderWrapper .calender .haveToSpace:hover,
+/* #ticket .calenderWrapper .calender .haveToSpace:hover,
 #ticket .calenderWrapper .calender .few:hover,
 #ticket .calenderWrapper .calender .noRoom:hover,
 #ticket .calenderWrapper .calender .full:hover {
 	opacity: 0.5;
 	-webkit-transition: all 0.4s ease;
 								transition: all 0.4s ease;
-}
+} */
 #ticket .calenderWrapper .calender .haveToSpace {  background: #00cc00; }
 #ticket .calenderWrapper .calender .noRoom {  background: #ff9900; }
 #ticket .calenderWrapper .calender .few {  background: #ff0000; }
@@ -1563,9 +1563,9 @@ body.top .sectionInner {
 	min-height:479px;
 }
 /* Unsold seat */
-#ticket .calenderWrapper .calender .haveToSpace:before	{ content:'●'; }
-#ticket .calenderWrapper .calender .noRoom:before	{ content:'▲'; }
-#ticket .calenderWrapper .calender .few:before	{ content:'▼'; }
+#ticket .calenderWrapper .calender .haveToSpace:before	{ content:'◎'; }
+#ticket .calenderWrapper .calender .noRoom:before	{ content:'〇'; }
+#ticket .calenderWrapper .calender .few:before	{ content:'△'; }
 #ticket .calenderWrapper .calender .full:before	{ content:'×'; }
 
 /* next prev */
