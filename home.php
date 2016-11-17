@@ -16,6 +16,7 @@ get_header();
 
 <main class="mainContents">
 <article>
+
 <!--mainVisual-->
 <section id="mainVisual" class="section parallax-window" data-parallax="scroll" data-image-src="<?php echo THEME_IMAGES; ?>/top/img_main.png" data-z-index="1">
 
@@ -23,17 +24,19 @@ get_header();
 <h1 class="siteTitle"><img src="<?php echo THEME_IMAGES; ?>/top/logo.png" alt="ギアーGEARー"></h1>
 
 <ul class="actions">
-<li><a id="modalOpen_400" href="#animatedModal_400" class="ani-opacity">Watch Video</a></li>
-<li><a href="/ticket/" class="ani-opacity">Buy Tickets</a></li>
+<li><a id="modalOpen_400" href="#animatedModal_400" class="ani-opacity"><span class="actions_en">Watch Video</span><span class="actions_jp">動画を見る</span></a></li>
+<li><a href="/ticket/" class="ani-opacity"><span class="actions_en">Tickets</span><span class="actions_jp">チケット情報</span></a></li>
 </ul>
 
 <ul class="snsBtns">
-<li><a href="https://twitter.com/nvpgear" target="_blank" class="ani-opacity" title="Twitter"><img src="<?php echo THEME_IMAGES; ?>/top/icon_twitter.png" alt="Twitter"></a></li>
-<li><a href="https://www.facebook.com/cco.gear" target="_blank" class="ani-opacity" title="Facebook"><img src="<?php echo THEME_IMAGES; ?>/top/icon_fb.png" alt="Facebook"></a></li>
-<li><a href="https://www.instagram.com/gear_kyoto/" target="_blank" class="ani-opacity" title="Instagram"><img src="<?php echo THEME_IMAGES; ?>/top/icon_instagram.png" alt="Instagram"></a></li>
-<li><a href="https://www.youtube.com/channel/UCrQv_h2ZnHw0hk6CdVBQOsQ" target="_blank" class="ani-opacity" title="YouTube"><img src="<?php echo THEME_IMAGES; ?>/top/icon_youtube.png" alt="YouTube"></a></li>
-<li><a href="https://www.tripadvisor.jp/Attraction_Review-g298564-d2616330-Reviews-Gear_Art_Complex_1928-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" class="ani-opacity" title="トリップアドバイザー"><img src="<?php echo THEME_IMAGES; ?>/top/icon_tripadvisor.png" alt="トリップアドバイザー"></a></li>
+<li><a href="https://twitter.com/nvpgear" target="_blank" class="ani-opacity"><img src="<?php echo THEME_IMAGES; ?>/top/icon_twitter.png" alt="Twitter"></a></li>
+<li><a href="https://www.facebook.com/cco.gear" target="_blank" class="ani-opacity"><img src="<?php echo THEME_IMAGES; ?>/top/icon_fb.png" alt="Facebook"></a></li>
+<li><a href="https://www.instagram.com/gear_kyoto/" target="_blank" class="ani-opacity"><img src="<?php echo THEME_IMAGES; ?>/top/icon_instagram.png" alt="Instagram"></a></li>
+<li><a href="https://www.youtube.com/channel/UCrQv_h2ZnHw0hk6CdVBQOsQ" target="_blank" class="ani-opacity"><img src="<?php echo THEME_IMAGES; ?>/top/icon_youtube.png" alt="YouTube"></a></li>
+<li><a href="https://www.tripadvisor.jp/Attraction_Review-g298564-d2616330-Reviews-Gear_Art_Complex_1928-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" class="ani-opacity"><img src="<?php echo THEME_IMAGES; ?>/top/icon_tripadvisor.png" alt="トリップアドバイザー"></a></li>
 </ul>
+
+<div class="scroll"><span></span></div>
 
 </div>
 
@@ -65,6 +68,8 @@ if (!is_archive()) {
 </div>
 </section>
 <!--/mainVisual-->
+
+
 		
 <!--ABOUT AREA-->
 <section id="about" class="section parallax-window" data-parallax="scroll" data-image-src="<?php echo THEME_IMAGES; ?>/top/bg_about.jpg" data-z-index="1">
@@ -164,6 +169,20 @@ if (!is_archive()) {
 <h2>TICKET</h2>
 <div class="ticketBox">
 
+<ul class="calenderNavi clearfix navi">
+	<li class="calenderNavi_item calenderNavi_item_select">
+	<div class="selectWrapper">
+	<select name="" id="">
+	<option value="{{slug}}" v-for="item in select">{{item}}</option>
+	</select>
+	</div>
+	</li>
+
+	<li class="calenderNavi_item prev"><a href="#" class="ani-reverseBtn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> 前の月へ</a></li>
+	<li class="calenderNavi_item next"><a href="#" class="ani-reverseBtn">次の月へ <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></li>
+</ul>
+
+<div class="calender_view">
 <!---▽カレンダー仮ここから-->
 <!-- Vue.js のテンプレート機能を使ってカレンダーを表示 -->
 <!-- カレンダーをtableではなくolで作っているのは、7日毎の折り返しが厳しいため。 -->
@@ -204,9 +223,10 @@ if (!is_archive()) {
 </ol>
 </div>
 </div>
-</template>					 
+</template>
+</div>			 
 
-<ul class="legend">
+<ul class="legend pc_none">
 <li><span class="haveToSpace">●</span>余裕があります</li>
 <li><span class="noRoom">●</span>少なくなっています</li>
 <li><span class="few">●</span>残りわずか!!</li>
@@ -214,10 +234,19 @@ if (!is_archive()) {
 <li><span class="daytime">■</span>ギアの日割</li>
 <li><span class="kids">■</span>キッズデー</li>
 </ul>
+
+<ul class="legend sp_none">
+<li><span class="haveToSpace">◎</span>余裕があります</li>
+<li><span class="noRoom">●</span>少なくなっています</li>
+<li><span class="few">▲</span>残りわずか!!</li>
+<li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定）</span></li>
+<li><span class="daytime">■</span>ギアの日割</li>
+<li><span class="kids">■</span>キッズデー</li>
+</ul>
           
 <ul class="navi">
 <!--<li class="wide"><a href="/ticket/">カレンダーをもっと見る</a></li>-->
-<li class="wide"><a href="/ticket/">チケット詳細</a></li>
+<li class="wide"><a href="/ticket/">チケット予約</a></li>
 <li><a href="/ticket/privilege/">誕生月プラン</a></li>
 <li><a href="/ticket/seat/">座席表</a></li>
 <li><a href="/ticket/cast_schedule/">キャストスケジュール</a></li>
