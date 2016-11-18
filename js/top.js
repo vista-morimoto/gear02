@@ -163,7 +163,7 @@
       // $('.twTicker .twList').marquee({pauseOnHover:true,pauseSpeed:5000,scrollSpeed:5000});
       $('.twTicker .twList').marquee({
       //speed in milliseconds of the marquee
-      duration: 30000,
+      duration: 20000,
       //gap in pixels between the tickers
       gap: 0,
       //time in milliseconds before the marquee will start animating
@@ -174,7 +174,7 @@
       duplicated: true
   	});
 	
-	if (win.GEAR.isNarrow()) {	 $('.twTicker .twList').marquee({ duration: 15000}); }	
+	if (win.GEAR.isNarrow()) {	 $('.twTicker .twList').marquee({ duration: 12000}); }	
 	
 	}).fail(function (e) {
       console.error(e);
@@ -233,4 +233,19 @@ $(function($){
 	$('a#btn-close-modal').click(function() {
 		$("#video").html('<div id="play_button"><span>PLAY MOVIE</span></div>');
 	});
+});
+
+/* -----------------------------------------------------------------------
+ ## Scroll ############################################################
+ ----------------------------------------------------------------------- */
+$(function() {
+    var scrollBtn = $('.scroll span');    
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 50) {
+            scrollBtn.fadeIn();
+        } else {
+            scrollBtn.fadeOut();
+        }
+    });
 });
