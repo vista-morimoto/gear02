@@ -598,7 +598,7 @@ body.top .sectionInner {
 	
 	z-index: 1;
 
-	-webkit-animation-name:scroll;
+	/*-webkit-animation-name:scroll;
 	-webkit-animation-duration:2s;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-direction:alternate;
@@ -608,10 +608,10 @@ body.top .sectionInner {
 	-moz-animation-duration:2s;
 	-moz-animation-iteration-count:infinite;
 	-moz-animation-direction:alternate;
-	-moz-animation-timing-function:ease;
+	-moz-animation-timing-function:ease;*/
 }
 
-@-webkit-keyframes scroll {
+/*@-webkit-keyframes scroll {
 	0% {-webkit-transform:translate(0, 0);}
 	50% {-webkit-transform:translate(0, -10px);}
 	100% {-webkit-transform:translate(0, 0);}
@@ -620,8 +620,8 @@ body.top .sectionInner {
 	0% {-moz-transform:translate(0, 0);}
 	50% {-moz-transform:translate(0, -10px);}
 	100% {-moz-transform:translate(0, 0);}
-}
-.scroll span {
+}*/
+/*.scroll span {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -632,12 +632,26 @@ body.top .sectionInner {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	box-sizing: border-box;
-}
-
+}*/
+.scroll span {
+	background:url("../img/top/scrollDown.png") center center no-repeat;
+	
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 47px;
+	height: 47px;
+	
+	cursor:pointer;
+	}
+.scroll span:hover {
+	background:url("../img/top/scrollDownOn.png") center center no-repeat;
+	}
 @media screen and (max-width: 768px) {
 #mainVisual .sectionInner .scroll {
-	position: absolute;
-	bottom:44px;
+	/*position: absolute;
+	bottom:44px;*/
+	display:none;
 }	
 }
 

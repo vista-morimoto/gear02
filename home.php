@@ -5,15 +5,14 @@ $cssLink = '
 <link rel="stylesheet" href="'.THEME_CSS.'/top.css">
 ';
 $jsLink_top = '
-<script src="'.THEME_JS.'/lib/jquery.inview.min.js"></script>'
-;
+<script src="'.THEME_JS.'/lib/jquery.inview.min.js"></script>
+';
 $jsLink_btm = '
 <script src="'.THEME_JS.'/top.js"></script>
 <script src="'.THEME_JS.'/calender.js"></script>
 ';
 get_header();
 ?>
-
 <main class="mainContents">
 <article>
 
@@ -40,7 +39,7 @@ get_header();
 
 </div>
 
-<div class="news">
+<div id="news" class="news">
 <h2>NEWS</h2>
 <ul>
 
@@ -426,3 +425,4 @@ if (!is_archive()) {
 </div>
 
 <?php get_footer(); ?>
+
