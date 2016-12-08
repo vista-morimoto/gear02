@@ -105,6 +105,7 @@ $title     = get_the_title();
 <div class="menu-container sp_none">
 <nav class="gNavi">
 <ul class="gNaviList">
+	<li class="gNaviList_item"><a href="/" class="ani-reverseBtn">HOME</a></li>
 	<li class="gNaviList_item<?php if (is_page('about') || is_parent_slug() == 'about' || is_post_type_archive('voice')){	echo ' current';} ?>"><a href="/about/" class="ani-reverseBtn">作品紹介</a>
 	<div class="gNaviList_ul_box">
 	<ul>
@@ -256,11 +257,11 @@ $title     = get_the_title();
 	</ul>
 	<div class="gNaviList">
 	<ul class="snsBtns">
-		<li class="snsBtns_item"><a href="https://twitter.com/nvpgear" target="_blank" class="ani-opacity" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-		<li class="snsBtns_item"><a href="https://www.facebook.com/cco.gear" target="_blank" class="ani-opacity" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-		<li class="snsBtns_item"><a href="https://www.instagram.com/gear_kyoto/" target="_blank" class="ani-opacity" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		<li class="snsBtns_item"><a href="https://www.youtube.com/channel/UCrQv_h2ZnHw0hk6CdVBQOsQ" target="_blank" class="ani-opacity" title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-		<li class="snsBtns_item"><a href="https://www.tripadvisor.jp/Attraction_Review-g298564-d2616330-Reviews-Gear_Art_Complex_1928-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" class="ani-opacity" title="トリップアドバイザー"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+		<li class="snsBtns_item"><a href="https://twitter.com/nvpgear" target="_blank" class="ani-opacity"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		<li class="snsBtns_item"><a href="https://www.facebook.com/cco.gear" target="_blank" class="ani-opacity"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li class="snsBtns_item"><a href="https://www.instagram.com/gear_kyoto/" target="_blank" class="ani-opacity"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li class="snsBtns_item"><a href="https://www.youtube.com/channel/UCrQv_h2ZnHw0hk6CdVBQOsQ" target="_blank" class="ani-opacity"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+		<li class="snsBtns_item"><a href="https://www.tripadvisor.jp/Attraction_Review-g298564-d2616330-Reviews-Gear_Art_Complex_1928-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" class="ani-opacity"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
 	</ul>
 	</div>
 </nav>

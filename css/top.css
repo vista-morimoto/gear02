@@ -132,6 +132,7 @@
 }
 .pageHeader .gNaviList_item:first-child {
 	margin-left: 0;
+	display:none;
 }
 .pageHeader .gNaviList .active {
 	background: rgba(255, 255, 255, 0.75);

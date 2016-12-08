@@ -931,7 +931,8 @@ body {
 .underlayerHeader .gNaviList_item {
 	display: inline-block;
 	margin: 00;
-	width: 192px;
+	/*width: 192px;*/
+	width: 176px;
 	background: rgba(0, 0, 0, 0.75);
 	float: left;
 }
@@ -954,7 +955,7 @@ body {
 
 .underlayerHeader .gNaviList a {
 	display: block;
-	padding: 0 10px;
+	/*padding: 0 10px;*/
 	/*border: 2px solid #fff;*/
 	border-radius: 0;
 	text-align: center;
@@ -975,7 +976,7 @@ body {
 	float: left;
 	margin: 0;
 	/* width: 17.5%;*/
-	width: 20%;
+	/*width: 20%;*/
 }
 
 .underlayerHeader.float .gNaviList a {
@@ -1012,7 +1013,9 @@ body {
 .underlayerHeader.float .gNavi {
 	background-color:#FFF;	
 }
-
+.underlayerHeader .gNaviList_item:first-child {
+	width:80px;
+}
 }
 /*PCのみの指定_end*/
 
@@ -1557,7 +1560,7 @@ a.ani-uBar:hover:after {
 a.ani-reverseBtn {
 	position: relative;
 	display: inline-block;
-	padding: 0 20px 0 20px;
+	/*padding: 0 20px 0 20px;*/
 	border-radius: 1000px;
 	background: #FFF;
 	color: #333;

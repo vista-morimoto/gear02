@@ -127,7 +127,7 @@ Screen style's
 	padding: .2em 0;
 	border: none!important;
 	padding-bottom: 40px;
-	max-height: 183px;
+	max-height: 140px;
 	line-height: 1.6;
 }
 .gNavi > ul > li > div.gNaviList_ul_box > ul > li a span {
@@ -190,6 +190,9 @@ PC用
 	/* padding:5px 0; */
 	background:none;
 }
+.gNavi li.gNaviList_item:first-child a.ani-reverseBtn {
+	font-size:.7rem;
+}
 .gNavi li.gNaviList_item a.ani-reverseBtn:hover {
 	border-bottom: 5px solid #a28500;
 	color: #cc9966!important;
@@ -200,6 +203,17 @@ PC用
 .gNavi li.gNaviList_item a.ani-reverseBtn:hover:after {
 	content: url("../img/gnavi/gnavi_arrow_on.png") ;
 }
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:after {
+		content:none;
+	}
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:before {
+		content: url("../img/gnavi/gnavi_home_off.png") ;
+		margin-right:5px;
+	}
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:hover:before {
+		content: url("../img/gnavi/gnavi_home_on.png") ;
+		margin-right:5px;
+	}
 .gNavi li.gNaviList_item a.gNaviList_ul_box_hover {
 	color: #cc9966!important;
 	border-bottom: 5px solid #a28500;
