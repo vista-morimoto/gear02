@@ -332,8 +332,9 @@ if (!is_archive()) {
 <div class="sectionInner">
 <h2>FAQ</h2>
 <ul>
-<li><a href="/info/#cat2">お子さま連れのお客さまへ</a></li>
-<li><a href="/info/#cat3">障がいをお持ちのお客さまへ</a></li>
+<li><a href="/info/#cat1">チケット予約・<br />会場について</a></li>
+<li><a href="/info/#cat2">お子さま連れの<br />お客さまへ</a></li>
+<li><a href="/info/#cat3">障がいをお持ちの<br />お客さまへ</a></li>
 </ul>				
 </div>
 </section>

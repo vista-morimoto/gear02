@@ -1868,7 +1868,7 @@ body.top .sectionInner {
 	align-items: center;
 }
 #faq ul li {
-	width: 50%;
+	width: 33.3%;
 	font-size: 20px;
 	font-size: 1.25rem;
 	border: solid 5px #fff;
@@ -1881,14 +1881,16 @@ body.top .sectionInner {
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
-#faq ul li:nth-child(1) a {	background: url(../img/top/icon_child.png) no-repeat center 225px; }
-#faq ul li:nth-child(2) a {	background: url(../img/top/icon_handicapped.png) no-repeat center 225px; }
+#faq ul li:nth-child(1) a {	background: url(../img/top/icon_cart.png) no-repeat center 225px; }
+#faq ul li:nth-child(2) a {	background: url(../img/top/icon_child.png) no-repeat center 225px; }
+#faq ul li:nth-child(3) a {	background: url(../img/top/icon_handicapped.png) no-repeat center 225px; }
 
 #faq ul li a:hover {
 	color: #336600;
 }
-#faq ul li:nth-child(1) a:hover {	background: #fff url(../img/top/icon_child_over.png) no-repeat center 220px; }
-#faq ul li:nth-child(2) a:hover {	background: #fff url(../img/top/icon_handicapped_over.png) no-repeat center 220px; }
+#faq ul li:nth-child(1) a:hover {	background: #fff url(../img/top/icon_cart_over.png) no-repeat center 220px; }
+#faq ul li:nth-child(2) a:hover {	background: #fff url(../img/top/icon_child_over.png) no-repeat center 220px; }
+#faq ul li:nth-child(3) a:hover {	background: #fff url(../img/top/icon_handicapped_over.png) no-repeat center 220px; }
 
 #faq.en_faq ul li:first-child {
 	width: 100%;
@@ -1898,7 +1900,8 @@ body.top .sectionInner {
 #faq.en_faq ul li:first-child a:hover { background: #fff url(../img/top/icon_entrip_over.png) no-repeat center 200px; color:#669900; }
 
 @media screen and (min-width: 769px) {
-#faq ul li:first-child { border-right: none; }
+#faq ul li:nth-child(1),
+#faq ul li:nth-child(2) { border-right: none; }
 }
 @media screen and (max-width: 768px) {
 #faq ul {
