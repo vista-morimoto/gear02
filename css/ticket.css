@@ -267,10 +267,10 @@
     opacity: 0.5;
 }
 /* Unsold seat */
-#ticket .calenderWrapper .calender .haveToSpace:before	{ content:'◎'; }
+/*#ticket .calenderWrapper .calender .haveToSpace:before	{ content:'◎'; }
 #ticket .calenderWrapper .calender .noRoom:before	{ content:'〇'; }
 #ticket .calenderWrapper .calender .few:before	{ content:'△'; }
-#ticket .calenderWrapper .calender .full:before	{ content:'×'; }
+#ticket .calenderWrapper .calender .full:before	{ content:'×'; }*/
 
 @media screen and (min-width: 769px){
 #ticket .f14 {

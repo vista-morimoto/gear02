@@ -59,10 +59,15 @@ $(function() {
 <h3 class="contentsTitle">公演日程</h3>
 <div class="ad">
 <ul class="legend pc_none">
-<li><span class="haveToSpace">◎</span>余裕があります</li>
+<!--<li><span class="haveToSpace">◎</span>余裕があります</li>
 <li><span class="noRoom">●</span>少なくなっています</li>
 <li><span class="few">▲</span>残りわずか!!</li>
 <li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定）</span></li>
+-->
+<li><span class="haveToSpace">●</span>余裕があります</li>
+<li><span class="noRoom">●</span>少なくなっています</li>
+<li><span class="few">●</span>残りわずか!!</li>
+<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>
 <li><span class="daytime">■</span>ギアの日割</li>
 <li><span class="kids">■</span>キッズデー</li>
 </ul>
@@ -122,10 +127,14 @@ $(function() {
 </ol>
 </div>
 <ul class="legend">
-	<li><span class="haveToSpace">◎</span>余裕があります</li>
+	<!--<li><span class="haveToSpace">◎</span>余裕があります</li>
 	<li><span class="noRoom">●</span>少なくなっています</li>
 	<li><span class="few">▲</span>残りわずか!!</li>
-	<li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>
+	<li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>-->
+    <li><span class="haveToSpace">●</span>余裕があります</li>
+	<li><span class="noRoom">●</span>少なくなっています</li>
+	<li><span class="few">●</span>残りわずか!!</li>
+	<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>
 	<li class="tooltip tipdaytime"><span class="daytime">■</span>ギアの日割<em>毎週月曜日（祝日を除く）は14時、19時公演共に500円OFF！</em></li>
 	<li class="tooltip tipkids"><span class="kids">■</span>キッズデー<em>毎月第1・3土曜日12時公演は普段ご入場いただけない4歳未満のお子さまも一緒にご入場いただけます（要予約）</em></li>
 </ul>
@@ -223,9 +232,13 @@ $(function() {
 <div class="ltike_cord">
 <p>※下記Lコードが必要となります。</p>
 <dl class="clearfix">
-<dt>・11月公演</dt><dd>51231</dd>
 <dt>・12月公演</dt><dd>51232</dd>
 <dt>・1月公演</dt><dd>59901</dd>
+<dt>・2月公演</dt><dd>59902</dd>
+<dt>・3月公演</dt><dd>59903</dd>
+<dt>・4月公演</dt><dd>59904</dd>
+<dt>・5月公演</dt><dd>59905</dd>
+<dt>・6月公演</dt><dd>59906</dd>
 </dl>
 </div>
 </div>
