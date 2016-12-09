@@ -999,6 +999,27 @@ body {
 	/* width: 30%;*/
 }
 
+#fixedNav {
+	position:fixed;
+	top:309px;
+	right:0;
+	z-index:1;
+	display:none;
+
+	width:50px;
+	height:160px;
+}
+#fixedNav a {
+	display:block;
+	background:#A28500;
+	text-align:center;
+	padding:21px 0;
+	border-radius:4px 0 0 4px;
+}
+	#fixedNav a:hover {
+		background:#8a7200;
+	}
+
 /*PCのみの指定*/
 @media screen and (min-width: 769px) {
 .underlayerHeader .siteName {
@@ -1016,6 +1037,7 @@ body {
 .underlayerHeader .gNaviList_item:first-child {
 	width:80px;
 }
+
 }
 /*PCのみの指定_end*/
 

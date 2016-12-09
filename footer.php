@@ -25,11 +25,11 @@ global $jsLink_btm;
 	</ul>
 </div>
 <ul class="snsBtns">
-	<li class="snsBtns_item"><a href="https://twitter.com/nvpgear" target="_blank" class="ani-opacity" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	<li class="snsBtns_item"><a href="https://www.facebook.com/cco.gear" target="_blank" class="ani-opacity" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-	<li class="snsBtns_item"><a href="https://www.instagram.com/gear_kyoto/" target="_blank" class="ani-opacity" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-	<li class="snsBtns_item"><a href="https://www.youtube.com/channel/UCrQv_h2ZnHw0hk6CdVBQOsQ" target="_blank" class="ani-opacity" title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-	<li class="snsBtns_item"><a href="https://www.tripadvisor.jp/Attraction_Review-g298564-d2616330-Reviews-Gear_Art_Complex_1928-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" class="ani-opacity" title="トリップアドバイザー"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+	<li class="snsBtns_item"><a href="https://twitter.com/nvpgear" target="_blank" class="ani-opacity"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li class="snsBtns_item"><a href="https://www.facebook.com/cco.gear" target="_blank" class="ani-opacity"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	<li class="snsBtns_item"><a href="https://www.instagram.com/gear_kyoto/" target="_blank" class="ani-opacity"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+	<li class="snsBtns_item"><a href="https://www.youtube.com/channel/UCrQv_h2ZnHw0hk6CdVBQOsQ" target="_blank" class="ani-opacity"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+	<li class="snsBtns_item"><a href="https://www.tripadvisor.jp/Attraction_Review-g298564-d2616330-Reviews-Gear_Art_Complex_1928-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" class="ani-opacity"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 <nav class="footerNavi clearfix">
@@ -111,6 +111,12 @@ global $jsLink_btm;
 <div><small>Copyright (C) 2011 ART COMPLEX Group All rights reserved.</small></div>
 </div>
 </footer>
+
+<!-- PCのfixedNavここから -->
+<nav id="fixedNav">
+<p><a href="" title="チケット購入"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_purchase.png" alt="購入する" /></a></p>
+</nav>
+<!-- PCのfixedNavここまで -->
 
 <!--Pagetop-->
 <p id="pageTop"><i class="fa fa-angle-up"></i></p>

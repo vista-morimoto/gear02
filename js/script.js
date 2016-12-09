@@ -8,6 +8,7 @@
 	var $doc = $(doc);
 	var $body = $('body');
 	var $pageHeader = $('.pageHeader');
+	var $fixedNav = $('#fixedNav');
 	var $gNaviList = $('.gNaviList');
 	var $menuBtn = $('.menuBtn');
 	var $h1txt = $('h1.siteName');
@@ -44,7 +45,29 @@
 			//$(".pageHeader.on").css("opacity","0");
 
     }
-  }
+}
+
+  function fixedNavSwitch(sctop) {
+    //挙動
+    if (sctop > 50) {
+      //$pageHeader.addClass('on');
+			$fixedNav.fadeIn(1000);
+			//$(".pageHeader.on").animate({opacity:"1"}, 2000, "easeInCubic");
+			//$(".pageHeader.on").animate({display:"block"}, 2000, "easeInCubic");
+    } else {
+      //$pageHeader.removeClass('on');	
+			$fixedNav.fadeOut(500);
+
+			//$(".pageHeader.on").css("opacity","0");
+
+    }
+}
+
+
+
+
+
+
   function underlayerGnavi(sctop) {
     //下層のグローバルナビの挙動
     if (sctop > 66) {
@@ -188,6 +211,7 @@
     var sctop = $win.scrollTop(); //スクロール距離を取得
     gNaviSwitch(sctop); //gNaviSwitch関数にスクロール距離を渡す
     if (isLayer > 0 && win.GEAR.isPc() && win.GEAR.isWide()) underlayerGnavi(sctop); //PCで画面幅が広い場合、underlayerGnaviにスクロール距離を渡す
+    fixedNavSwitch(sctop); //gNaviSwitch関数にスクロール距離を渡す
   };
   $win.on('scroll', scrollEvent);
 
