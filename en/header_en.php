@@ -107,6 +107,7 @@ $toppage = ($bodyClass == 'top')? TRUE: '';
 <div class="menu-container sp_none">
 <nav class="gNavi">
 <ul class="gNaviList">
+	<li class="gNaviList_item"><a href="/" class="ani-reverseBtn">HOME</a></li>
 	<li class="gNaviList_item<?php if (is_page('about') || is_parent_slug() == 'about' || is_post_type_archive('voice')){	echo ' current';} ?>"><a href="/en/about/" class="ani-reverseBtn">THE SHOW</a>
 	<div class="gNaviList_ul_box">
 	<ul>
@@ -115,8 +116,7 @@ $toppage = ($bodyClass == 'top')? TRUE: '';
 		<li><a href="/en/about/cast/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_cast.png" alt="CAST" /><span>CAST</span></a></li>
 		<li><a href="/en/about/staff/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_staff.png" alt="CREW" /><span>CREW</span></a></li>
 		<li<?php if (is_post_type_archive('voice')){ echo ' class="current"';} ?>><a href="/about/voice/?lang=en"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_voice.png" alt="ACCLAIM" /><span>ACCLAIM</span></a></li>
-		<li><a href="/en/about/history/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_history.png" alt="PAST PERFORMANCES" /><span>PAST<br>
-PERFORMANCES</span></a></li>
+		<li><a href="/en/about/history/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_history.png" alt="PAST PERFORMANCES" /><span class="LH1_1">PAST<br>PERFORMANCES</span></a></li>
 	</ul>
 	</div>
 	</li>
@@ -126,7 +126,7 @@ PERFORMANCES</span></a></li>
 		<li><a href="/en/ticket/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_ticket.png" alt="PURCHASE TICKETS" /><span>PURCHASE TICKETS</span></a></li>
 		<li><a href="/en/ticket/seat/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_seat.png" alt="SEATING CHART" /><span>SEATING CHART</span></a></li>
 		<!--<li><a href="/en/ticket/cast_schedule/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_cast_schedule.png" alt="キャストスケジュール" /><span>キャストスケジュール</span></a></li>-->
-		<li><a href="/en/ticket/privilege/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_privilege.png" alt="BIRTHDAY MONTH PLAN" /><span>BIRTHDAY<br>MONTH PLAN</span></a></li>
+		<li><a href="/en/ticket/privilege/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_privilege.png" alt="BIRTHDAY MONTH PLAN" /><span class="LH1_1">BIRTHDAY<br>MONTH PLAN</span></a></li>
 		<!--<li<?php if (is_parent_slug() == 'reserved'){	echo ' class="current"';} ?>><a href="/en/ticket/reserved/"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_reserved.png" alt="団体鑑賞、貸切公演" /><span>団体鑑賞・貸切公演</span></a></li>-->
 	</ul>
 	</div>

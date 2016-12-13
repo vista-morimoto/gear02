@@ -1578,10 +1578,10 @@ body.top .sectionInner {
 	min-height:479px;
 }
 /* Unsold seat */
-#ticket .calenderWrapper .calender .haveToSpace:before	{ content:'◎'; }
+/*#ticket .calenderWrapper .calender .haveToSpace:before	{ content:'◎'; }
 #ticket .calenderWrapper .calender .noRoom:before	{ content:'〇'; }
 #ticket .calenderWrapper .calender .few:before	{ content:'△'; }
-#ticket .calenderWrapper .calender .full:before	{ content:'×'; }
+#ticket .calenderWrapper .calender .full:before	{ content:'×'; }*/
 
 /* next prev */
 .top #ticket .ticketBox .calenderNavi li a , .top #ticket .ticketBox .calenderNavi li a:hover {
@@ -1902,6 +1902,7 @@ body.top .sectionInner {
 @media screen and (min-width: 769px) {
 #faq ul li:nth-child(1),
 #faq ul li:nth-child(2) { border-right: none; }
+
 }
 @media screen and (max-width: 768px) {
 #faq ul {
@@ -1917,7 +1918,9 @@ body.top .sectionInner {
 	border: solid 3px #fff;
 	font-size: 1rem;
 }
-#faq ul li:first-child {
+#faq ul li:first-child,
+#faq ul li:nth-child(2)
+ {
 	border-bottom: 0;
 }
 #faq ul li a {

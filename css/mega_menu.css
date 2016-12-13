@@ -206,14 +206,22 @@ PC用
 	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:after {
 		content:none;
 	}
-	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:before {
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn {
+		background:url("../img/gnavi/gnavi_home_off.png") left center no-repeat;
+		padding-left:5px;
+	}
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:hover {
+		background: url("../img/gnavi/gnavi_home_on.png") left center no-repeat;
+		padding-left:5px;
+	}
+	/*.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:before {
 		content: url("../img/gnavi/gnavi_home_off.png") ;
 		margin-right:5px;
 	}
 	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:hover:before {
 		content: url("../img/gnavi/gnavi_home_on.png") ;
 		margin-right:5px;
-	}
+	}*/
 .gNavi li.gNaviList_item a.gNaviList_ul_box_hover {
 	color: #cc9966!important;
 	border-bottom: 5px solid #a28500;

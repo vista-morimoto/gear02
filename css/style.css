@@ -443,7 +443,9 @@ body.top .sectionInner {
 .producerProf_body {
 	line-height:2;	
 }
-
+.LH1_1 {
+	line-height:1.1!important;
+	}
 .mt0 {margin-top:0!important;}
 .mt5 {margin-top:5px;}
 .mt10 {margin-top:10px;}
@@ -1003,7 +1005,7 @@ body {
 	position:fixed;
 	top:309px;
 	right:0;
-	z-index:1;
+	z-index:3;
 	display:none;
 
 	width:50px;
@@ -1016,9 +1018,15 @@ body {
 	padding:21px 0;
 	border-radius:4px 0 0 4px;
 }
-	#fixedNav a:hover {
-		background:#8a7200;
-	}
+#fixedNav a:hover {
+	background:#8a7200;
+}
+@media screen and (max-width: 768px) {
+#fixedNav {
+	display:none !important;
+}
+}
+
 
 /*PCのみの指定*/
 @media screen and (min-width: 769px) {

@@ -209,7 +209,7 @@ $(function() {
 </section>
 
 <!--前売りチケット-->
-<section class="contents">
+<section id="purchase" class="contents">
 <div class="prereserve clearfix">
 <h3 class="contentsTitle">前売チケット予約<span></span></h3>
 <div class="ad">

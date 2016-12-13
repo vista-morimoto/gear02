@@ -114,7 +114,7 @@ global $jsLink_btm;
 
 <!-- PCのfixedNavここから -->
 <nav id="fixedNav">
-<p><a href="" title="チケット購入"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_purchase.png" alt="購入する" /></a></p>
+<p><a href="/ticket/#purchase" title="チケット購入"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_purchase.png" alt="購入する" /></a></p>
 </nav>
 <!-- PCのfixedNavここまで -->
 

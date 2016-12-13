@@ -49,22 +49,22 @@
 
   function fixedNavSwitch(sctop) {
     //挙動
-    if (sctop > 50) {
-      //$pageHeader.addClass('on');
+	
+	if (ww <= 768) {
+		$('#fixedNav').css({'display': 'none'});
+	} else {
+		if (sctop > 50) {
+			//$pageHeader.addClass('on');
 			$fixedNav.fadeIn(1000);
 			//$(".pageHeader.on").animate({opacity:"1"}, 2000, "easeInCubic");
 			//$(".pageHeader.on").animate({display:"block"}, 2000, "easeInCubic");
-    } else {
-      //$pageHeader.removeClass('on');	
+		} else {
+			//$pageHeader.removeClass('on');	
 			$fixedNav.fadeOut(500);
-
 			//$(".pageHeader.on").css("opacity","0");
-
-    }
+		}
+	}
 }
-
-
-
 
 
 
