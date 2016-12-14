@@ -23,9 +23,15 @@ get_header();
 <h1 class="siteTitle"><img src="<?php echo THEME_IMAGES; ?>/top/logo.png" alt="ギアーGEARー"></h1>
 
 <ul class="actions">
+<li><a id="modalOpen_400" href="#animatedModal_400" class="ani-opacity">Watch Video</a></li>
+<li><a href="/ticket/" class="ani-opacity">Buy Tickets</a></li>
+</ul>
+<!--
+マウスオーバー時日本語が入ったもの
+<ul class="actions">
 <li><a id="modalOpen_400" href="#animatedModal_400" class="ani-opacity"><span class="actions_en">Watch Video</span><span class="actions_jp">動画を見る</span></a></li>
 <li><a href="/ticket/" class="ani-opacity"><span class="actions_en">Tickets</span><span class="actions_jp">チケット情報</span></a></li>
-</ul>
+</ul>-->
 
 <ul class="snsBtns">
 <li><a href="https://twitter.com/nvpgear" target="_blank" class="ani-opacity"><img src="<?php echo THEME_IMAGES; ?>/top/icon_twitter.png" alt="Twitter"></a></li>
@@ -177,8 +183,8 @@ if (!is_archive()) {
 	</div>
 	</li>
 
-	<li class="calenderNavi_item prev"><a href="#" class="ani-reverseBtn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> 前の月へ</a></li>
-	<li class="calenderNavi_item next"><a href="#" class="ani-reverseBtn">次の月へ <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></li>
+	<!--<li class="calenderNavi_item prev"><a href="#" class="ani-reverseBtn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> 前の月へ</a></li>
+	<li class="calenderNavi_item next"><a href="#" class="ani-reverseBtn">次の月へ <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></li>-->
 </ul>
 
 <div class="calender_view">
@@ -223,9 +229,18 @@ if (!is_archive()) {
 </div>
 </div>
 </template>
-</div>			 
+</div>
 
-<ul class="legend pc_none">
+<ul class="legend">
+<li><span class="haveToSpace">●</span>余裕があります</li>
+<li><span class="noRoom">●</span>少なくなっています</li>
+<li><span class="few">●</span>残りわずか!!</li>
+<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定）</span></li>
+<li><span class="daytime">■</span>ギアの日割</li>
+<li><span class="kids">■</span>キッズデー</li>
+</ul>
+			 
+<!--<ul class="legend pc_none">
 <li><span class="haveToSpace">●</span>余裕があります</li>
 <li><span class="noRoom">●</span>少なくなっています</li>
 <li><span class="few">●</span>残りわずか!!</li>
@@ -241,7 +256,7 @@ if (!is_archive()) {
 <li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定）</span></li>
 <li><span class="daytime">■</span>ギアの日割</li>
 <li><span class="kids">■</span>キッズデー</li>
-</ul>
+</ul>-->
           
 <ul class="navi">
 <!--<li class="wide"><a href="/ticket/">カレンダーをもっと見る</a></li>-->

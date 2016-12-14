@@ -215,10 +215,13 @@ $(function() {
 <div class="ad">
 <h4><img src="<?php echo THEME_URI; ?>/ticket/img/index/icon_pc.png" alt="インターネットで予約"><br>
 インターネットで予約</h4>
-<div class="leftBox mb100"> <a href="http://l-tike.com/gear/" target="_blank" class="img hover ani-reverseBtn"><img src="<?php echo THEME_URI; ?>/ticket/img/index/logo_ltike.png" alt="ローチケ"></a>
+<div class="leftBox mb100"><a href="http://l-tike.com/gear/" target="_blank" class="img hover ani-reverseBtn"><img src="<?php echo THEME_URI; ?>/ticket/img/index/logo_ltike.png" alt="ローチケ"></a>
 <p class="tc">公演の3日前まで受付</p>
 </div>
-<div class="rightBox"> <a href="http://www.confetti-web.com/detail.php?tid=34941&" target="_blank" class="img hover ani-reverseBtn"><img src="<?php echo THEME_URI; ?>/ticket/img/index/logo_confetti.png" alt="Confetti"></a>
+<!--!!!リンク先が2つある場合は linkN2 を追加。リンク先が1つの場合は linkN2 を削除。!!!-->
+<div class="rightBox linkN2">
+<a href="http://www.confetti-web.com/detail.php?tid=34941&" target="_blank" class="img hover ani-reverseBtn"><img src="<?php echo THEME_URI; ?>/ticket/img/index/logo_confetti.png" alt="Confetti">【～1月公演分】</a>
+<a href="http://www.confetti-web.com/detail.php?tid=37072&" target="_blank" class="img hover ani-reverseBtn"><img src="<?php echo THEME_URI; ?>/ticket/img/index/logo_confetti.png" alt="Confetti">【2月～6月公演分】</a>
 <p class="tc">公演前日の23:59まで受付</p>
 </div>
 <h4><img src="<?php echo THEME_URI; ?>/ticket/img/index/icon_tel.png" alt="電話でチケット予約"><br>

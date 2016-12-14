@@ -127,7 +127,7 @@ $voice_img_group = SCF::get( 'voice_img_group' );
 foreach ( $voice_img_group as $field_name => $field_value ) {
 $img_array[] = $field_value['voice_img'];
 }
-shuffle($img_array);
+//shuffle($img_array);
 ?>
 
 <?php

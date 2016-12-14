@@ -107,7 +107,7 @@ $toppage = ($bodyClass == 'top')? TRUE: '';
 <div class="menu-container sp_none">
 <nav class="gNavi">
 <ul class="gNaviList">
-	<li class="gNaviList_item"><a href="/" class="ani-reverseBtn">HOME</a></li>
+	<li class="gNaviList_item"><a href="/en/" class="ani-reverseBtn">HOME</a></li>
 	<li class="gNaviList_item<?php if (is_page('about') || is_parent_slug() == 'about' || is_post_type_archive('voice')){	echo ' current';} ?>"><a href="/en/about/" class="ani-reverseBtn">THE SHOW</a>
 	<div class="gNaviList_ul_box">
 	<ul>

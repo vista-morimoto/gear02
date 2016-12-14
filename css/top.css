@@ -418,7 +418,7 @@ body.top .sectionInner {
 	box-sizing:border-box;
 	position: relative;
 	display: inline-block;
-	/* padding: 7px 20px 7px 20px; */
+	padding: 7px 20px 7px 20px;/*マウスオーバー日本語時は左記をコメントアウト */
 	border-radius: 1000px;
 	background: #000;
 	color: #f6e5cb;
@@ -448,7 +448,17 @@ body.top .sectionInner {
 	content: '\f144';
 }
 
-#mainVisual .actions .actions_en , #mainVisual .actions .actions_jp {
+#mainVisual .actions .actions_en {
+	text-align:center;
+}
+
+/*↓↓↓日本語版をマウスオーバーで日本語にするときは下記不要*/
+#mainVisual .actions .actions_jp {
+	padding: 0 38px 7px 0;
+}
+
+/*↓↓↓#mainVisual .actions .actions_enを一旦コメントアウト*/
+/*#mainVisual .actions .actions_en ,*/ #mainVisual .actions .actions_jp {
 	display: block; /* position指定がある時は無くても可 */
 	width: 100%;
 	position: absolute;

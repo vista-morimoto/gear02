@@ -231,6 +231,12 @@
 	width:100px;
 	float:left;
 }
+/*リンク先2個の場合*/
+#ticket .prereserve .rightBox.linkN2 .img {
+	color:#a28500;
+}
+
+
 /*当日チケット*/
 #ticket .theday .leftBox,
 #ticket .theday .rightBox {
@@ -349,7 +355,13 @@
 #ticket .theday .rightBox p {
 	height: 310px;
 }
-
+/*リンク先2個の場合*/
+#ticket .prereserve .rightBox.linkN2 .img {
+	height:70px;
+	padding-top:10px;
+	text-align:left;
+	padding-left:60px;
+}
 
 /* en */
 #ticket .link_form {
@@ -528,6 +540,10 @@
 }
 #ticket .prereserve .rightBox .img {
 	padding: 30px 0;
+}
+/*リンク先2個の場合*/
+#ticket .prereserve .rightBox.linkN2 .img img {
+	width:40%;
 }
 #ticket .prereserve .leftBox .tel span:nth-of-type(2) {
 	margin-top: 20px;
