@@ -646,6 +646,25 @@ TBS「ワンステップ！」出演。文化庁第26回国民文化祭にて京
 <div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/sasaki.jpg" ><p>Photo by Yusuke Otsuki</p></div>
 </div>
 
+<!--中村るみ-->
+<div class="doru_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">中村るみ<span>Rumi Nakamura</span></h3>
+<p class="cast_category">俳優</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+2歳の頃にバトントワリングと出会い、国内最大級の大会「全日本バトントワーリング選手権大会」では「ダンストワール部門」および「トゥーバトン部門」において3年連続で全国大会進出、また「ソロトワール部門」でも全国大会出場経験を持つなど、数々の賞歴を誇る。<br>
+高校在学時には、創作ダンス部のキャプテンとしてチームを束ね「All Japan Dance Festival-KOBE」では ’10年と’11年に連続入選、’13年「NFCC・全国ハイスクールダンスコンペティション」では入賞およびCBC賞受賞を果たす。<br>
+神戸大学入学後に演劇活動をスタートし、学内での定期公演では自らが出演する他、演出や振付でも参加。<br>
+また、関西の様々な劇団の公演にも出演するなど、精力的な活動を見せている。<br>
+バトントワリングと創作ダンスで培った高い身体能力を活かした溌剌とした演技で、演劇界も注目する新進気鋭の若手女優である。
+</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/nakamura.jpg" ><!--<p>Photo by Yoshikazu Inoue</p>--></div>
+</div>
+
 
 </div>
 </div>

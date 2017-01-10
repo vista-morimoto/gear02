@@ -55,10 +55,10 @@ $(document).ready(function() {
 <dd class="member clearfix">
 <ul>
 	<li><a id="modalOpen_1" href="#animatedModal" class="ani-uLine modalOpen">小林顕作 </a></li>
-	<li class="pt13">ウォーリー木下</li>
+    <li class="link"><a href="http://www.cubeinc.co.jp/members/prf/035.html" target="_blank" class="ani-uLine">ウォーリー木下</a></li>
 	<li class="pt13">窪木亨</li>
-	<li class="pt13">いいむろなおき</li>
-	<li class="pt13">大熊隆太郎</li>
+	<li class="link"><a href="http://mime1166.com/" target="_blank" class="ani-uLine">いいむろなおき</a></li>
+    <li class="link"><a href="http://ichigekiyaoffice.wixsite.com/ichigekiya" target="_blank" class="ani-uLine">大熊隆太郎</a></li>
 </ul>
 </dd>
 </dl>
@@ -185,9 +185,9 @@ $(document).ready(function() {
 <dt class="part">音楽</dt>
 <dd class="member">
 <ul>
-	<li class="pt13">豊田奈千甫</li>
+	<li class="link"><a href="http://www.natiho.com/" target="_blank" class="ani-uLine">豊田奈千甫</a></li>
 	<li class="pt13">西村淳</li>
-	<li class="pt13">KATSU</li>
+    <li class="link"><a href="http://1gk-music.com/" target="_blank" class="ani-uLine">KATSU</a></li>
 	<li class="pt13">三村真吾</li>
 </ul>
 </dd>
@@ -237,7 +237,7 @@ $(document).ready(function() {
 <dt class="part">レーザー演出<br>システムデザイン</dt>
 	<dd class="member">
 <ul>
-	<li class="pt13">藤本実</li>
+	<li class="link"><a href="http://www.dr-popeye.com/" target="_blank" class="ani-uLine">藤本実</a></li>
 	<li class="pt13">土田修平</li>
 </ul>
 </dd>
@@ -280,7 +280,7 @@ $(document).ready(function() {
 <dt class="part">衣装原案</dt>
 <dd class="member">
 <ul>
-	<li class="pt13">山田章博</li>
+	<li><a id="modalOpen_3" href="#animatedModal" class="ani-uLine modalOpen">山田章博 </a></li>
 </ul>
 </dd>
 </dl>
@@ -291,7 +291,8 @@ $(document).ready(function() {
 <ul>
 	<li class="pt13">辻野孝明</li>
 	<li class="pt13">向沙知子</li>
-	<li class="pt13">林百合子</li>
+	<li class="pt13">森 朱希子</li>
+	<!--<li class="pt13">林百合子</li>-->
 </ul>
 </dd>
 </dl>
@@ -347,7 +348,7 @@ $(document).ready(function() {
 <dt class="part">イメージイラスト</dt>
 <dd class="member">
 <ul>
-	<li class="pt13">山田章博</li>
+	<li><a id="modalOpen_4" href="#animatedModal" class="ani-uLine modalOpen">山田章博 </a></li>
 </ul>
 </dd>
 </dl>
@@ -357,9 +358,9 @@ $(document).ready(function() {
 <dd class="member">
 <ul>
 	<li class="pt13">重松よしこ</li>
-	<li class="pt13">黒田武志</li>
+    <li class="link"><a href="http://sandscape.biz/" target="_blank" class="ani-uLine">黒田武志</a></li>
 	<li class="pt13">田代貞雄</li>
-	<li class="pt13">細川夏樹</li>
+    <li class="link"><a href="https://www.behance.net/natsukihosokawa" target="_blank" class="ani-uLine">細川夏樹</a></li>
 </ul>
 </dd>
 </dl>
@@ -519,16 +520,16 @@ $(document).ready(function() {
 	<li><a href="http://ichigekiyaoffice.wixsite.com/ichigekiya" target="_blank" class="ani-uLine">劇団壱劇屋 </a></li>
 	<li><a href="http://www.ricomotion.com/" target="_blank" class="ani-uLine">（株）リコモーション </a></li>
 	<li class="pt13">reco</li>
-	<li class="pt13">sunday</li>
+	<li><a href="http://sunday-go.jp/" target="_blank" class="ani-uLine">sunday </a></li>
 	<li><a href="http://www.originaltempo.com/index.html" target="_blank" class="ani-uLine">オリジナルテンポ </a></li>
 	<li><a href="http://www.condors.jp/" target="_blank" class="ani-uLine">コンドルズ </a></li>
 	<li class="pt13">Top.gear</li>
 	<li class="pt13">Chick'n'Heart</li>
-	<li class="pt13">sandscape</li>
+	<li><a href="http://sandscape.biz/" target="_blank" class="ani-uLine">sandscape </a></li>
 	<li class="pt13">kasane</li>
-	<li class="pt13">kutowans studio</li>
+	<li><a href="http://www.kutowans.com/" target="_blank" class="ani-uLine">kutowans studio </a></li>
 	<li class="pt13">劇団_BIRTHDAYCAKE_</li>
-	<li><a href="http://www.namura.cc/" target="_blank" target="_blank" class="ani-uLine">Creative Center Osaka </a></li>
+	<li><a href="http://www.namura.cc/" target="_blank" class="ani-uLine">Creative Center Osaka </a></li>
 	<li><a href="http://j-v.co.jp/" target="_blank" class="ani-uLine">株式会社ジャグラーズビジョン </a></li>
 	<li><a href="http://fes.kyoto.jp/" target="_blank" class="ani-uLine">FES株式会社 </a></li>
 	

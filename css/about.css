@@ -1324,6 +1324,7 @@ flickity-page-dots{
 #staffs .staffList dd.member li.last a {
 	background:url(../about/img/staff/staff03.png) right center no-repeat;
 }
+#staffs .staffList dd.member li.link a,
 #staffs .staffList dd.member02 li a,
 #staffs .staffList dd.member02 li.company02 a {
 	background: url(../about/img/staff/staff02.png) right center no-repeat;
@@ -1494,6 +1495,7 @@ flickity-page-dots{
 	padding-left: 15px;
 	margin-left: -15px;
 }
+#staffs .staffList dd.member li.link a ,
 #staffs .staffList dd.member02 li a {
 	background:url(../about/img/staff/staff02.png) left center no-repeat;
 	background-size: 12px;

@@ -23,9 +23,11 @@ get_template_part( 'en/header_en' );
 <h1 class="siteTitle"><img src="<?php echo THEME_IMAGES; ?>/top/logo.png" alt="ギアーGEARー"></h1>
 
 <ul class="actions">
-	<li><a id="modalOpen_400" href="#animatedModal_400" class="ani-opacity">Watch Video</a></li>
-	<li><a href="/en/ticket/" class="ani-opacity">Buy Tickets</a></li>
+<li><a id="modalOpen_400" href="#animatedModal_400" class="ani-opacity"><span class="actions_en">Watch Video</span><span class="actions_jp">Watch Video</span></a></li>
+<li><a href="/en/ticket/" class="ani-opacity"><span class="actions_en">Tickets</span><span class="actions_jp">Tickets</span></a></li>
 </ul>
+
+
 
 <ul class="snsBtns">
 	<li><a href="https://twitter.com/gearkyoto" target="_blank" class="ani-opacity"><img src="<?php echo THEME_IMAGES; ?>/top/icon_twitter.png" alt="Twitter"></a></li>

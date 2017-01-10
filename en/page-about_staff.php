@@ -291,7 +291,7 @@ $(document).ready(function() {
 	<ul>
 		<li class="pt13">Takaaki Tsujino</li>
 		<li class="pt13">Sachiko Mukai</li>
-		<li class="pt13">Yuriko Hayashi</li>
+		<li class="pt13">Akiko Mori</li>
 	</ul>
 	</dd>
 </dl>
