@@ -329,12 +329,13 @@ He is thriving in multiple roles, performing in many venues, judging dance event
 <!--ワンヤン-->
 <div class="breakdance_area cast_box clearfix">
 <div class="profile_box fleft">
-<h3 class="cast_name">ワンヤン</h3>
-<p class="cast_category">ダンスアクロバットアーティスト</p>
+<h3 class="cast_name">Wang Yang</h3>
+<p class="cast_category">Dance Acrobat Artist</p>
 <div class="bar sp_none"></div>
 <p class="cast_profile">
-14歳で中国国家雑技団に入団し、チャイニーズポール・フープダイビング・アクロバット・シーソーなどを担当。18歳でオランダのサーカス専門学校の講師に抜擢される。その後はヨーロッパで数々のイベントやショーに出演。<br>
-2014年に来日してからは、忍者ショーやテーマパーク、各種イベントでのパフォーマンスから、アクロバットやカンフーの講師まで、幅広く活動している。
+Wang Yang joined the National Chinese Acrobatic Troupe at age 14. He majored in a broad range of fields such as Chinese pole, Acrobatics and Seesaw technique.<br />
+At age 18, Wang Yang was promoted to instructor for the College of Circus Codarts Rotterdam. Thereafter, he has participated many events and shows in Europe.<br />
+Wang Yang came to Japan in 2014. He has been performing for Ninja shows and theme parks. He also works as an instructor for Acrobatics and Kung Fu. Moreover, his talents draw a great deal of media attention.
 </p>
 <!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
 <div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
@@ -614,16 +615,15 @@ Yasuko graduated from Kobe University in the prestigious Institute for Human Dev
 <p class="cast_category">Actress</p>
 <div class="bar sp_none"></div>
 <p class="cast_profile">
-2歳の頃にバトントワリングと出会い、国内最大級の大会「全日本バトントワーリング選手権大会」では「ダンストワール部門」および「トゥーバトン部門」において3年連続で全国大会進出、また「ソロトワール部門」でも全国大会出場経験を持つなど、数々の賞歴を誇る。<br>
-高校在学時には、創作ダンス部のキャプテンとしてチームを束ね「All Japan Dance Festival-KOBE」では ’10年と’11年に連続入選、’13年「NFCC・全国ハイスクールダンスコンペティション」では入賞およびCBC賞受賞を果たす。<br>
-神戸大学入学後に演劇活動をスタートし、学内での定期公演では自らが出演する他、演出や振付でも参加。<br>
-また、関西の様々な劇団の公演にも出演するなど、精力的な活動を見せている。<br>
-バトントワリングと創作ダンスで培った高い身体能力を活かした溌剌とした演技で、演劇界も注目する新進気鋭の若手女優である。
+Rumi has been Baton Twirling at the age of two, and has since won the championship in Dance Twirling and Twin Baton Twirling at the prestigious All Japan Baton Twirling Competition for a consecutive three years.  She also boasts of having won awards in solo baton twirling nationally, as well as many other awards.<br />
+As captain of the dance team of her high school, she lead them to the Kobe All Japan Dance Festival event for 2010 and 2011, and 2013 took them to them advance in the All Japan High School Dance Competition to garner the CBC prize.<br />
+At Kobe University, Rumi began studying theatrical performance as well, and is active in her own work, as well as performing and choreographing in other pieces.  Additionally appearing on many stages throughout Kansai, her career is off to an energetic start.<br />
+With her vigor and physical ability cultivated by Baton Twirling, Rumi is an up and coming young actress who is attracting much attention in the theatrical community.
 </p>
 <!--<div class="go_site_btn"><a href="#">Related Sites</a></div>-->
 <div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
 </div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/nakamura.jpg" ><!--<p>Photo by Yoshikazu Inoue</p>--></div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/nakamura.jpg" ><p>Photo by Yusuke Otsuki</p></div>
 </div>
 
 

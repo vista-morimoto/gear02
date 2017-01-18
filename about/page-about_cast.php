@@ -662,7 +662,7 @@ TBS「ワンステップ！」出演。文化庁第26回国民文化祭にて京
 <!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
 <div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
 </div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/nakamura.jpg" ><!--<p>Photo by Yoshikazu Inoue</p>--></div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/nakamura.jpg" ><p>Photo by Yusuke Otsuki</p></div>
 </div>
 
 
