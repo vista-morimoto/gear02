@@ -168,7 +168,8 @@ $(function() {
 	<tr class="tl">
 		<th>小学生～高校生</th><td data-label="■スペシャルエリア">2,200円</td><td data-label="□スタンダードエリア">1,700円</td><td data-label="■サイドエリア">1,200円</td></tr>
 <tr class="tl child">
-		<th>幼児（4歳～未就学児）</th><td colspan="4">無料<span class="f14">（事前にお電話にてご予約ください。<span class="underline">4歳未満はキッズデー公演のみ入場可</span>）</span></td></tr>
+		<th>幼児（4歳～未就学児）</th><td colspan="4">無料 <span class="f14">（事前にお電話にてご予約ください。）<br />
+※入場時に年齢のわかる証明書が必要です。<span class="underline">4歳未満はキッズデー公演のみ入場可</span></span></td></tr>
 	<tr class="pc_none">
 		<th>【当日券】</th><td>上記前売料金&plus;500円（サイドエリアは前売と同額）<br>※幼児（4歳～未就学児）は無料</td></tr>
 </table>
