@@ -406,6 +406,20 @@ Masaya has performed in numerous showrooms, parties, bars, pubs, restaurant, loc
 <div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/hashimoto.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
 </div>
 
+<!--松田有生-->
+<div class="magic_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">Yuki Matsuda</h3>
+<p class="cast_category">Magician</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+As a mere middle-schooler, Yuki was so impressed with a magic show that he saw on television that he started to learn magic techniques all by himself.  As a college student, he apprenticed with world-class magicians Hiromasa Fukai and Kimika, and debuted as a pro after graduation.  Prioritizing “lively and fun” magic, he is good at a wide field from tabletop magic to stage magic.  In 2016, he won the six minute contest at the Fukuyama Magic Festival, and in 2015 was the victor in the two minute contest at the same festival.  He has ranked high in many such events, such as taking 2nd place in the ICM Magic Contest (2016), and 2nd place in the Chiba Magic Festival(2015).
+He is certainly a vital and promising young talent!</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/matsuda.jpg" ><p>Photo by Yusuke Otsuki</p></div>
+</div>
 
 </div>
 </div>
@@ -429,7 +443,7 @@ JUGGLING
 <p class="cast_profile">
 As a kid, Shingo first got interested in juggling when he saw some street performers on the corner.  From the age of 10, he took up juggling all on his own.  At 17, when he was still a high school student, he set a new record in Japan for juggling 7 balls for the longest time.
 </p>
-<div class="go_site_btn"><a href="http://j-v.co.jp/" target="_blank">Related Sites</a></div>
+<div class="go_site_btn"><a href="http://www.shingosakata.com/" target="_blank">Related Sites</a></div>
 <div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
 </div>
 <div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/sakata.jpg" ><p>Photo by Yoshikazu Inoue</p></div>

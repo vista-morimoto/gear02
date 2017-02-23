@@ -133,6 +133,10 @@ get_header();
 	
 <p class="no_cast">現在この組み合わせはありません</p>
 
+<p class="fz12">出演者は事前予告なく変更になる可能性​がございます。<br />
+​予めご了承ください。
+</p>
+
 <button class="loading resetBtn">組み合わせをリセットする</button>
 <div class="loader"><i class="fa fa-cog fa-spin fa-fw"></i><br><span>Loading...</span></div>
 </div>

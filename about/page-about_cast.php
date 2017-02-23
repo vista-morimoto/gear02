@@ -429,6 +429,24 @@ TBS「ワンステップ！」出演。文化庁第26回国民文化祭にて京
 </div>
 
 
+<!--松田有生-->
+<div class="magic_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">松田有生<span>Yuki Matsuda</span></h3>
+<p class="cast_category">マジシャン</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+中学生の頃にテレビで見たマジックに衝撃を受け、独学でマジックを学び始める。大学時代より世界的マジシャン・深井洋正＆キミカ氏に師事し、卒業と同時にプロデビュー。<br />
+「元気に楽しく明るく」をモットーに、テーブルマジックからステージマジックまで幅広いジャンルを得意とする。<br />
+福山マジックフェスティバル6分間コンテスト優勝(’16)、同2分間コンテスト優勝(’15)、ICMマジックコンベンション2分間コンテスト第2位(’16)、マジックの祭典in千葉2分間コンテスト第2位(’15)受賞など、確かな実力とフレッシュさを併せ持つ若手の注目株である。
+</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/matsuda.jpg" ><p>Photo by Yusuke Otsuki</p></div>
+</div>
+
+
 </div>
 </div>
 <!--**********************/magic**********************-->
@@ -453,7 +471,7 @@ TBS「ワンステップ！」出演。文化庁第26回国民文化祭にて京
 10歳より独学でジャグリングを学び、高校在学中の17歳で7ボールジャグリング耐久時間の公式日本新記録を樹立する。<br>
 シャープ製スマートフォン「AQUOS Xx2」Webムービー、朝日放送『エンカメ』『LIFE-夢のカタチ-』出演。
 </p>
-<div class="go_site_btn"><a href="http://j-v.co.jp/" target="_blank">関連サイト</a></div>
+<div class="go_site_btn"><a href="http://www.shingosakata.com/" target="_blank">関連サイト</a></div>
 <div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
 </div>
 <div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/sakata.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
