@@ -48,11 +48,10 @@ $(document).ready(function() {
 	</dd>
 </dl>
 
-<dl class="staffList">
+<!--<dl class="staffList">
 	<dt class="part">Production Division</dt>
 	<dd class="member clearfix">
 	<ul>
-		<!--<li class="lines2"><a id="modalOpen_1" href="#animatedModal" class="ani-uLine modalOpen">Kensaku Kobayashi </a></li>-->
 		<li class="pt13">Kensaku Kobayashi</li>
 		<li class="pt13">Worry Kinoshita</li>
 		<li class="pt13">Toru Kubiki</li>
@@ -60,7 +59,7 @@ $(document).ready(function() {
 		<li class="pt13">Ryutaro Okuma</li>
 	</ul>
 	</dd>
-</dl>
+</dl>-->
 
 <dl class="staffList">
 	<dt class="part">Stage directors</dt>

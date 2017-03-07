@@ -50,7 +50,7 @@ $(document).ready(function() {
 </dd>
 </dl>
 
-<dl class="staffList">
+<!--<dl class="staffList">
 <dt class="part">演出部</dt>
 <dd class="member clearfix">
 <ul>
@@ -61,7 +61,7 @@ $(document).ready(function() {
     <li class="link"><a href="http://ichigekiyaoffice.wixsite.com/ichigekiya" target="_blank" class="ani-uLine">大熊隆太郎</a></li>
 </ul>
 </dd>
-</dl>
+</dl>-->
 
 <dl class="staffList">
 <dt class="part">舞台監督</dt>
@@ -498,7 +498,7 @@ $(document).ready(function() {
 </dd>
 </dl>
 
-<dl class="staffList">
+<!--<dl class="staffList">
 <dt class="part">協力</dt>
 <dd class="member02">
 <ul>
@@ -532,42 +532,9 @@ $(document).ready(function() {
 	<li><a href="http://www.namura.cc/" target="_blank" class="ani-uLine">Creative Center Osaka </a></li>
 	<li><a href="http://j-v.co.jp/" target="_blank" class="ani-uLine">株式会社ジャグラーズビジョン </a></li>
 	<li><a href="http://fes.kyoto.jp/" target="_blank" class="ani-uLine">FES株式会社 </a></li>
-	
-		<!--<li><a href="" class="ani-uLine">α-STATION </a></li>
-	<li><a href="" class="ani-uLine">株式会社KADOKAWA </a></li>
-	<li><a href="" class="ani-uLine">株式会社JTB西日本 </a></li>
-	<li class="company02"><a href="" class="ani-uLine">株式会社電通 </a></li>
-	<li class="company02"><a href="" class="ani-uLine">千島土地株式会社 </a></li>
-	<li class="company02"><a href="" class="ani-uLine">株式会社地域計画建築研究所 <br>（アルパック） </a></li>
-	<li><a href="" class="ani-uLine">株式会社FM802 </a></li>
-	<li><a href="" class="ani-uLine">株式会社大広 </a></li>
-	<li><a href="" class="ani-uLine">友井工芸 </a></li>
-	<li><a href="" class="ani-uLine">MOOI </a></li>
-	<li><a href="" class="ani-uLine">T＆A（teenei and co.,) </a></li>
-	<li><a href="" class="ani-uLine">神戸大学塚本研究室 </a></li>
-	<li><a href="" class="ani-uLine">ジャグリングショップ ナランハ </a></li>
-	<li><a href="" class="ani-uLine">いいむろなおきマイムカンパニー </a></li>
-	<li><a href="" class="ani-uLine">1.G.K </a></li>
-	<li><a href="" class="ani-uLine">劇団壱劇屋 </a></li>
-	<li><a href="" class="ani-uLine">（株）リコモーション </a></li>
-	<li><a href="" class="ani-uLine">reco </a></li>
-	<li class="company02"><a href="" class="ani-uLine">株式会社よしもとクリエイティブ <br>・エージェンシー </a></li>
-	<li class="company02"><a href="" class="ani-uLine">sunday </a></li>
-	<li class="company02"><a href="" class="ani-uLine">オリジナルテンポ </a></li>
-	<li><a href="" class="ani-uLine">コンドルズ </a></li>
-	<li><a href="" class="ani-uLine">Top.gear </a></li>
-	<li><a href="" class="ani-uLine">Chick'n'Heart </a></li>
-	<li><a href="" class="ani-uLine">sandscape </a></li>
-	<li><a href="" class="ani-uLine">kasane </a></li>
-	<li><a href="" class="ani-uLine">kutowans studio </a></li>
-	<li><a href="" class="ani-uLine">劇団_BIRTHDAYCAKE_ </a></li>
-	<li><a href="" class="ani-uLine">Creative Center Osaka </a></li>
-	<li><a href="" class="ani-uLine">クラブコング株式会社 </a></li>
-	<li><a href="" class="ani-uLine">株式会社ジャグラーズビジョン </a></li>
-	<li><a href="" class="ani-uLine">FES株式会社 </a></li>-->
 </ul>
 </dd>
-</dl>
+</dl>-->
                 
 <dl class="staffList">
 <dt class="part">後援</dt>

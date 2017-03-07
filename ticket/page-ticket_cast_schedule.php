@@ -14,9 +14,11 @@ get_header();
 <main class="mainContents">
 <article>
 <section id="castSchedule" class="castSchedule section">
-
 <!--Vue.jsで監視している範囲（キャストスケジュール用） -->
 <div id="castScheduleArea" class="sectionInner">
+
+<p class="fz12 castScheduleAttention"><span>出演者は事前予告なく変更になる可能性​がございます。<br class="pc_none" />​予めご了承ください。</span></p>
+
 <ul class="castScheduleNavi clearfix navi">
 	<li class="castScheduleNavi_item">
 	<div class="selectWrapper">
@@ -132,10 +134,6 @@ get_header();
 <p v-show="filteredItems2.length == 0">{{filteredItems2.length}}</p> --> 
 	
 <p class="no_cast">現在この組み合わせはありません</p>
-
-<p class="fz12">出演者は事前予告なく変更になる可能性​がございます。<br />
-​予めご了承ください。
-</p>
 
 <button class="loading resetBtn">組み合わせをリセットする</button>
 <div class="loader"><i class="fa fa-cog fa-spin fa-fw"></i><br><span>Loading...</span></div>

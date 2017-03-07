@@ -915,6 +915,17 @@
 #castSchedule .sun { color: #F00;}
 #castSchedule .no_cast { display:none; text-align:center;}
 
+.castScheduleAttention {
+	background:rgba(0,0,0,0.2);
+	padding:10px;
+	text-align:center;
+	}
+.castScheduleAttention span {
+	display:inline-block;
+	background:url(../ticket/img/index/icon_caution.png) left center / 22px 21px no-repeat ;
+	padding-left:28px;
+}
+
 
 @media screen and (min-width: 769px){
 .castSchedule .castScheduleTable_header .players_item {
