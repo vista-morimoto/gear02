@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Body - not related to megamenu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu-container {
+	/*width: 80%;*/
+	/*margin: 0 auto;*/
+	/*background: #e9e9e9;*/
+}
+
+.menu-mobile {
+	display: none;
+	padding: 20px;
+}
+.menu-mobile:after {
+	content: "\f394";/*モバイル用メニューに表示するアイコン*/
+	font-family: "Ionicons";
+	font-size: 2.5rem;
+	padding: 0;
+	float: right;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-25%);
+			transform: translateY(-25%);
+}
+.menu-dropdown-icon:before {
+	content: "\f489";/*モバイル用メニューに表示するアイコン*/
+	font-family: "Ionicons";
+	display: none;
+	cursor: pointer;
+	float: right;
+	padding: 1.5em 2em;
+	background: #fff;
+	color: #333;
+}
+.gNavi > ul {
+	margin: 0 auto;
+	width: 960px;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.gNavi > ul:before,
+.gNavi > ul:after {
+	content: "";
+	display: table;
+}
+.gNavi > ul:after {
+	clear: both;
+}
+.gNavi > ul > li {
+	/*float: left;*/
+	background: none !important;
+	/*padding: 0;*/
+	/*margin: 0;*/
+}
+.gNavi > ul > li a {
+	text-decoration: none;
+	/*padding: 1.5em 3em;*/
+	display: block;
+}
+.gNavi > ul > li:hover {
+	/* background: #f0f0f0; */
+	/* background-color:#000; */
+}
+.gNavi > ul > li > div.gNaviList_ul_box {
+	display: none;
+	width: 100%;
+	background: #a28500;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.gNavi > ul > li > div.gNaviList_ul_box:before,
+.gNavi > ul > li > div.gNaviList_ul_box:after {
+	content: "";
+	display: table;
+}
+.gNavi > ul > li > div.gNaviList_ul_box:after {
+	clear: both;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul {
+	width: 960px;
+	margin: 0 auto;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.gNavi_two_items {
+	width: 384px;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.gNavi_three_items {
+	width: 576px;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li {
+	margin: 0;
+	padding-bottom: 0;
+	list-style: none;
+	background: none;
+	float: left;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a {
+	color: #FFF;
+	padding: .2em 0;
+	border: none!important;
+	padding-bottom: 40px;
+	max-height: 140px;
+	line-height: 1.6;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a span {
+	clear: both;
+	display: block;
+	font-weight: 100;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li a:hover {
+	background: #8A7200;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul {
+	display: block;
+	padding: 0;
+	margin: 10px 0 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul:before,
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul:after {
+	content: "";
+	display: table;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul:after {
+	clear: both;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul > li {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	margin: 0;
+	font-size: .8em;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li > ul > li a {
+	border: 0;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.normal-sub {
+	width: 300px;
+	left: auto;
+	padding: 10px 20px;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.normal-sub > li {
+	width: 100%;
+}
+.gNavi > ul > li > div.gNaviList_ul_box > ul.normal-sub > li a {
+/*	border: 0;
+	padding: 1em 0;*/
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+PC用
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.pc_none {
+	display: none!important;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn {
+	font-weight: 100;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	/* padding:5px 0; */
+	background:none;
+}
+.gNavi li.gNaviList_item:first-child a.ani-reverseBtn {
+	font-size:.7rem;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn:hover {
+	border-bottom: 5px solid #a28500;
+	color: #cc9966!important;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn:after {
+	content: url("../img/gnavi/gnavi_arrow.png") ;
+}
+.gNavi li.gNaviList_item a.ani-reverseBtn:hover:after {
+	content: url("../img/gnavi/gnavi_arrow_on.png") ;
+}
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:after {
+		content:none;
+	}
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn {
+		background:url("../img/gnavi/gnavi_home_off.png") left center no-repeat;
+		padding-left:5px;
+	}
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:hover {
+		background: url("../img/gnavi/gnavi_home_on.png") left center no-repeat;
+		padding-left:5px;
+	}
+	/*.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:before {
+		content: url("../img/gnavi/gnavi_home_off.png") ;
+		margin-right:5px;
+	}
+	.gNavi li.gNaviList_item:first-child a.ani-reverseBtn:hover:before {
+		content: url("../img/gnavi/gnavi_home_on.png") ;
+		margin-right:5px;
+	}*/
+.gNavi li.gNaviList_item a.gNaviList_ul_box_hover {
+	color: #cc9966!important;
+	border-bottom: 5px solid #a28500;
+}
+.gNavi li.gNaviList_item a.gNaviList_ul_box_hover:after {
+	content: url("../img/gnavi/gnavi_arrow_on.png") ;
+}
+.underlayerHeader.float .gNavi a.gNaviList_ul_box_hover {
+	/*border-bottom: 1px solid #333;*/
+}
+*,
+::before,
+::after {
+	border-style: none;
+	border-width: 0;
+}
+
+
+/* edit */
+.gNavi > ul > li > div.gNaviList_ul_box > ul > li.current a {
+	background: #8A7200;
+}
+
+@media screen and (min-width: 769px){
+.gNavi li.gNaviList_item.current a.ani-reverseBtn {
+	border-bottom: 5px solid #a28500;
+	color:#a28500;
+}
+.gNavi li.gNaviList_item.current a.ani-reverseBtn:after {
+	content: url("../img/gnavi/gnavi_arrow_on.png") ;
+}
+}
+@media only screen and (max-width: 768px) {
+
+
+}

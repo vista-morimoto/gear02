@@ -163,7 +163,9 @@ function getSchedules($scheduleData){
 
       } elseif($k == 'matinee_unsold'){
         //キーがmatinee_unsoldであれば、それぞれの記号をCSSで使う用のclass名に変換して$schedules[$key]['matinee_unsold']に入れる。
-        if($v == '○'){
+        if( $schedules[$key]['matinee'] == '貸切'){
+          $schedules[$key]['matinee_unsold'] = 'reserved';
+        } elseif($v == '○'){
           $schedules[$key]['matinee_unsold'] = 'haveToSpace';
         } elseif($v == '△'){
           $schedules[$key]['matinee_unsold'] = 'noRoom';
@@ -171,12 +173,15 @@ function getSchedules($scheduleData){
           $schedules[$key]['matinee_unsold'] = 'few';
         } elseif($v == '×'){
           $schedules[$key]['matinee_unsold'] = 'full';
+          $schedules[$key]['matinee'] = '完売';
         } else {
           $schedules[$key][$k] = $v;
         }
       } elseif($k == 'soiree_unsold'){
         //キーがsoiree_unsoldであれば、それぞれの記号をCSSで使う用のclass名に変換して$schedules[$key]['soiree_unsold']に入れる。
-        if($v == '○'){
+        if( $schedules[$key]['soiree'] == '貸切'){
+          $schedules[$key]['soiree_unsold'] = 'reserved';
+        } elseif($v == '○'){
           $schedules[$key]['soiree_unsold'] = 'haveToSpace';
         } elseif($v == '△'){
           $schedules[$key]['soiree_unsold'] = 'noRoom';
@@ -184,6 +189,7 @@ function getSchedules($scheduleData){
           $schedules[$key]['soiree_unsold'] = 'few';
         } elseif($v == '×'){
           $schedules[$key]['soiree_unsold'] = 'full';
+          $schedules[$key]['soiree'] = '完売';
         } else {
           $schedules[$key][$k] = $v;
         }

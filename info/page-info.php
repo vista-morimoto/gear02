@@ -8,6 +8,44 @@ $jsLink_btm = '';
 get_header();
 ?>
 
+<script>
+// TOPからの遷移時にアコーディオン展開
+
+//別ページからのアンカーリンク設定
+$(window).load(function (e) {
+	//アンカーリンク取得
+	var hash = location.hash;
+	//アンカーリンクがあった場合
+	if($(hash).length){
+		e.preventDefault();
+		//ヘッダーの高さ取得
+		headerH = $('.gNavi').height();
+		//IE判別
+		var ua = window.navigator.userAgent.toLowerCase();
+		var isIE = (ua.indexOf('msie') >= 0 || ua.indexOf('trident') >= 0);
+		//IEだった場合
+		if (isIE) {
+			setTimeout(function(){
+				var position = $(hash).offset().top;
+				$("html, body").scrollTop(Number(position)-headerH);
+			},500);
+		//IE以外
+		} else {
+			//アンカーリンクの位置取得
+			var position = $(hash).offset().top;
+			//アンカーリンクの位置まで移動
+			$("html, body").scrollTop(Number(position)-headerH);
+		}
+		if( hash == '#disability' ){
+		}	else {
+		$(hash).addClass('dd_open');
+		$(hash).next().slideToggle();
+		}
+	}
+});
+
+</script>
+
 <main class="mainContents">
 <article>
 <section id="faq" class="faq section">
@@ -33,8 +71,8 @@ get_header();
 <a href="/ticket/">詳しくはこちら</a>をご覧ください。
 </dd>
 
-<dt class="qaBox_list_q">当日券は購入できますか？</dt>
-<dd class="qaBox_list_a">
+<dt id="today" class="qaBox_list_q">当日券は購入できますか？</dt>
+<dd id="todayCont" class="qaBox_list_a">
 残席がある場合のみ、当日お電話でのご予約（平日10:00～/土日祝9:00～）を受け付けております。<br>
 ギアインフォメーション（0120-937-882）までお問い合わせください。<br>
 予定枚数に達していない場合には、開演１時間前より会場受付でも販売いたします。
@@ -58,8 +96,8 @@ get_header();
 確認できた場合のみ、ご入場いただくことが可能です。事前にお電話にてご相談ください。
 </dd>
 
-<dt class="qaBox_list_q">お得なチケットはありますか？</dt>
-<dd class="qaBox_list_a">
+<dt id="value" class="qaBox_list_q">お得なチケットはありますか？</dt>
+<dd id="valueCont" class="qaBox_list_a">
 <a href="/ticket/">ギアの日割引</a>、<a href="/ticket/privilege/">誕生月プラン</a>、<a href="/forfans/fanclub/">ファンクラブ会員割引</a>など様々な割引をご準備しております。<br>
 <a href="/ticket/">詳しくはこちら</a>をご覧ください。
 </dd>
@@ -76,8 +114,8 @@ get_header();
 お申込み方法など、<a href="/ticket/reserved/">詳しくはこちら</a>をご確認ください。
 </dd>
 
-<dt class="qaBox_list_q">上演時間はどれくらいですか？途中休憩はありますか？</dt>
-<dd class="qaBox_list_a">
+<dt id="runtime" class="qaBox_list_q">上演時間はどれくらいですか？途中休憩はありますか？</dt>
+<dd id="runtimeCont" class="qaBox_list_a">
 上演時間は約90分を予定しております。<br>
 途中休憩はございませんので、お手洗いなど前もってお済ませいただきますようお願いいたします。
 </dd>
@@ -196,8 +234,8 @@ get_header();
 <h3 class="contentsTitle">お子さま連れのお客さまへ<span></span></h3>
 
 <dl class="qaBox_list clearfix">
-<dt class="qaBox_list_q  noline">キッズデーとは？</dt>
-<dd class="qaBox_list_a">
+<dt id="kidsday" class="qaBox_list_q  noline">キッズデーとは？</dt>
+<dd id="kidsdayCont" class="qaBox_list_a">
 子育て中の方も気兼ねなく、お子様と一緒にパフォーマンスを楽しんでいただくためのスペシャルデーとして<br>
 毎月第1・3土曜日の12時公演に設定しています。普段ご入場いただけない4歳未満のお子さまも一緒にご入場いただけます。<br>
 ※お子さま向けの特別な演出等はございません。
@@ -208,8 +246,8 @@ get_header();
 上演中、会場にてお預かりいたします。<br>ただし、劇場のあるビルにはエレベーターがないため、会場まではご自身で持って上がっていただく必要があります。
 </dd>
 
-<dt class="qaBox_list_q">おむつ替えや授乳ができる場所はありますか？</dt>
-<dd class="qaBox_list_a">
+<dt id="place" class="qaBox_list_q">おむつ替えや授乳ができる場所はありますか？</dt>
+<dd id="placeCpnt" class="qaBox_list_a">
 専用のスペースは設けておりません。また、おむつを捨てるゴミ箱等もございませんので、お客さまご自身でお持ち帰りください。
 </dd>
 
@@ -218,8 +256,8 @@ get_header();
 座高を高くするための補助シートを設置させていただきます。
 </dd>
 
-<dt class="qaBox_list_q">大きな音量で音が流れたり、暗くなる場面がありますか？</dt>
-<dd class="qaBox_list_a">
+<dt id="volume" class="qaBox_list_q">大きな音量で音が流れたり、暗くなる場面がありますか？</dt>
+<dd id="volumeCont" class="qaBox_list_a">
 ございます。ご不安な点は、お電話でもご相談を承ります。
 </dd>
 
@@ -251,7 +289,7 @@ get_header();
 <!-- カテゴリ3 -->
 <section class="contents">
 <div id="cat3" class="faq_qaBox qaBox">
-<h3 class="contentsTitle">障がいをお持ちのお客さまへ<span></span></h3>
+<h3 id="disability" class="contentsTitle">障がいをお持ちのお客さまへ<span></span></h3>
 
 <dl class="qaBox_list clearfix">
 <dt class="qaBox_list_q  noline">車椅子を預かってもらうことは可能ですか？</dt>
@@ -262,15 +300,15 @@ get_header();
 ご来場ご検討の場合は、必ず<span class="bold">事前に</span>お電話にてご相談いただきますよう、お願いいたします。
 </dd>
 
-<dt class="qaBox_list_q">車椅子に座ったままで観劇することは可能ですか？</dt>
-<dd class="qaBox_list_a">
+<dt id="wheelchair" class="qaBox_list_q">車椅子に座ったままで観劇することは可能ですか？</dt>
+<dd id="wheelchairCont" class="qaBox_list_a">
 客席の都合上、車椅子に座ったままでご鑑賞いただくことができません。<br>
 またプロの介助スタッフもおりませんので、必ず付き添いの方とご一緒にご来場いただきますようお願いいたします。<br>
 尚、付き添いの方が来場される場合も、チケットが必要となりますので、ご了承ください。
 </dd>
 
-<dt class="qaBox_list_q">手話案内の申し込み方法をおしえてください。</dt>
-<dd class="qaBox_list_a">
+<dt id="sign" class="qaBox_list_q">手話案内の申し込み方法をおしえてください。</dt>
+<dd id="signCont" class="qaBox_list_a">
 観劇の3日前までにお電話、FAXまたはメール（<a href="mailto:info@gear.ac">info@gear.ac</a>）にてご連絡ください。<br>
 手話案内は無料です。<br>
 言葉を使わないノンバーバルの舞台だからこそ、日本語が解らない海外からのお客様や耳が不自由なお客さまも気兼ねなく共に<br>

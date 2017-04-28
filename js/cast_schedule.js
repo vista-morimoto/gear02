@@ -244,7 +244,7 @@
     //リセットボタンを押したらschedulesVm.ジャンルの値を空にする。
     //これにより、filterが解除されます。
 	cast_select();
-	stimer = setTimeout(function() { accordion_table(); }, 100);
+	accordion_table_reset();
     schedulesVm.mime = '';
     schedulesVm.breakin = '';
     schedulesVm.magic = '';
@@ -270,6 +270,7 @@ function cast_select() {
 		$('.no_cast').css('display','block');
 	}
 	}, 100);
+	accordion_table_reset();
 	stimer = setTimeout(function() { accordion_table(); }, 100);
 }
 
@@ -297,17 +298,23 @@ function accordion_table() {
 
   //windowのリサイズ完了時。
   if(staffw <= 768) { //スマホ
-    $("#castSchedule .castScheduleList th").off("click"); //重複イベント削除
-    $("#castSchedule .castScheduleList td").css("display", "none");
-    $("#castSchedule .castScheduleList th").on("click", function() {
-      $(this).siblings("td").slideToggle("fast"); //兄弟要素のtdが開く
+    $("#castSchedule .castScheduleList .castScheduleAcc th").off("click"); //重複イベント削除
+    //$("#castSchedule .castScheduleList .castScheduleAcc td").css("display", "none");
+    $("#castSchedule .castScheduleList .castScheduleAcc th").on("click", function() {
+      //$(this).siblings("td").css("display", "block");
+	  $(this).siblings("td").slideToggle("fast"); //兄弟要素のtdが開く	  
       $(this).parent().toggleClass("open"); //親要素にクラスを付与
+	  $(this).siblings("td").css("display", "block");
     });
   }
   else if(staffw > 768) { //PC
-    $("#castSchedule .castScheduleList td").css("display", "table-cell");
-    $("#castSchedule .castScheduleList th").off("click"); //重複イベント削除
+    $("#castSchedule .castScheduleList .castScheduleAcc td").css("display", "table-cell");
+    $("#castSchedule .castScheduleList .castScheduleAcc th").off("click"); //重複イベント削除
   }
+}
+function accordion_table_reset() {
+	$("#castSchedule .castScheduleList .castScheduleAcc td").css("display", "none");
+	$("#castSchedule .castScheduleList .castScheduleAcc").removeClass("open");
 }
 
 

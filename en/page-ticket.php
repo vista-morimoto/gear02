@@ -60,10 +60,14 @@ $(function() {
 <div class="ad"> 
 
 <ul class="legend pc_none">
-	<li><span class="haveToSpace">●</span>For best availability</li>
+	<li class="state"><span class="haveToSpace">○</span>For best availability</li>
+	<!-- <li><span class="noRoom">●</span>少なくなっています</li> -->
+	<li class="state"><span class="few">△</span>Limited availability</li>
+	<li class="state"><span class="full">完売</span>Not available</li>
+	<!--<li><span class="haveToSpace">●</span>For best availability</li>
 	<li><span class="noRoom">●</span>Available</li>
 	<li><span class="few">●</span>Limited availability</li>
-	<li><span class="full">●</span>Not available</li>
+	<li><span class="full">●</span>Not available</li>-->
 	<li><span class="daytime">■</span>Special price</li>
 	<li><span class="kids">■</span>For all age</li>
 </ul>
@@ -106,7 +110,7 @@ $(function() {
 <li v-if="days.suspend" class="otherday">
 	<span class="day {{days.holiday}}">{{days.day}}</span>
 	<span class="week {{days.holiday}}">{{days.weeks}}</span>
-	{{days.etc}}
+	<span v-if="days.etc" class="suspend">{{days.etc}}</span>
 </li>
 
 <!-- ３.paddingもsuspendもfalseだった場合に挿入される。 -->
@@ -122,10 +126,14 @@ $(function() {
 </ol>
 </div>
 <ul class="legend">
-	<li><span class="haveToSpace">●</span>For best availability</li>
+	<li class="state"><span class="haveToSpace">○</span>For best availability</li>
+	<!-- <li><span class="noRoom">●</span>少なくなっています</li> -->
+	<li class="state"><span class="few">△</span>Limited availability</li>
+	<li class="state"><span class="full">完売</span>Not available</li>
+	<!--<li><span class="haveToSpace">●</span>For best availability</li>
 	<li><span class="noRoom">●</span>Available</li>
 	<li><span class="few">●</span>Limited availability</li>
-	<li><span class="full">●</span>Not available</li>
+	<li><span class="full">●</span>Not available</li>-->
 	<li><span class="daytime">■</span>Special price</li>
 	<li><span class="kids">■</span>For all age</li>
 </ul>

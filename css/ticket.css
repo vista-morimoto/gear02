@@ -872,7 +872,8 @@
 }
 .castSchedule .loader {
 	position: absolute;
-	top: 50%;
+	/*top: 50%;*/
+	top:70%;
 	left: 50%;
 	margin: auto;
 	text-align: center;
@@ -916,16 +917,25 @@
 #castSchedule .no_cast { display:none; text-align:center;}
 
 .castScheduleAttention {
-	background:rgba(0,0,0,0.2);
+	background:rgba(255,255,255,0.5);
 	padding:10px;
-	text-align:center;
+	margin: 0 0 20px;
+	border:1px solid #a28500;
 	}
 .castScheduleAttention span {
 	display:inline-block;
-	background:url(../ticket/img/index/icon_caution.png) left center / 22px 21px no-repeat ;
-	padding-left:28px;
+	/*background:url(../ticket/img/index/icon_caution.png) left center / 22px 21px no-repeat ;
+	padding-left:28px;*/
+	
+	/*background:url(../ticket/img/index/icon_caution.png) top center / 22px 21px no-repeat ;
+	padding-top:23px;*/
+	
+	margin-top:10px;
+	margin-bottom:15px;
 }
-
+.hosokuAttention {
+	text-align:left;
+}
 
 @media screen and (min-width: 769px){
 .castSchedule .castScheduleTable_header .players_item {
@@ -959,6 +969,14 @@
 	font-size: 13px;
 	font-size: 0.8125rem;
 }
+.castScheduleAttention {
+	margin:20px 0 0;
+	text-align:center;
+}
+.hosokuAttention {
+	padding:15px 100px;
+}
+
 }
 @media screen and (max-width: 768px) {
 .castScheduleNavi .prev a,
@@ -1010,25 +1028,33 @@
 	display: block;
 	clear: both;
 	overflow: hidden;
-		border-bottom: 1px solid #a28500;
-		background: url("../img/ico_arrow_down.png") no-repeat 98% 15px/20px;
+	border-bottom: 1px solid #a28500;
 }
-.castSchedule .castScheduleTable .castScheduleList tr.open {
+.castSchedule .castScheduleTable .castScheduleList tr.castScheduleAcc {
+	background: url("../img/ico_arrow_down.png") no-repeat 98% 15px/20px;
+}
+
+.castSchedule .castScheduleTable .castScheduleList tr.castScheduleAcc.open {
 	background: url("../img/ico_arrow_up.png") no-repeat 98% 15px/20px;
 }
+
+
 
 .castSchedule .castScheduleTable .castScheduleList .date_item {
 	color: #996600;
 }
 .castSchedule .castScheduleTable .castScheduleList td {
-	display: block;
+	display: none;
+}
+.castSchedule .castScheduleTable .castScheduleList .open td {
+	display: block !important;
 }
 .castSchedule .castScheduleTable .castScheduleList_item {
 	display: block;
 	padding-bottom: 1em;
 }
 .castSchedule .castScheduleTable .castScheduleList .suspend td {
-	padding: 0 0 15px;
+	padding: 0 0 0;
 	clear: both;
 }
 .castSchedule .castScheduleTable .castScheduleList .date {
@@ -1056,13 +1082,14 @@
 }
 .castSchedule .castScheduleTable .castScheduleList .players_item {
 	width: 100%;
-	padding-top: 12px;
+	padding-bottom: 12px;
 	margin-left: 0;
 	line-height: 1;
 	font-weight: normal;
 	clear: both;
+	font-size: 16px;
 }	
-.castSchedule .castScheduleTable .castScheduleList .players_item.dall { padding-bottom: 15px; }
+/*.castSchedule .castScheduleTable .castScheduleList .players_item.jaggling { padding-bottom: 15px; }*/
 
 .castSchedule .castScheduleTable .castScheduleList .players_item.mime:before, 		 
 .castSchedule .castScheduleTable .castScheduleList .players_item.breakin:before,  
@@ -1080,6 +1107,9 @@
 	color: #fff;
 	border: none;
 	font-size: 1.14rem;
+}
+.castSchedule .loader {
+	top:80%;
 }
 }
 
@@ -1621,6 +1651,7 @@
 	background: rgba(0,0,0,0.2);
 }
 #reserved p.mb {
+
 	margin-bottom:80px;
 }
 #reserved .Inquiry .formBox {

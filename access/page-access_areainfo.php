@@ -19,7 +19,7 @@ get_header();
 <div class="leftBox mb70">
 <img src="<?php echo THEME_URI; ?>/access/img/areainfo/img_01.jpg" alt="河原町">
 <h4>河原町</h4>
-<p>劇場からすぐそばにある新京極商店街ではお土産物屋がたくさん。さらに5分程歩くと、京都の台所とも呼ばれる「錦市場」が。京野菜やお漬物、湯葉、豆腐、菓子など様々なお店が並び、毎日賑わっています。また、京都中心部を流れる鴨川も劇場から徒歩5分ほど。鴨川は京都有数のデートスポット。5月から9月にかけて、京の風物詩「納涼床（のうりょうゆか）」を楽しむことができます。</p>
+<p>劇場からすぐそばにある新京極商店街ではお土産物屋がたくさん。さらに5分程歩くと、京都の台所とも呼ばれる錦市場が。京野菜やお漬物、湯葉、豆腐、菓子など様々なお店が並び、毎日賑わっています。また、京都中心部を流れる鴨川も劇場から徒歩5分ほど。鴨川は京都有数のデートスポット。5月から9月にかけて、京の風物詩「納涼床（のうりょうゆか）」を楽しむことができます。</p>
 <!--<iframe src="https://www.google.com/maps/d/embed?mid=1OroLv3k6NieenY7HqfYw9rVqt5A" width="640" height="480"></iframe>-->
 <iframe src="https://www.google.com/maps/d/embed?mid=10Ovb2l4CH3TTGDF0gy-ucO-fdkU" width="640" height="480"></iframe>
 </div>

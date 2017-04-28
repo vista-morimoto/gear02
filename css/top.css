@@ -418,7 +418,7 @@ body.top .sectionInner {
 	box-sizing:border-box;
 	position: relative;
 	display: inline-block;
-	padding: 7px 20px 7px 20px;/*マウスオーバー日本語時は左記をコメントアウト */
+	/* padding: 7px 20px 7px 20px; */
 	border-radius: 1000px;
 	background: #000;
 	color: #f6e5cb;
@@ -448,17 +448,7 @@ body.top .sectionInner {
 	content: '\f144';
 }
 
-#mainVisual .actions .actions_en {
-	text-align:center;
-}
-
-/*↓↓↓日本語版をマウスオーバーで日本語にするときは下記不要*/
-#mainVisual .actions .actions_jp {
-	padding: 0 38px 7px 0;
-}
-
-/*↓↓↓#mainVisual .actions .actions_enを一旦コメントアウト*/
-/*#mainVisual .actions .actions_en ,*/ #mainVisual .actions .actions_jp {
+#mainVisual .actions .actions_en , #mainVisual .actions .actions_jp {
 	display: block; /* position指定がある時は無くても可 */
 	width: 100%;
 	position: absolute;
@@ -1074,6 +1064,7 @@ body.top .sectionInner {
 	padding: 15px 0;
 	background: #000;
 }
+
 #about .visualBox_img .txt_01 {
 	width: auto;
 	position: static;
@@ -1335,7 +1326,8 @@ body.top .sectionInner {
 #ticket .calenderWrapper .calender .haveToSpace,
 #ticket .calenderWrapper .calender .few,
 #ticket .calenderWrapper .calender .noRoom,
-#ticket .calenderWrapper .calender .full {
+#ticket .calenderWrapper .calender .full ,
+#ticket .calenderWrapper .calender .reserved {
 	padding: 0 8px;
 	border-radius: 1000px;
 	color: #fff;
@@ -1350,9 +1342,17 @@ body.top .sectionInner {
 								transition: all 0.4s ease;
 } */
 #ticket .calenderWrapper .calender .haveToSpace {  background: #00cc00; }
-#ticket .calenderWrapper .calender .noRoom {  background: #ff9900; }
+#ticket .calenderWrapper .calender .noRoom {  background: #00cc00; }/*ff9900*/
 #ticket .calenderWrapper .calender .few {  background: #ff0000; }
-#ticket .calenderWrapper .calender .full {  background: #666; }
+/*#ticket .calenderWrapper .calender .full {  background: #666; }*/
+
+#ticket .calenderWrapper .calender .full ,
+#ticket .calenderWrapper .calender .reserved {
+  color: #A28500;
+  background: #FFF;
+  border: 1px solid #A28500;
+}
+
 
 #ticket .legend {
 	margin-top: 10px;
@@ -1361,7 +1361,7 @@ body.top .sectionInner {
 #ticket .legend li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 10px;
+	margin-right: 6px;
 	font-size:15px;
 }
 #ticket .legend li span {
@@ -1383,6 +1383,22 @@ body.top .sectionInner {
 #ticket .legend .full	{  color: #EEE; }
 #ticket .legend .daytime	{  color: #66ccff; }
 #ticket .legend .kids	{  color: #ffcce8; }
+
+#ticket .legend li .full {
+  display: inline-block;
+  font-size: 12px;
+  width: 35px;
+  line-height: 1;
+  padding: 2px;
+  text-align: center;
+  border-radius: 1000px;
+  color: #A28500;
+  background: #FFF;
+  margin-right: 0.5em;
+  border: 1px solid #A28500;
+}
+
+
 
 .sat { color: #66CCFF;}
 .sun { color:#FF4D4D;}

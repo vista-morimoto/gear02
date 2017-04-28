@@ -10,6 +10,9 @@
  */
 $js  = SCF::get('javascript');
 global $jsLink_btm;
+global $bodyClass;
+
+$toppage    = ($bodyClass == 'top')? TRUE: '';//TOPページ判定（日本語・英語）
 ?>
 
 <footer class="pageFooter">
@@ -47,7 +50,7 @@ global $jsLink_btm;
 		</dd>
 	</dl>
 	<dl class="footerNavi_box">
-		<dt class="footerNavi_title"><a href="/ticket/">チケット</a></dt>
+		<dt class="footerNavi_title"><a href="/ticket/">公演日程・チケット</a></dt>
 		<dd class="footerNavi_list">
 		<ul>
 			<li class="footerNavi_list_item"><a href="/ticket/">購入方法</a></li>
@@ -108,14 +111,16 @@ global $jsLink_btm;
 		</dd>
 	</dl>
 </nav>
-<div><small>Copyright (C) 2011 ART COMPLEX Group All rights reserved.</small></div>
+<div><small>Copyright (C) 2011 有限会社一九二八 All rights reserved.</small></div>
 </div>
 </footer>
 
 <!-- PCのfixedNavここから -->
+<?php if( !$toppage ): ?>
 <nav id="fixedNav">
 <p><a href="/ticket/#purchase" title="チケット購入"><img src="<?php echo THEME_IMAGES; ?>/gnavi/btn_purchase.png" alt="購入する" /></a></p>
 </nav>
+<?php endif;?>
 <!-- PCのfixedNavここまで -->
 
 <!--Pagetop-->

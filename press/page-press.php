@@ -15,7 +15,16 @@ get_header();
 
 <div class="press_contact">
 <h3 class="contentsTitle">プレスのお問合せ<span></span></h3>
-<div class="col2Box">
+
+<p class="mb">
+本公演に関する取材･撮影やご質問などございましたら、下記のフォームよりお問合せください。後ほど広報担当よりご連絡いたします。<br>
+※内容および都合により、お問合せ内容にお答えできない場合がございますのでご了承ください。<br>
+※お預かりした個人情報は厳重に管理し、取材の連絡以外には一切使用いたしません。また、第三者への譲渡・公開を行いません。
+</p>
+
+<a href="/press/form/" class="link_form">プレス様向け お問合せフォーム</a>
+
+<!--<div class="col2Box">
 <div class="col2Box_item">
 <div class="btn"><a href="mailto:info@gear.ac" class="linkBtn"><i class="fa fa-envelope"></i>info@gear.ac</a></div>
 </div>
@@ -28,7 +37,7 @@ get_header();
 がございますのでご了承ください。
 </p>
 </div>
-</div>
+</div>-->
 </div>
 
 </div>

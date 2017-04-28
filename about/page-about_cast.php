@@ -48,17 +48,17 @@ $(function() {
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(1).removeClass('disnon');
 	});
-	$(".cast_magic").click(function(){
+	$(".cast_doru").click(function(){
 		//$("#box3").fadeIn("slow");
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(2).removeClass('disnon');
 	});
-	$(".cast_juggling").click(function(){
+	$(".cast_magic").click(function(){
 		//$("#box4").fadeIn("slow");
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(3).removeClass('disnon');
 	});
-	$(".cast_doru").click(function(){
+	$(".cast_juggling").click(function(){
 		//$("#box5").fadeIn("slow");
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(4).removeClass('disnon');
@@ -117,17 +117,17 @@ $(function() {
 <ul class="tab top carousel carousel-main carousel--full-width pc_none clearfix">
 	<li class="carousel-cell"><a class="cast_mime btn_act"><img src="<?php echo THEME_URI; ?>/about/img/cast/1_sp.jpg" width="100%" alt="マイム"></a></li>
 	<li class="carousel-cell"><a class="cast_breakdance btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/2_sp.jpg" width="100%" alt="ブレイクダンス"></a></li>
+	<li class="carousel-cell"><a class="cast_doru btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp.jpg" width="100%" alt="ドール"></a></li>
 	<li class="carousel-cell"><a class="cast_magic btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/3_sp.jpg" width="100%" alt="マジック"></a></li>
 	<li class="carousel-cell"><a class="cast_juggling btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/4_sp.jpg" width="100%" alt="ジャグリング"></a></li>
-	<li class="carousel-cell"><a class="cast_doru btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp.jpg" width="100%" alt="ドール"></a></li>
 </ul>
 
 <ul class="tab top sp_none  clearfix">
 	<li class="tab_list"><a class="cast_mime" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/1.jpg" width="100%" alt="マイム"></a></li>
 	<li class="tab_list"><a class="cast_breakdance" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/2.jpg" width="100%" alt="ブレイクダンス"></a></li>
+	<li class="tab_list"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5.jpg" width="100%" alt="ドール"></a></li>
 	<li class="tab_list"><a class="cast_magic" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/3.jpg" width="100%" alt="マジック"></a></li>
 	<li class="tab_list"><a class="cast_juggling" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/4.jpg" width="100%" alt="ジャグリング"></a></li>
-	<li class="tab_list"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5.jpg" width="100%" alt="ドール"></a></li>
 </ul>
 
 
@@ -359,9 +359,126 @@ DANCE COMPLEX 2008審査員特別賞。ロクソドンタ演劇祭2010優勝。�
 <!--**********************/breakdance**********************-->
 
 
-<!--**********************magic**********************-->
+
+<!--**********************doru**********************-->
 <div class="content_wrap disnon">
 <div id="box3 tab3" class="cast_content">
+
+<div class="doru_category_title pc_none">
+ドール
+</div>
+
+
+<!--兵頭祐香-->
+<div class="doru_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">兵頭祐香<span>Yuka Hyodo</span></h3>
+<p class="cast_category">俳優</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+2003年カンヌ国際映画祭コンペティション部門正式出品作『沙羅双樹』（監督：河瀬直美）主演に抜擢されデビュー。初々しくも表情豊かな演技で鮮烈な印象を残し、初主演にして第18回高崎映画祭最優秀新人賞を受賞。<br>
+2007年より、ウォーリー木下を中心に設立されたパフォーマンス集団「オリジナルテンポ」のメンバーとして活動を始め、2009年世界最大の芸術祭・エジンバラフリンジフェスティバルにて代表作の『Shut up,Play!!』が最高評価の5つ星を獲得。<br>
+その後、シンガポール、韓国などアジアでの公演だけでなく、イギリス、ハンガリー、ルーマニアなどを始めとするヨーロッパ各地で公演を行う。<br>
+2012年には、スロベニアのダンスカンパニー'BETONTANC'との共同制作を行い、『Audition for life』を発表し、好評を得る。<br>
+舞台を中心に、TV、映画など、国内外問わず活動を行う。
+</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/hyodo.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--平本茜子-->
+<div class="doru_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">平本茜子<span>Akane Hiramoto</span></h3>
+<p class="cast_category">俳優</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+幼少の頃よりジャズバレエを学び、NYでのダンス留学経験を経て、舞台・ドラマなどで女優として活動。<br>
+その身体一杯で表現する天真爛漫な演技は、観る者を魅了する。<br>
+出演作品は、ミュージカルや吉本新喜劇、NHK連続テレビ小説など多岐にわたる。<br>
+一方で、振付師や脚本家としての才能も併せ持ち、舞台公演のセルフプロデュースなど、マルチな活躍を見せている。
+</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/hiramoto.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--和田ちさと-->
+<!--<div class="doru_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">和田ちさと<span>Chisato Wada</span></h3>
+<p class="cast_category">俳優</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+大阪教育大学音楽科卒業後、俳優として活動。ミュージカル「ウェスト・サイド・ストーリー」マリア役等の出演をはじめ、演劇や京都府民ホールアルティ主催のコンテンポラリーダンス公演にも出演。日本での活動を経て、NYのMichael Howard Studiosへ演劇留学。奨学生に選ばれる。演劇の他、一流コメディアンが出演する "COMIX" でも出演。帰国後、大阪・新世界のデザイン＆アートイベント「ツムテンカク2013」で企画演出したゾンビのフラッシュモブを機にグランフロントのウメキタフロアなど様々な商業施設でハロウィンイベントを演出。「ツムテンカク2015」では、味園ビル「ユニバース」にて一夜限りのキャバレーショーを復活させる。
+</p>
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/wada.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>-->
+
+<!--游礼奈-->
+<div class="doru_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">游礼奈<span>Reina Yu</span></h3>
+<p class="cast_category">俳優</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+大阪芸術大学舞台芸術学科を卒業後、同大学院に首席入学、修士号取得。主にクラシックバレエやコンテンポラリーダンスの舞台で活躍中。<br>
+上海万博にて堀内充振付の舞踊作品を踊り高い評価を得るほか、KAORI aliveメンバーとしてロサンゼルスで開催された18th VIBE dance competitionに参加し、第3位受賞。<br>
+その他、なかの国際ダンスコンペティション1位入賞など、国内の舞踊創作コンクールにて自ら振付・出演し多数の受賞歴あり。
+</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/yu.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--佐々木ヤス子-->
+<div class="doru_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">佐々木ヤス子<span>Yasuko Sasaki</span></h3>
+<p class="cast_category">俳優</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">神戸大学 発達科学部 人間表現学科卒業。同大学在学中より演劇活動を開始する。<br>
+コメディからシリアスな役どころまで柔軟に適応できる演技力には定評があり、主に関西を拠点に活動する劇団やイベント団体から引く手あまたの注目株である。<br>
+また、コンテンポラリーダンスやバレエの素養をも併せ持ち、神戸市などが主催する総合芸術祭「神戸ビエンナーレ」において、舞踊家・関典子氏の演出・監修のもと Site Specific Dance Performance #1「GATE」及び#2「KIRA」に出演するなど、幅広いフィールドで活躍している。</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/sasaki.jpg" ><p>Photo by Yusuke Otsuki</p></div>
+</div>
+
+<!--中村るみ-->
+<div class="doru_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">中村るみ<span>Rumi Nakamura</span></h3>
+<p class="cast_category">俳優</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+2歳の頃にバトントワリングと出会い、国内最大級の大会「全日本バトントワーリング選手権大会」では「ダンストワール部門」および「トゥーバトン部門」において3年連続で全国大会進出、また「ソロトワール部門」でも全国大会出場経験を持つなど、数々の賞歴を誇る。<br>
+高校在学時には、創作ダンス部のキャプテンとしてチームを束ね「All Japan Dance Festival-KOBE」では ’10年と’11年に連続入選、’13年「NFCC・全国ハイスクールダンスコンペティション」では入賞およびCBC賞受賞を果たす。<br>
+神戸大学入学後に演劇活動をスタートし、学内での定期公演では自らが出演する他、演出や振付でも参加。<br>
+また、関西の様々な劇団の公演にも出演するなど、精力的な活動を見せている。<br>
+バトントワリングと創作ダンスで培った高い身体能力を活かした溌剌とした演技で、演劇界も注目する新進気鋭の若手女優である。
+</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/nakamura.jpg" ><p>Photo by Yusuke Otsuki</p></div>
+</div>
+
+
+</div>
+</div>
+<!--**********************/doru**********************-->
+
+<!--**********************magic**********************-->
+<div class="content_wrap disnon">
+<div id="box4 tab4" class="cast_content">
 
 
 <div class="magic_category_title pc_none">
@@ -454,7 +571,7 @@ TBS「ワンステップ！」出演。文化庁第26回国民文化祭にて京
 
 <!--**********************juggling**********************-->
 <div class="content_wrap disnon">
-<div id="box4 tab4" class="cast_content">
+<div id="box5 tab5" class="cast_content">
 
 <div class="juggling_category_title pc_none">
 ジャグリング
@@ -572,121 +689,6 @@ TBS「ワンステップ！」出演。文化庁第26回国民文化祭にて京
 <!--**********************/juggling**********************-->
 
 
-<!--**********************doru**********************-->
-<div class="content_wrap disnon">
-<div id="box5 tab5" class="cast_content">
-
-<div class="doru_category_title pc_none">
-ドール
-</div>
-
-
-<!--兵頭祐香-->
-<div class="doru_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">兵頭祐香<span>Yuka Hyodo</span></h3>
-<p class="cast_category">俳優</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-2003年カンヌ国際映画祭コンペティション部門正式出品作『沙羅双樹』（監督：河瀬直美）主演に抜擢されデビュー。初々しくも表情豊かな演技で鮮烈な印象を残し、初主演にして第18回高崎映画祭最優秀新人賞を受賞。<br>
-2007年より、ウォーリー木下を中心に設立されたパフォーマンス集団「オリジナルテンポ」のメンバーとして活動を始め、2009年世界最大の芸術祭・エジンバラフリンジフェスティバルにて代表作の『Shut up,Play!!』が最高評価の5つ星を獲得。<br>
-その後、シンガポール、韓国などアジアでの公演だけでなく、イギリス、ハンガリー、ルーマニアなどを始めとするヨーロッパ各地で公演を行う。<br>
-2012年には、スロベニアのダンスカンパニー'BETONTANC'との共同制作を行い、『Audition for life』を発表し、好評を得る。<br>
-舞台を中心に、TV、映画など、国内外問わず活動を行う。
-</p>
-<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/hyodo.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--平本茜子-->
-<div class="doru_area cast_box clearfix">
-<div class="profile_box fleft">
-<h3 class="cast_name">平本茜子<span>Akane Hiramoto</span></h3>
-<p class="cast_category">俳優</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-幼少の頃よりジャズバレエを学び、NYでのダンス留学経験を経て、舞台・ドラマなどで女優として活動。<br>
-その身体一杯で表現する天真爛漫な演技は、観る者を魅了する。<br>
-出演作品は、ミュージカルや吉本新喜劇、NHK連続テレビ小説など多岐にわたる。<br>
-一方で、振付師や脚本家としての才能も併せ持ち、舞台公演のセルフプロデュースなど、マルチな活躍を見せている。
-</p>
-<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
-</div>
-<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/hiramoto.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--和田ちさと-->
-<!--<div class="doru_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">和田ちさと<span>Chisato Wada</span></h3>
-<p class="cast_category">俳優</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-大阪教育大学音楽科卒業後、俳優として活動。ミュージカル「ウェスト・サイド・ストーリー」マリア役等の出演をはじめ、演劇や京都府民ホールアルティ主催のコンテンポラリーダンス公演にも出演。日本での活動を経て、NYのMichael Howard Studiosへ演劇留学。奨学生に選ばれる。演劇の他、一流コメディアンが出演する "COMIX" でも出演。帰国後、大阪・新世界のデザイン＆アートイベント「ツムテンカク2013」で企画演出したゾンビのフラッシュモブを機にグランフロントのウメキタフロアなど様々な商業施設でハロウィンイベントを演出。「ツムテンカク2015」では、味園ビル「ユニバース」にて一夜限りのキャバレーショーを復活させる。
-</p>
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/wada.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>-->
-
-<!--游礼奈-->
-<div class="doru_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">游礼奈<span>Reina Yu</span></h3>
-<p class="cast_category">俳優</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-大阪芸術大学舞台芸術学科を卒業後、同大学院に首席入学、修士号取得。主にクラシックバレエやコンテンポラリーダンスの舞台で活躍中。<br>
-上海万博にて堀内充振付の舞踊作品を踊り高い評価を得るほか、KAORI aliveメンバーとしてロサンゼルスで開催された18th VIBE dance competitionに参加し、第3位受賞。<br>
-その他、なかの国際ダンスコンペティション1位入賞など、国内の舞踊創作コンクールにて自ら振付・出演し多数の受賞歴あり。
-</p>
-<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/yu.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--佐々木ヤス子-->
-<div class="doru_area cast_box clearfix">
-<div class="profile_box fleft">
-<h3 class="cast_name">佐々木ヤス子<span>Yasuko Sasaki</span></h3>
-<p class="cast_category">俳優</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">神戸大学 発達科学部 人間表現学科卒業。同大学在学中より演劇活動を開始する。<br>
-コメディからシリアスな役どころまで柔軟に適応できる演技力には定評があり、主に関西を拠点に活動する劇団やイベント団体から引く手あまたの注目株である。<br>
-また、コンテンポラリーダンスやバレエの素養をも併せ持ち、神戸市などが主催する総合芸術祭「神戸ビエンナーレ」において、舞踊家・関典子氏の演出・監修のもと Site Specific Dance Performance #1「GATE」及び#2「KIRA」に出演するなど、幅広いフィールドで活躍している。</p>
-<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
-</div>
-<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/sasaki.jpg" ><p>Photo by Yusuke Otsuki</p></div>
-</div>
-
-<!--中村るみ-->
-<div class="doru_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">中村るみ<span>Rumi Nakamura</span></h3>
-<p class="cast_category">俳優</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-2歳の頃にバトントワリングと出会い、国内最大級の大会「全日本バトントワーリング選手権大会」では「ダンストワール部門」および「トゥーバトン部門」において3年連続で全国大会進出、また「ソロトワール部門」でも全国大会出場経験を持つなど、数々の賞歴を誇る。<br>
-高校在学時には、創作ダンス部のキャプテンとしてチームを束ね「All Japan Dance Festival-KOBE」では ’10年と’11年に連続入選、’13年「NFCC・全国ハイスクールダンスコンペティション」では入賞およびCBC賞受賞を果たす。<br>
-神戸大学入学後に演劇活動をスタートし、学内での定期公演では自らが出演する他、演出や振付でも参加。<br>
-また、関西の様々な劇団の公演にも出演するなど、精力的な活動を見せている。<br>
-バトントワリングと創作ダンスで培った高い身体能力を活かした溌剌とした演技で、演劇界も注目する新進気鋭の若手女優である。
-</p>
-<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">キャストスケジュールを見る</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/nakamura.jpg" ><p>Photo by Yusuke Otsuki</p></div>
-</div>
-
-
-</div>
-</div>
-<!--**********************/doru**********************-->
 
 </div>
 <!--/cast_contents--> 
@@ -694,17 +696,17 @@ TBS「ワンステップ！」出演。文化庁第26回国民文化祭にて京
 <ul class="tab bottom sp_none  clearfix"  >
 	<li class="tab_list_btm"><a class="cast_mime" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/1.jpg" width="100%" alt="マイム"></a></li>
 	<li class="tab_list_btm"><a class="cast_breakdance" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/2.jpg" width="100%" alt="ブレイクダンス"></a></li>
+	<li class="tab_list_btm"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5.jpg" width="100%" alt="ドール"></a></li>
 	<li class="tab_list_btm"><a class="cast_magic" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/3.jpg" width="100%" alt="マジック"></a></li>
 	<li class="tab_list_btm"><a class="cast_juggling" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/4.jpg" width="100%" alt="ジャグリング"></a></li>
-	<li class="tab_list_btm"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5.jpg" width="100%" alt="ドール"></a></li>
 </ul>
 
 <ul class="tab bottom carousel carousel-nav carousel--nav  carousel--full-width pc_none  clearfix">
 	<li class="carousel-cell"><a class="cast_mime btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/1_sp.jpg" width="100%" alt="マイム"></a></li>
 	<li class="carousel-cell"><a class="cast_breakdance btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/2_sp.jpg" width="100%" alt="ブレイクダンス"></a></li>
+	<li class="carousel-cell"><a class="cast_doru btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp.jpg" width="100%" alt="ドール"></a></li>
 	<li class="carousel-cell"><a class="cast_magic btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/3_sp.jpg" width="100%" alt="マジック"></a></li>
 	<li class="carousel-cell"><a class="cast_juggling btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/4_sp.jpg" width="100%" alt="ジャグリング"></a></li>
-	<li class="carousel-cell"><a class="cast_doru btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp.jpg" width="100%" alt="ドール"></a></li>
 </ul>
 
 </div>

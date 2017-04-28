@@ -46,17 +46,17 @@ $(function() {
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(1).removeClass('disnon');
 	});
-	$(".cast_magic").click(function(){
+	$(".cast_doru").click(function(){
 		//$("#box3").fadeIn("slow");
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(2).removeClass('disnon');
 	});
-	$(".cast_juggling").click(function(){
+	$(".cast_magic").click(function(){
 		//$("#box4").fadeIn("slow");
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(3).removeClass('disnon');
 	});
-	$(".cast_doru").click(function(){
+	$(".cast_juggling").click(function(){
 		//$("#box5").fadeIn("slow");
 		$(".content_wrap").addClass('disnon');
 		$(".content_wrap").eq(4).removeClass('disnon');
@@ -131,17 +131,17 @@ var num = $("#tab li").index(this);
 <ul class="tab top carousel carousel-main carousel--full-width pc_none clearfix">
 	<li class="carousel-cell"><a class="cast_mime btn_act"><img src="<?php echo THEME_URI; ?>/about/img/cast/1_sp_en.jpg" width="100%" alt="MIME"></a></li>
 	<li class="carousel-cell"><a class="cast_breakdance btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/2_sp_en.jpg" width="100%" alt="BREAKIN’"></a></li>
+	<li class="carousel-cell"><a class="cast_doru btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp_en.jpg" width="100%" alt="DOLL"></a></li>
 	<li class="carousel-cell"><a class="cast_magic btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/3_sp_en.jpg" width="100%" alt="MAGIC"></a></li>
 	<li class="carousel-cell"><a class="cast_juggling btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/4_sp_en.jpg" width="100%" alt="JUGGLING"></a></li>
-	<li class="carousel-cell"><a class="cast_doru btn_act" ><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp_en.jpg" width="100%" alt="DOLL"></a></li>
 </ul>
 
 <ul class="tab top sp_none  clearfix">
 	<li class="tab_list"><a class="cast_mime" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/1_en.jpg" width="100%" alt="MIME"></a></li>
 	<li class="tab_list"><a class="cast_breakdance" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/2_en.jpg" width="100%" alt="BREAKIN’"></a></li>
+	<li class="tab_list"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_en.jpg" width="100%" alt="DOLL"></a></li>
 	<li class="tab_list"><a class="cast_magic" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/3_en.jpg" width="100%" alt="MAGIC"></a></li>
 	<li class="tab_list"><a class="cast_juggling" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/4_en.jpg" width="100%" alt="JUGGLING"></a></li>
-	<li class="tab_list"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_en.jpg" width="100%" alt="DOLL"></a></li>
 </ul>
 
 
@@ -349,195 +349,10 @@ Wang Yang came to Japan in 2014. He has been performing for Ninja shows and them
 <!--**********************/breakdance**********************-->
 
 
-<!--**********************magic**********************-->
-<div class="content_wrap disnon">
-<div id="box3 tab3" class="cast_content">
-
-
-<div class="magic_category_title pc_none">
-MAGIC
-</div>
-
-<!--新子景視-->
-<div class="magic_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">Keishi Atarashi</h3>
-<p class="cast_category">Magician</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-After watching magic while he was still an elementary school student, Keishi started studying and learning techniques on his own and debuted as a professional magician at the age of 17. From sleight-of-hand done right in front of the audience’s eyes to stage magic and illusions, Keishi is skilled in many genres of magic. After graduating from Kansai University in 2009, he started performing on TV and at shows in and outside Japan at a full professional level. Having also won at many contests, Keishi also teaches magic to a wide variety of people, from amateur magicians to professional magicians.
-</p>
-<!--<div class="go_site_btn"><a href="#">Related Sites</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/atarashi.jpg" ><!--<p>Photo by Yoshikazu Inoue</p>--></div>
-</div>
-
-<!--山下翔吾-->
-<div class="magic_area cast_box clearfix">
-<div class="profile_box fleft">
-<h3 class="cast_name">Shohgo Yamashita</h3>
-<p class="cast_category">Magician</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-A graduate of Kyoto University of Art and Design, Shohgo came across magic while he was still a university student. He spent his time training hard while wandering through restaurants and stages as a magician. He is now an up-and-coming young magician who is trying his hand at a new genre of magic—magic that has a story and combines both film production (which he majored in at university) and magic together. Besides appearing on TV shows with NHK and ABC and so on, he also plays a magician in the movie Miroku.
-</p>
-<!--<div class="go_site_btn"><a href="#">Related Sites</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/yamashita.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--橋本昌也-->
-<div class="magic_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">Masaya Hashimoto</h3>
-<p class="cast_category">Magician</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-A Kyoto boy, at 6 years of age Masaya started studying magic because he was fascinated by magic toys.  He presented his original tricks to the illusionist world at the age of 17, which lead him to start a career performing and creating magic.  He is strong at “close-up magic” which is performed right in front of the face of a candidate, and also at “stage magic” which is performed to a large audience.<br>
-What he pursues  is “ an entertainment which remains in every heart,”  making his own field as wide on the table as on the stage.<br>
-He has been on the TBS TV programme “One Step,” and was awarded the Kyoto Special Prize winner in the 26th National Cultural Festival by the Agency for Cultural Affairs.<br>
-Masaya has performed in numerous showrooms, parties, bars, pubs, restaurant, local charity events, community revitalization events, educational events, and more.
-</p>
-<!--<div class="go_site_btn"><a href="#">Related Sites</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/hashimoto.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--松田有生-->
-<div class="magic_area cast_box clearfix">
-<div class="profile_box fleft">
-<h3 class="cast_name">Yuki Matsuda</h3>
-<p class="cast_category">Magician</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-As a mere middle-schooler, Yuki was so impressed with a magic show that he saw on television that he started to learn magic techniques all by himself.  As a college student, he apprenticed with world-class magicians Hiromasa Fukai and Kimika, and debuted as a pro after graduation.  Prioritizing “lively and fun” magic, he is good at a wide field from tabletop magic to stage magic.  In 2016, he won the six minute contest at the Fukuyama Magic Festival, and in 2015 was the victor in the two minute contest at the same festival.  He has ranked high in many such events, such as taking 2nd place in the ICM Magic Contest (2016), and 2nd place in the Chiba Magic Festival(2015).
-He is certainly a vital and promising young talent!</p>
-<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/matsuda.jpg" ><p>Photo by Yusuke Otsuki</p></div>
-</div>
-
-</div>
-</div>
-<!--**********************/magic**********************-->
-
-
-<!--**********************juggling**********************-->
-<div class="content_wrap disnon">
-<div id="box4 tab4" class="cast_content">
-
-<div class="juggling_category_title pc_none">
-JUGGLING
-</div>
-
-<!--酒田しんご-->
-<div class="juggling_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">Shingo Sakata</h3>
-<p class="cast_category">Juggler</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-As a kid, Shingo first got interested in juggling when he saw some street performers on the corner.  From the age of 10, he took up juggling all on his own.  At 17, when he was still a high school student, he set a new record in Japan for juggling 7 balls for the longest time.
-</p>
-<div class="go_site_btn"><a href="http://www.shingosakata.com/" target="_blank">Related Sites</a></div>
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/sakata.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--Ren-->
-<div class="juggling_area cast_box clearfix">
-<div class="profile_box fleft">
-<h3 class="cast_name">Ren</h3>
-<p class="cast_category">Juggler</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-Ren started juggling all on his own when he was fourteen years old.  In 2010, he made his debut as a professional.  With his androgynous looks and pliant body, his use of special props, his performance is a must-see.  Ren’s special talent is to insert jazz dance steps into his performance, giving a gorgeous performance.  His captivating show enchants you with a bewitching atmosphere into a unique world; his scope of activity is widening beyond Japan to include countries all over the world.
-</p>
-<div class="go_site_btn"><a href="http://www.juggler-ren.net" target="_blank">Related Sites</a></div>
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/ren.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--渡辺あきら-->
-<div class="juggling_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">Akira Watanabe</h3>
-<p class="cast_category">Juggler</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-Akira graduated from the Faculty of Engineering at Kyoto University.  Armed with his stylish technique and lively features, Akira has traveled all over Japan teaching Juggling performing, doing everything from stage performances to street performance.<br>
-From 2002 to 2004, he was also a regular performer in the "Hollywood Premium Parade" at Universal Studio Japan.<br>
-Among many awards and media performances, Akira has also performed in the Street Performance World Cup in Shizuoka, and won the first prize in Tenpozan World Performance Festival in 2006.
-</p>
-<div class="go_site_btn"><a href="http://www.w-akira.com" target="_blank">Related Sites</a></div>
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/watanabe.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--深河晃-->
-<div class="juggling_area cast_box clearfix">
-<div class="profile_box fleft">
-<h3 class="cast_name">Akira Fukagawa</h3>
-<p class="cast_category">Juggler</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-Akira’s strength is in incorporating his acrobatic body expression with Diabolo technique.  In addition to being a finalist at the International Juggling Association championship 2012 in the US, he has performed all over the world, from Taiwan to Turkey.  He is a registered performer with the Cirque du Soleil.  Further, he is the holder of the Japan Record for the High Toss with four Diabolos. 
-</p>
-<div class="go_site_btn"><a href="http://j-v.co.jp/" target="_blank">Related Sites</a></div>
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/fukagawa.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
-</div>
-
-<!--リスボン上田-->
-<div class="juggling_area cast_box clearfix">
-<div class="profile_box pc_right_sp_none">
-<h3 class="cast_name">Lisbon Ueda</h3>
-<p class="cast_category">Juggler</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-Lisbon has a singular history: although he started studying magic tricks as a gag for passing job interviews, he found he’d become the Japan juggling champion.   With the acquisition of this title, he became a professional juggler,  and among other activities, advanced to the finals in the International Juggling Association championships, is regular performer in the "Hollywood Premium Parade" at Universal Studio Japan, and is beguiling audiences in many venues.<br>
-In recent years, he was technique supervisor on the musical of Ocean’s 11 with the mega girl group Takarazuka, and on the international opera production of Pierrot, and is now expanding his activities into many arenas.<br>
-His use of two batons called “devil sticks” is one of his unique original techniques. 
-</p>
-<div class="go_site_btn"><a href="http://www.eonet.ne.jp/~juggling/" target="_blank">Related Sites</a></div>
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/risbon.jpg" ><p>Photo by Yusuke Otsuki</p></div>
-</div>
-
-<!--宮田直人-->
-<div class="juggling_area cast_box clearfix">
-<div class="profile_box fleft">
-<h3 class="cast_name">Naoto Miyata</h3>
-<p class="cast_category">Juggler</p>
-<div class="bar sp_none"></div>
-<p class="cast_profile">
-Naoto started Juggling after studying theatre in college.<br>
-In the Baton Juggling competition, “FantaStick” he has been awarded the Grand Prize, and also been awarded Runner’s Up Prize on a separate occasion.  He was a finalist in the Japan Juggling Festival's All-Japan 2012 competition.  As the representative of the “Juggling Unit Fratres,”, Naoto is the playwright and performance director of this group, which uses Juggling as stage art, creating a new genre of performance works.
-</p>
-<div class="go_site_btn"><a href="http://fratres.wp.xdomain.jp" target="_blank">Related Sites</a></div>
-<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
-</div>
-<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/miyata.jpg" ><p>Photo by Yusuke Otsuki</p></div>
-</div>
-
-
-</div>
-</div>
-<!--**********************/juggling**********************-->
-
 
 <!--**********************doru**********************-->
 <div class="content_wrap disnon">
-<div id="box5 tab5" class="cast_content">
+<div id="box3 tab3" class="cast_content">
 
 <div class="doru_category_title pc_none">
 DOLL
@@ -645,23 +460,210 @@ With her vigor and physical ability cultivated by Baton Twirling, Rumi is an up 
 </div>
 <!--**********************/doru**********************-->
 
+<!--**********************magic**********************-->
+<div class="content_wrap disnon">
+<div id="box4 tab4" class="cast_content">
+
+
+<div class="magic_category_title pc_none">
+MAGIC
+</div>
+
+<!--新子景視-->
+<div class="magic_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">Keishi Atarashi</h3>
+<p class="cast_category">Magician</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+After watching magic while he was still an elementary school student, Keishi started studying and learning techniques on his own and debuted as a professional magician at the age of 17. From sleight-of-hand done right in front of the audience’s eyes to stage magic and illusions, Keishi is skilled in many genres of magic. After graduating from Kansai University in 2009, he started performing on TV and at shows in and outside Japan at a full professional level. Having also won at many contests, Keishi also teaches magic to a wide variety of people, from amateur magicians to professional magicians.
+</p>
+<!--<div class="go_site_btn"><a href="#">Related Sites</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/atarashi.jpg" ><!--<p>Photo by Yoshikazu Inoue</p>--></div>
+</div>
+
+<!--山下翔吾-->
+<div class="magic_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">Shohgo Yamashita</h3>
+<p class="cast_category">Magician</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+A graduate of Kyoto University of Art and Design, Shohgo came across magic while he was still a university student. He spent his time training hard while wandering through restaurants and stages as a magician. He is now an up-and-coming young magician who is trying his hand at a new genre of magic—magic that has a story and combines both film production (which he majored in at university) and magic together. Besides appearing on TV shows with NHK and ABC and so on, he also plays a magician in the movie Miroku.
+</p>
+<!--<div class="go_site_btn"><a href="#">Related Sites</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/yamashita.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--橋本昌也-->
+<div class="magic_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">Masaya Hashimoto</h3>
+<p class="cast_category">Magician</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+A Kyoto boy, at 6 years of age Masaya started studying magic because he was fascinated by magic toys.  He presented his original tricks to the illusionist world at the age of 17, which lead him to start a career performing and creating magic.  He is strong at “close-up magic” which is performed right in front of the face of a candidate, and also at “stage magic” which is performed to a large audience.<br>
+What he pursues  is “ an entertainment which remains in every heart,”  making his own field as wide on the table as on the stage.<br>
+He has been on the TBS TV programme “One Step,” and was awarded the Kyoto Special Prize winner in the 26th National Cultural Festival by the Agency for Cultural Affairs.<br>
+Masaya has performed in numerous showrooms, parties, bars, pubs, restaurant, local charity events, community revitalization events, educational events, and more.
+</p>
+<!--<div class="go_site_btn"><a href="#">Related Sites</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/hashimoto.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--松田有生-->
+<div class="magic_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">Yuki Matsuda</h3>
+<p class="cast_category">Magician</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+As a mere middle-schooler, Yuki was so impressed with a magic show that he saw on television that he started to learn magic techniques all by himself.  As a college student, he apprenticed with world-class magicians Hiromasa Fukai and Kimika, and debuted as a pro after graduation.  Prioritizing “lively and fun” magic, he is good at a wide field from tabletop magic to stage magic.  In 2016, he won the six minute contest at the Fukuyama Magic Festival, and in 2015 was the victor in the two minute contest at the same festival.  He has ranked high in many such events, such as taking 2nd place in the ICM Magic Contest (2016), and 2nd place in the Chiba Magic Festival(2015).
+He is certainly a vital and promising young talent!</p>
+<!--<div class="go_site_btn"><a href="#">関連サイト</a></div>-->
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/matsuda.jpg" ><p>Photo by Yusuke Otsuki</p></div>
+</div>
+
+</div>
+</div>
+<!--**********************/magic**********************-->
+
+
+<!--**********************juggling**********************-->
+<div class="content_wrap disnon">
+<div id="box5 tab5" class="cast_content">
+
+<div class="juggling_category_title pc_none">
+JUGGLING
+</div>
+
+<!--酒田しんご-->
+<div class="juggling_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">Shingo Sakata</h3>
+<p class="cast_category">Juggler</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+As a kid, Shingo first got interested in juggling when he saw some street performers on the corner.  From the age of 10, he took up juggling all on his own.  At 17, when he was still a high school student, he set a new record in Japan for juggling 7 balls for the longest time.
+</p>
+<div class="go_site_btn"><a href="http://www.shingosakata.com/" target="_blank">Related Sites</a></div>
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/sakata.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--Ren-->
+<div class="juggling_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">Ren</h3>
+<p class="cast_category">Juggler</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+Ren started juggling all on his own when he was fourteen years old.  In 2010, he made his debut as a professional.  With his androgynous looks and pliant body, his use of special props, his performance is a must-see.  Ren’s special talent is to insert jazz dance steps into his performance, giving a gorgeous performance.  His captivating show enchants you with a bewitching atmosphere into a unique world; his scope of activity is widening beyond Japan to include countries all over the world.
+</p>
+<div class="go_site_btn"><a href="http://www.juggler-ren.net" target="_blank">Related Sites</a></div>
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/ren.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--渡辺あきら-->
+<div class="juggling_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">Akira Watanabe</h3>
+<p class="cast_category">Juggler</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+Akira graduated from the Faculty of Engineering at Kyoto University.  Armed with his stylish technique and lively features, Akira has traveled all over Japan teaching Juggling performing, doing everything from stage performances to street performance.<br>
+From 2002 to 2004, he was also a regular performer in the "Hollywood Premium Parade" at Universal Studio Japan.<br>
+Among many awards and media performances, Akira has also performed in the Street Performance World Cup in Shizuoka, and won the first prize in Tenpozan World Performance Festival in 2006.
+</p>
+<div class="go_site_btn"><a href="http://www.w-akira.com" target="_blank">Related Sites</a></div>
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/watanabe.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--深河晃-->
+<div class="juggling_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">Akira Fukagawa</h3>
+<p class="cast_category">Juggler</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+Akira’s strength is in incorporating his acrobatic body expression with Diabolo technique.  In addition to being a finalist at the International Juggling Association championship 2012 in the US, he has performed all over the world, from Taiwan to Turkey.  He is a registered performer with the Cirque du Soleil.  Further, he is the holder of the Japan Record for the High Toss with four Diabolos. 
+</p>
+<div class="go_site_btn"><a href="http://j-v.co.jp/" target="_blank">Related Sites</a></div>
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/fukagawa.jpg" ><p>Photo by Yoshikazu Inoue</p></div>
+</div>
+
+<!--リスボン上田-->
+<div class="juggling_area cast_box clearfix">
+<div class="profile_box pc_right_sp_none">
+<h3 class="cast_name">Lisbon Ueda</h3>
+<p class="cast_category">Juggler</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+Lisbon has a singular history: although he started studying magic tricks as a gag for passing job interviews, he found he’d become the Japan juggling champion.   With the acquisition of this title, he became a professional juggler,  and among other activities, advanced to the finals in the International Juggling Association championships, is regular performer in the "Hollywood Premium Parade" at Universal Studio Japan, and is beguiling audiences in many venues.<br>
+In recent years, he was technique supervisor on the musical of Ocean’s 11 with the mega girl group Takarazuka, and on the international opera production of Pierrot, and is now expanding his activities into many arenas.<br>
+His use of two batons called “devil sticks” is one of his unique original techniques. 
+</p>
+<div class="go_site_btn"><a href="http://www.eonet.ne.jp/~juggling/" target="_blank">Related Sites</a></div>
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box pc_left_sp_none"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/risbon.jpg" ><p>Photo by Yusuke Otsuki</p></div>
+</div>
+
+<!--宮田直人-->
+<div class="juggling_area cast_box clearfix">
+<div class="profile_box fleft">
+<h3 class="cast_name">Naoto Miyata</h3>
+<p class="cast_category">Juggler</p>
+<div class="bar sp_none"></div>
+<p class="cast_profile">
+Naoto started Juggling after studying theatre in college.<br>
+In the Baton Juggling competition, “FantaStick” he has been awarded the Grand Prize, and also been awarded Runner’s Up Prize on a separate occasion.  He was a finalist in the Japan Juggling Festival's All-Japan 2012 competition.  As the representative of the “Juggling Unit Fratres,”, Naoto is the playwright and performance director of this group, which uses Juggling as stage art, creating a new genre of performance works.
+</p>
+<div class="go_site_btn"><a href="http://fratres.wp.xdomain.jp" target="_blank">Related Sites</a></div>
+<div class="cast_schedule_btn"><a href="/ticket/cast_schedule/"><span class="icon-schedule mr10"></span><span class="text">View schedule</span></a></div>
+</div>
+<div class="pic_box fright"><img src="<?php echo THEME_URI; ?>/about/img/cast/photo/miyata.jpg" ><p>Photo by Yusuke Otsuki</p></div>
+</div>
+
+
+</div>
+</div>
+<!--**********************/juggling**********************-->
+
+
+
 </div>
 <!--/cast_contents--> 
 
 <ul class="tab bottom sp_none  clearfix"  >
 	<li class="tab_list_btm"><a class="cast_mime" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/1_en.jpg" width="100%" alt="MIME"></a></li>
 	<li class="tab_list_btm"><a class="cast_breakdance" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/2_en.jpg" width="100%" alt="BREAKIN’"></a></li>
+	<li class="tab_list_btm"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_en.jpg" width="100%" alt="DOLL"></a></li>
 	<li class="tab_list_btm"><a class="cast_magic" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/3_en.jpg" width="100%" alt="MAGIC"></a></li>
 	<li class="tab_list_btm"><a class="cast_juggling" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/4_en.jpg" width="100%" alt="JUGGLING"></a></li>
-	<li class="tab_list_btm"><a class="cast_doru" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_en.jpg" width="100%" alt="DOLL"></a></li>
 </ul>
 
 <ul class="tab bottom carousel carousel-nav carousel--nav  carousel--full-width pc_none  clearfix">
 	<li class="carousel-cell"><a class="cast_mime btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/1_sp_en.jpg" width="100%" alt="MIME"></a></li>
 	<li class="carousel-cell"><a class="cast_breakdance btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/2_sp_en.jpg" width="100%" alt="BREAKIN’"></a></li>
+	<li class="carousel-cell"><a class="cast_doru btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp_en.jpg" width="100%" alt="DOLL"></a></li>
 	<li class="carousel-cell"><a class="cast_magic btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/3_sp_en.jpg" width="100%" alt="MAGIC"></a></li>
 	<li class="carousel-cell"><a class="cast_juggling btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/4_sp_en.jpg" width="100%" alt="JUGGLING"></a></li>
-	<li class="carousel-cell"><a class="cast_doru btn_act" href="#cast_area"><img src="<?php echo THEME_URI; ?>/about/img/cast/5_sp_en.jpg" width="100%" alt="DOLL"></a></li>
 </ul>
 
 </div>

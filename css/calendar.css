@@ -155,7 +155,7 @@
 		transition: all 0.4s ease;
 } */
 #ticket .calenderWrapper .calender .haveToSpace {  background: #00cc00; }
-#ticket .calenderWrapper .calender .noRoom {  background: #ff9900; }
+#ticket .calenderWrapper .calender .noRoom {  background: #00cc00; }/*ff9900*/
 #ticket .calenderWrapper .calender .few {  background: #ff0000; }
 #ticket .calenderWrapper .calender .full {  background: #666; }
 
@@ -372,4 +372,109 @@
 	padding: 6px 10px;
 	text-align: center;
 }
+}
+
+/*edit*/
+
+#ticket .calenderWrapper .calender .haveToSpace::before,
+#ticket .calenderWrapper .calender .few::before,
+#ticket .calenderWrapper .calender .noRoom::before {
+  padding-right: 0.5em;
+}
+
+#ticket .calenderWrapper .calender .haveToSpace::before , #ticket .calenderWrapper .calender .noRoom::before {
+  content: "○";
+}
+
+#ticket .calenderWrapper .calender .few::before {
+  content: "△";
+}
+
+#ticket .calenderWrapper .calender .suspend,
+#ticket .calenderWrapper .calender .haveToSpace,
+#ticket .calenderWrapper .calender .few,
+#ticket .calenderWrapper .calender .noRoom,
+#ticket .calenderWrapper .calender .full ,
+#ticket .calenderWrapper .calender .reserved {
+  font-size: 13px;
+  padding: 0 8px;
+  border-radius: 1000px;
+  color: #fff;
+  background: #a28500;
+  display: block;
+}
+#ticket .calenderWrapper .calender_body li.otherday .suspend {
+  display: block;
+  margin: 3px 8px;
+  background: #dddddd;
+  color: #666666;
+}
+#ticket .calenderWrapper .calender .full ,
+#ticket .calenderWrapper .calender .reserved {
+  border: 1px solid #a28500;
+  background: #fff;
+  color: #a28500;
+}
+#ticket .calenderWrapper .calender .discount,
+#ticket .calenderWrapper .calender .kids {
+  width: 98%;
+  margin: 1px 1px 0 1px;
+}
+#ticket .calenderWrapper .calender_body li.otherday {
+	background: rgba(255,255,255,0.5) !important;
+}
+
+#ticket .legend li.state span {
+  display: inline-block;
+  font-size: 12px;
+  width: 40px;
+  line-height: 1;
+  padding: 2px;
+  text-align: center;
+  border-radius: 1000px;
+  color: #fff;
+  background: #a28500;
+  margin-right: 0.5em;
+}
+
+#ticket .legend li.state .full {
+  color: #a28500;
+  background: #fff;
+  border: 1px solid #a28500;
+}
+
+@media screen and (max-width: 768px) {
+#ticket .calenderWrapper .calender .suspend,
+#ticket .calenderWrapper .calender .haveToSpace,
+#ticket .calenderWrapper .calender .few,
+#ticket .calenderWrapper .calender .noRoom,
+#ticket .calenderWrapper .calender .full {
+  padding: 5px 8px;
+}
+#ticket .legend li.state {
+	margin-bottom: 3px;
+}
+#ticket .legend li:nth-child(3) {
+	display: block;
+}
+#ticket .calenderWrapper .calender .discount,
+#ticket .calenderWrapper .calender .kids {
+  width: 45%;
+}
+#ticket .calenderWrapper .calender_body li.otherday .suspend {
+	width: 100%;
+	text-align: center;
+	margin: 5px 10px;
+	padding: 7px 10px 0;
+}
+#ticket .calenderWrapper .calender_body li {
+	min-height: 40px;
+}
+#ticket .calenderWrapper .calender_body li.otherday {
+	padding: 3px 0;
+}
+#ticket .calenderWrapper .calender_body li.otherday .day, #ticket .calenderWrapper .calender_body li.otherday .week {
+	padding: 11px 5px;
+}
+
 }

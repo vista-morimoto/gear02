@@ -21,7 +21,10 @@ $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST
 if(!$description){ $description = 'Not a play,not a musial,not a circus!Give you miracle moments!GEAR is world-top-non-verbal-performance produced in Kyoto! If you go to Kyoto, it is recommended! Never miss it!!';}
 
 //image
-if(strstr($url,'/about/')){
+if(strstr($url,'/about/voice/')){
+	$image_og = THEME_IMAGES.'/ogp/ogp_voice.jpg';
+	$image_tw = THEME_IMAGES.'/ogp/twitter_voice.jpg';
+} elseif (strstr($url,'/about/')) {
 	$image_og = THEME_IMAGES.'/ogp/ogp_about.jpg';
 	$image_tw = THEME_IMAGES.'/ogp/twitter_about.jpg';
 } elseif (strstr($url,'/ticket/')) {
@@ -39,6 +42,9 @@ if(strstr($url,'/about/')){
 } elseif (strstr($url,'/recruit/')) {
 	$image_og = THEME_IMAGES.'/ogp/ogp_recruit.jpg';
 	$image_tw = THEME_IMAGES.'/ogp/twitter_recruit.jpg';
+} elseif (strstr($url,'/press/')) {
+	$image_og = THEME_IMAGES.'/ogp/ogp_info.jpg';
+	$image_tw = THEME_IMAGES.'/ogp/twitter_info.jpg';
 } else {
 	$image_og = THEME_IMAGES.'/ogp/ogp_index-press.jpg';
 	$image_tw = THEME_IMAGES.'/ogp/twitter_index-press.jpg';

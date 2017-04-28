@@ -1,0 +1,277 @@
+/*---------------------------------------------------------------------
+ form base
+---------------------------------------------------------------------*/
+.formBox {
+	width: 100%;
+	padding: 45px;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+}
+.formBox form {
+	-webkit-appearance: none;
+}
+.formBox .input_required {
+	font-size: 12px;
+}
+.formBox .required {
+	color: #996600;
+}
+
+.formBox input[type="text"],
+.formBox input[type="tel"],
+.formBox input[type="email"] {
+	width: 100%;
+	height: 35px;
+	padding: 5px;
+	line-height:1.4;
+	background: rgba(255,255,255,0.8);
+}
+.formBox textarea {
+	width: 100%;
+	height: 230px;
+	padding: 10px;	
+	background: #eee;
+}
+.formBox select {
+	width: 180px;
+	padding: 2px 13px;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 0.875rem;
+	background: #a28500 url(../ticket/img/icon_select.png) no-repeat 95% center/7px;
+}
+
+.formBox input:-ms-input-placeholder {
+	color: #A9A9A9;
+}
+.formBox textarea {
+	background: rgba(255,255,255,0.8);	
+}
+.formBox input[name="submitBack"] {
+	margin-top:20px;	
+}
+.formBox input[type="submit"] {
+	width: 100%;
+	padding: 25px 0;
+	margin-top: 50px;
+	color: #996600;
+	background: #fff;
+	border: 1px solid #996600;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.formBox input[type="submit"]:hover {
+	background: #960;
+	color: #fff;
+	opacity:1;
+}
+
+/*label*/
+.formBox input[type=checkbox],
+.formBox input[type=radio] {
+	display:none;
+}
+.formBox .mwform-checkbox-field label,
+.formBox .mwform-radio-field label
+{
+	padding-left: 36px;
+	margin-right:20px;
+	margin-bottom:5px;
+	margin-left:0;
+	line-height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+.formBox label:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border:2px solid #A28500;
+	position: absolute;
+	left: 0;
+	background: rgba(255,255,255,0.6);	
+}
+.formBox label.input_checked:before {
+	background-color:#A28500;
+}
+.formBox label input[type=checkbox]:checked {
+	display:block;
+} 
+
+/*.mw_wp_form .horizontal-item + .horizontal-item {
+	margin-left:0;	
+}*/
+.formBox label .inputbox.none {
+	background-color: #ddd;
+}
+.formBox label .inputbox.active {
+	background-color:#FFF8E1;
+	color: #000;
+	box-shadow:0px 0px 5px rgba(84,189,245,1);
+}
+/*.formBox .horizontal-item , .formBox input {
+	float:left;
+}*/
+.formBox .mw_wp_form .horizontal-item + .horizontal-item {
+	margin-left:0;
+}
+/*error*/
+.formBox .mw_wp_form .error {
+	margin-bottom:-10px;
+	font-size:14px;
+	color:#C00;
+}
+/*confirm*/
+.form_confirm .formBox .contents {
+	border-top: none;
+}
+.form_confirm .form_confirm_none {
+	display:none;
+}
+/*complete*/
+.formBox .mw_wp_form_complete {
+	text-align:center;
+}
+.formBox .mw_wp_form_complete a {
+	display:block;
+	color:#333;
+	text-align:center;
+	margin: 40px 0 0;
+	padding: 40px 0;
+	width: 100%;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	background: rgba(255,255,255,0.8);	
+}
+.formBox .mw_wp_form_complete a:hover {
+	background: #333;
+	color: #fff;
+}
+
+/*layout*/
+.formBox .formBox_title {
+	margin: 30px 0 0;
+}
+.formBox dl.formArea dd {
+	word-break: break-all;
+}
+.formBox dl.formArea {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+.formBox dl.formArea dt,
+.formBox dl.formArea dd {
+	margin-top: 20px;
+}
+.formBox dl.formArea dt {
+	width: 28%;
+	margin-right: 2%;
+}
+.formBox dl.formArea dd {
+	width: 70%;
+}
+/*input*/
+.formBox  input[type="text"][disabled] {
+	background: #BBB;
+}
+.formBox .input_num input {
+	width:100px;
+	float: left;
+	margin-right: 5px;
+}
+
+
+@media screen and (min-width: 769px){
+
+}
+
+@media screen and (max-width: 768px) {
+.formBox {
+	padding: 20px 15px 15px;
+}
+.formBox select {
+	width: 100%;
+	font-size: 14px;
+	padding: 5px 15px;
+}
+.formBox input,
+.formBox select,
+.formBox textarea {
+	font-size:16px;
+}
+.formBox .mwform-checkbox-field label,
+.formBox .mwform-radio-field label
+{
+	padding-left:24px;
+	margin-right:10px;
+	line-height:18px;
+	display:inline-block;
+	cursor:pointer;
+	position:relative;
+} 
+.formBox label:before {
+	content:'';
+	width:18px;
+	height:18px;
+	display:inline-block;
+	border:2px solid #A28500;
+	position:absolute;
+	left:0;
+	background-color:#fff;
+}
+
+.formBox .mw_wp_form_complete a {
+	display:block;
+	width: 100%;
+	border: 1px solid #333;
+	padding: 15px 0;
+	margin-top: 20px;
+	background: #FFF;
+	color: #333;
+	text-align:center;
+	font-size: 1.14rem;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.8);	
+	
+}
+/*error*/
+.formBox .mw_wp_form .error {
+	margin-bottom:0;
+}
+/*layout*/
+.formBox .formBox_title {
+	margin: 20px 0 0;
+}
+
+.formBox dl.formArea dt {
+	margin-top: 10px;
+	width: 100%;
+}
+.formBox dl.formArea dd {
+	margin-top: 3px;
+	width: 100%;
+}
+
+.formBox input[type="submit"] {
+	margin-top: 30px;
+	background: #a28500;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	padding: 15px 0;
+	font-size: 1.14rem;
+}
+
+}

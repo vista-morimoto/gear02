@@ -6,7 +6,7 @@ $cssLink = '<link rel="stylesheet" href="'.THEME_CSS.'/ticket.css">';
 $jsLink_top = '';
 $jsLink_btm = '
 <script src="'.THEME_JS.'/cast_schedule.js"></script>
-<script src="'.THEME_JS.'/ticket.js"></script>
+<!--<script src="'.THEME_JS.'/ticket.js"></script>-->
 ';
 get_header();
 ?>
@@ -17,7 +17,7 @@ get_header();
 <!--Vue.jsで監視している範囲（キャストスケジュール用） -->
 <div id="castScheduleArea" class="sectionInner">
 
-<p class="fz12 castScheduleAttention"><span>出演者は事前予告なく変更になる可能性​がございます。<br class="pc_none" />​予めご了承ください。</span></p>
+<!--<br class="pc_none" />-->
 
 <ul class="castScheduleNavi clearfix navi">
 	<li class="castScheduleNavi_item">
@@ -31,6 +31,22 @@ get_header();
 	<li class="castScheduleNavi_item prev"><a href="#" class="ani-reverseBtn" onClick="month_select();"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> 前の月へ</a></li>
 	<li class="castScheduleNavi_item next"><a href="#" class="ani-reverseBtn" onClick="month_select();">次の月へ <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></li>
 </ul>
+
+<div class="castScheduleAttention">
+<p><span>
+出演キャストスケジュールは事前予告なく変更になる可能性がございます。<br />
+あらかじめご了承の上、チケットをお買い求めください。<br />
+尚、ご購入済みのチケットに関しまして、払い戻しは行っておりません。</span><br />
+<!--<br />
+<em style="display:block; text-align:left;font-style:normal;"></em>-->
+</p>
+<p class="hosokuAttention fz12">マイム・ブレイクダンス・マジック・ジャグリング・ドールの５つの異なるジャンルから、毎日日替わりで1名ずつが出演します。<br />
+その組み合わせは、なんと3,000通り以上！<br />
+「これまで観たことのないキャストのパフォーマンスを観たい」「お気に入りのキャストによる様々な組み合わせが楽しみ！」など、お客さまからのご要望も取り入れて、現時点のキャストスケジュールを公開しております。<br />
+発表後のスケジュールが都合により変更になる場合もございますが、その日・その瞬間だけのコンビネーションで生まれる一期一会の『ギア』を、お楽しみください。</p>
+</div>
+
+
 
 <div class="castScheduleTable">
 <div class="castScheduleTable_header">
@@ -57,6 +73,16 @@ get_header();
 </div>
 </div>
 
+<div class="players_item dall"><span>ドール</span>
+<div class="selectWrapper">
+	<select name="" id="dall" v-model="dall" onchange="cast_select()"><!--v-model="dall"でテーブル側のドールのキャスト名と関連付ける -->
+	<option value="" selected="selected">選択しない</option>
+	<!-- v-forを使ってschedulesVm.cast['dall']の値を全て表示。itemはschedulesVm.cast['dall']内の一人づつのデータ -->
+	<option value="{{item}}" v-for="item in cast['dall']">{{item}}</option>
+	</select>
+</div>
+</div>
+
 <div class="players_item magic"><span>マジック</span>
 <div class="selectWrapper">
 	<select name="" id="magic" v-model="magic" onchange="cast_select()"><!--v-model="magic"でテーブル側のマジックのキャスト名と関連付ける -->
@@ -77,15 +103,6 @@ get_header();
 </div>
 </div>
 
-<div class="players_item dall"><span>ドール</span>
-<div class="selectWrapper">
-	<select name="" id="dall" v-model="dall" onchange="cast_select()"><!--v-model="dall"でテーブル側のドールのキャスト名と関連付ける -->
-	<option value="" selected="selected">選択しない</option>
-	<!-- v-forを使ってschedulesVm.cast['dall']の値を全て表示。itemはschedulesVm.cast['dall']内の一人づつのデータ -->
-	<option value="{{item}}" v-for="item in cast['dall']">{{item}}</option>
-	</select>
-</div>
-</div>
 </div>
 </div>
 
@@ -104,15 +121,16 @@ get_header();
 <tbody v-for="item in schedule[0] | filterBy mime in 'mime' | filterBy breakin in 'breakin' | filterBy magic in 'magic' | filterBy jaggling in 'jaggling' | filterBy dall in 'dall'" class="cast_table">
 
 <!-- 休演日ではない場合表示するタグ -->
-<tr v-if="!item.suspend">
+<tr v-if="!item.suspend" class="castScheduleAcc">
 	<th class="date_item day {{item.holiday}}">{{item.date}}</th>
 	<th class="date_item weeks {{item.holiday}}">{{item.weeks}}</th>
 	<th class="date_item time"><span v-if="item.matinee != 'none'">{{item.matinee}}</span><span v-if="(item.matinee != ''&& item.soiree != '')"> / </span><span v-if="item.soiree != 'none'">{{item.soiree}}</span></th><!-- マチネ、ソワレ、それぞれ値がnoneではない時に表示。/は両方空ではない時だけ表示(=片方が空だと非表示) -->
 	<td class="players_item mime {{item.mime_class}}"><!--<img :src="item.mime_img" v-show="item.mime_img" alt="">-->{{item.mime}}</td><!-- item.mimeがv-model="mime"で選択した値と一致した場合と、選択しないを選んでいる場合だけ表示される -->
 	<td class="players_item breakin {{item.breakin_class}}"><!--<img :src="item.breakin_img" v-show="item.breakin_img" alt="">-->{{item.breakin}}</td><!-- item.breakinがv-model="breakin"で選択した値と一致した場合と、選択しないを選んでいる場合だけ表示される -->
+	<td class="players_item dall {{item.dall_class}}"><!--<img :src="item.dall_img" v-show="item.dall_img" alt="">-->{{item.dall}}</td><!-- item.dallがv-model="dall"で選択した値と一致した場合と、選択しないを選んでいる場合だけ表示される -->
 	<td class="players_item magic {{item.magic_class}}"><!--<img :src="item.magic_img" v-show="item.magic_img" alt="">-->{{item.magic}}</td><!-- item.magicがv-model="magic"で選択した値と一致した場合と、選択しないを選んでいる場合だけ表示される -->
 	<td class="players_item jaggling {{item.jaggling_class}}"><!--<img :src="item.jaggling_img" v-show="item.jaggling_img" alt="">-->{{item.jaggling}}</td><!-- item.jagglingがv-model="jaggling"で選択した値と一致した場合と、選択しないを選んでいる場合だけ表示される -->
-	<td class="players_item dall {{item.dall_class}}"><!--<img :src="item.dall_img" v-show="item.dall_img" alt="">-->{{item.dall}}</td><!-- item.dallがv-model="dall"で選択した値と一致した場合と、選択しないを選んでいる場合だけ表示される -->
+	
 </tr>
 
 <!-- 休演日の場合表示するタグ -->

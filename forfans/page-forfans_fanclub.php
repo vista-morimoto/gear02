@@ -68,7 +68,7 @@ get_header();
 <h4><img src="<?php echo THEME_URI; ?>/forfans/img/fanclub/icon_web.png" alt="Webからのお申込"><br>Webからのお申込</h4>
 <ul class="joinList">
 <li class="list_01"><p>下記入部フォームからお申込ください。</p></li>
-<li class="link"><a href="http://goo.gl/4jEA6" target="_blank">入部フォーム</a></li>
+<li class="link"><a href="/forfans/fanclub/form/">入部フォーム</a></li>
 <li class="list_02"><p>部費の振込先情報があなたの登録メールアド<br>
 レスに届きます。メールの到着後、一週間以内に<br>
 お振込ください。

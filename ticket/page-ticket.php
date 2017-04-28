@@ -59,15 +59,18 @@ $(function() {
 <h3 class="contentsTitle">公演日程</h3>
 <div class="ad">
 <ul class="legend pc_none">
-<!--<li><span class="haveToSpace">◎</span>余裕があります</li>
-<li><span class="noRoom">●</span>少なくなっています</li>
-<li><span class="few">▲</span>残りわずか!!</li>
-<li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定）</span></li>
--->
-<li><span class="haveToSpace">●</span>余裕があります</li>
-<li><span class="noRoom">●</span>少なくなっています</li>
-<li><span class="few">●</span>残りわずか!!</li>
-<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>
+	<li class="state"><span class="haveToSpace">○</span>空席あり</li>
+	<!-- <li><span class="noRoom">●</span>少なくなっています</li> -->
+	<li class="state"><span class="few">△</span>残りわずか</li>
+	<li class="state"><span class="full">完売</span>前売完売<small>（当日券は別途販売予定）</small></li>
+	<!--<li><span class="haveToSpace">◎</span>余裕があります</li>
+	<li><span class="noRoom">●</span>少なくなっています</li>
+	<li><span class="few">▲</span>残りわずか!!</li>
+	<li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定）</span></li>-->
+	<!--<li><span class="haveToSpace">●</span>余裕があります</li>
+	<li><span class="noRoom">●</span>少なくなっています</li>-
+	<li><span class="few">●</span>残りわずか!!</li>
+	<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>-->
 <li><span class="daytime">■</span>ギアの日割</li>
 <li><span class="kids">■</span>キッズデー</li>
 </ul>
@@ -111,7 +114,7 @@ $(function() {
 	<li v-if="days.suspend" class="otherday">
 		<span class="day {{days.holiday}}">{{days.day}}</span>
 		<span class="week {{days.holiday}}">{{days.weeks}}</span>
-		{{days.etc}}
+		<span v-if="days.etc" class="suspend">{{days.etc}}</span>
 	</li>
 
 <!-- ３.paddingもsuspendもfalseだった場合に挿入される。 -->
@@ -127,14 +130,20 @@ $(function() {
 </ol>
 </div>
 <ul class="legend">
+	<li class="state"><span class="haveToSpace">○</span>空席あり</li>
+	<!-- <li><span class="noRoom">●</span>少なくなっています</li> -->
+	<li class="state"><span class="few">△</span>残りわずか</li>
+	<li class="state"><span class="full">完売</span>前売完売<small>（当日券は別途販売予定）</small></li>
+
+	<!--<li><span class="haveToSpace">●</span>余裕があります</li>
+	<li><span class="noRoom">●</span>少なくなっています</li>
+	<li><span class="few">●</span>残りわずか!!</li>
+	<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>-->
 	<!--<li><span class="haveToSpace">◎</span>余裕があります</li>
 	<li><span class="noRoom">●</span>少なくなっています</li>
 	<li><span class="few">▲</span>残りわずか!!</li>
 	<li><span class="full">×</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>-->
-    <li><span class="haveToSpace">●</span>余裕があります</li>
-	<li><span class="noRoom">●</span>少なくなっています</li>
-	<li><span class="few">●</span>残りわずか!!</li>
-	<li><span class="full">●</span>前売完売<span>（当日券は​別途​販売​予定​）</span></li>
+	
 	<li class="tooltip tipdaytime"><span class="daytime">■</span>ギアの日割<em>毎週月曜日（祝日を除く）は14時、19時公演共に500円OFF！</em></li>
 	<li class="tooltip tipkids"><span class="kids">■</span>キッズデー<em>毎月第1・3土曜日12時公演は普段ご入場いただけない4歳未満のお子さまも一緒にご入場いただけます（要予約）</em></li>
 </ul>

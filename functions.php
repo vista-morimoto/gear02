@@ -314,20 +314,58 @@ function my_validation_rule1( $Validation ) {
 	$Validation->set_rule( 'mail_confirm', 'eq', array('target'=>'mail' , 'message' => '※メールアドレスが一致しません') );
 	$Validation->set_rule( 'mailad_confirm', 'noEmpty', array('message' => '※メールアドレス（確認）を入力してください') );
 	$Validation->set_rule( 'mailad_confirm', 'mail', array('message' => '※メールアドレスの形式ではありません') );
-
-	//$Validation->set_rule( 'address_pref', 'noEmpty', array('message' => '※グループの所在地（都道府県）を選択してください') );
-	//$Validation->set_rule( 'address_city', 'noEmpty', array('message' => '※グループの所在地（市町村区）を選択してください') );
-	//$Validation->set_rule( 'group_detail', 'noEmpty', array('message' => '※グループの種類を選択してください') );
-	//$Validation->set_rule( 'name', 'noEmpty', array('message' => '※代表者様のお名前を入力してください') );	
-	//$Validation->set_rule( 'tel_detail', 'noEmpty', array('message' => '※電話の種類を選択してください') );	
-	//$Validation->set_rule( 'contact', 'noEmpty', array('message' => '※ご希望の連絡方法を入力してください') );
 	
 	return $Validation;
 }
 add_filter( 'mwform_validation_mw-wp-form-3202069', 'my_validation_rule1' );
 
+//プレス様向け お問合せフォーム
+function my_validation_rule2( $Validation ) {
+	$Validation->set_rule( 'company', 'noEmpty', array('message' => '※会社名を入力してください') );
+	$Validation->set_rule( 'name', 'noEmpty', array('message' => '※ご担当者名を入力してください') );
+	$Validation->set_rule( 'name_furigana', 'noEmpty', array('message' => '※ご担当者名（ふりがな）を入力してください') );
+	$Validation->set_rule( 'tel', 'noEmpty', array('message' => '※電話番号を入力してください') );
+	$Validation->set_rule( 'tel', 'tel', array('message' => '※電話番号の形式ではありません') );
+	$Validation->set_rule( 'mail', 'noEmpty', array('message' => '※メールアドレスを入力してください') );
+	$Validation->set_rule( 'mail', 'mail', array('message' => '※メールアドレスの形式ではありません') );
+	$Validation->set_rule( 'mail_confirm', 'noEmpty', array('message' => '※メールアドレスを入力してください') );
+	$Validation->set_rule( 'mail_confirm', 'eq', array('target'=>'mail' , 'message' => '※メールアドレスが一致しません') );
+	$Validation->set_rule( 'mailad_confirm', 'noEmpty', array('message' => '※メールアドレス（確認）を入力してください') );
+	$Validation->set_rule( 'mailad_confirm', 'mail', array('message' => '※メールアドレスの形式ではありません') );
+	$Validation->set_rule( 'info1', 'required', array('message' => '※事前の情報公開の可否を選択してください') );
+	$Validation->set_rule( 'info2', 'required', array('message' => '※放送・掲載媒体をご提供の可否を選択してください') );
+	$Validation->set_rule( 'coverage', 'required', array('message' => '※取材方法を選択してください') );
+	$Validation->set_rule( 'contents', 'noEmpty', array('message' => '※取材内容を入力してください') );
+	
+	return $Validation;
+}
+add_filter( 'mwform_validation_mw-wp-form-3204664', 'my_validation_rule2' );
+
+//「ギア部」入部届フォーム
+function my_validation_rule3( $Validation ) {
+	$Validation->set_rule( 'entry', 'required', array('message' => '※お申込み内容を選択してください') );
+	$Validation->set_rule( 'name', 'noEmpty', array('message' => '※お名前を入力してください') );
+	$Validation->set_rule( 'name_furigana', 'noEmpty', array('message' => '※お名前（ヨミガナ）を入力してください') );
+	$Validation->set_rule( 'birthday', 'noEmpty', array('message' => '※生年月日を入力してください') );
+	$Validation->set_rule( 'gender', 'required', array('message' => '※性別を選択してください') );
+	$Validation->set_rule( 'code', 'noEmpty', array('message' => '※郵便番号を入力してください') );
+	$Validation->set_rule( 'address', 'noEmpty', array('message' => '※住所を入力してください') );
+	$Validation->set_rule( 'tel', 'noEmpty', array('message' => '※電話番号を入力してください') );
+	$Validation->set_rule( 'tel', 'tel', array('message' => '※電話番号の形式ではありません') );
+	$Validation->set_rule( 'mail', 'noEmpty', array('message' => '※メールアドレスを入力してください') );
+	$Validation->set_rule( 'mail', 'mail', array('message' => '※メールアドレスの形式ではありません') );
+	$Validation->set_rule( 'mail_confirm', 'noEmpty', array('message' => '※メールアドレスを入力してください') );
+	$Validation->set_rule( 'mail_confirm', 'eq', array('target'=>'mail' , 'message' => '※メールアドレスが一致しません') );
+	return $Validation;
+}
+add_filter( 'mwform_validation_mw-wp-form-3204665', 'my_validation_rule3' );
+
+
 //送信者情報追加
-add_filter( 'mwform_admin_mail_mw-wp-form-3202069', 'my_admin_mail' );
+add_filter( 'mwform_admin_mail_mw-wp-form-3202069', 'my_admin_mail' );//団体鑑賞・貸切公演フォーム
+add_filter( 'mwform_admin_mail_mw-wp-form-3204664', 'my_admin_mail' );//プレス様向け お問合せフォーム
+add_filter( 'mwform_admin_mail_mw-wp-form-3204665', 'my_admin_mail' );//「ギア部」入部届フォーム
+
 function my_admin_mail( $Mail ) {
 $Browser = $_SERVER["HTTP_USER_AGENT"];
 $Ip = $_SERVER["REMOTE_ADDR"];

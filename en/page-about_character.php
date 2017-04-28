@@ -32,27 +32,6 @@ get_template_part( 'en/header_en' );
 </div>
 </div>
 
-<div class="imgTxtBox clearfix magic">
-<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="MAGIC"></div>
-<div class="txtBox">
-<h3 class="txtBox_title">MAGIC<span></span></h3>
-<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="MAGIC"></div>
-<p class="txtBox_body">An ostentatious, cool-headed lone wolf RoboRoid. Tends to do different things from everyone else. Strength lies in stable designs.</p>
-<div class="btn"><a href="/en/about/cast/#tab3" class="ani-reverseBtn">View profile</a></div>
-</div>
-</div>
-
-<div class="txtImgBox clearfix jaggling">
-<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="JUGGLING"></div>
-<div class="txtBox">
-<h3 class="txtBox_title">JUGGLING<span></span></h3>
-<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="JUGGLING"></div>
-<p class="txtBox_body">An earnest but inefficient and somewhat clumsy RoboRoid. Tends to break machinery when working.
-</p>
-<div class="btn"><a href="/en/about/cast/#tab4" class="ani-reverseBtn">View profile</a></div>
-</div>
-</div>
-
 <div class="imgTxtBox clearfix doll">
 <div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_doll.png" alt="DOLL"></div>
 <div class="txtBox">
@@ -60,9 +39,32 @@ get_template_part( 'en/header_en' );
 <div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_doll.png" alt="DOLL"></div>
 <p class="txtBox_body">The doll that was once made in this factory. Falls into the factory unexpectedly one day and is led by curiosity to start playing with the RoboRoids, becoming more and more human every day.
 </p>
+<div class="btn"><a href="/en/about/cast/#tab3" class="ani-reverseBtn">View profile</a></div>
+</div>
+</div>
+
+<div class="txtImgBox clearfix magic">
+<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="MAGIC"></div>
+<div class="txtBox">
+<h3 class="txtBox_title">MAGIC<span></span></h3>
+<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="MAGIC"></div>
+<p class="txtBox_body">An ostentatious, cool-headed lone wolf RoboRoid. Tends to do different things from everyone else. Strength lies in stable designs.</p>
+<div class="btn"><a href="/en/about/cast/#tab4" class="ani-reverseBtn">View profile</a></div>
+</div>
+</div>
+
+<div class="imgTxtBox clearfix jaggling">
+<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="JUGGLING"></div>
+<div class="txtBox">
+<h3 class="txtBox_title">JUGGLING<span></span></h3>
+<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="JUGGLING"></div>
+<p class="txtBox_body">An earnest but inefficient and somewhat clumsy RoboRoid. Tends to break machinery when working.
+</p>
 <div class="btn"><a href="/en/about/cast/#tab5" class="ani-reverseBtn">View profile</a></div>
 </div>
 </div>
+
+
 
 <!--<section id="msgFromProducer">
 <div class="producerProf">

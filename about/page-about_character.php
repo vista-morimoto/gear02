@@ -38,30 +38,6 @@ get_header();
 </div>
 </div>
 
-<div class="imgTxtBox clearfix magic">
-<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="マジック"></div>
-<div class="txtBox">
-<h3 class="txtBox_title">マジック<span></span></h3>
-<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="マジック"></div>
-<p class="txtBox_body">キザでクールな一匹狼のロボロイド。<br>
-みんなとは違う行動をすることが多い。<br>
-安定感のある設計が自慢。</p>
-<div class="btn"><a href="/about/cast/#tab3" class="ani-reverseBtn">マジック キャストを見る</a></div>
-</div>
-</div>
-
-<div class="txtImgBox clearfix jaggling">
-<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="ジャグリング"></div>
-<div class="txtBox">
-<h3 class="txtBox_title">ジャグリング<span></span></h3>
-<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="ジャグリング"></div>
-<p class="txtBox_body">真面目だけれど要領が悪くて、<br>
-ちょっぴりドジなロボロイド。<br>
-ちょこちょこ動いては、<br>
-あちこちで機械を壊したりする。</p>
-<div class="btn"><a href="/about/cast/#tab4" class="ani-reverseBtn">ジャグリング キャストを見る</a></div>
-</div>
-</div>
 
 <div class="imgTxtBox clearfix doll">
 <div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_doll.png" alt="ドール"></div>
@@ -73,7 +49,32 @@ get_header();
 ある日、ひょんなことから工場に落ちてきて、<br>
 「好奇心」からロボロイド達と遊ぶうちに<br>
 少しずつ「人間」に近づいていく。</p>
-<div class="btn"><a href="/about/cast/#tab5" class="ani-reverseBtn">ドール キャストを見る</a></div>
+<div class="btn"><a href="/about/cast/#tab3" class="ani-reverseBtn">ドール キャストを見る</a></div>
+</div>
+</div>
+
+<div class="txtImgBox clearfix magic">
+<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="マジック"></div>
+<div class="txtBox">
+<h3 class="txtBox_title">マジック<span></span></h3>
+<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_magic.png" alt="マジック"></div>
+<p class="txtBox_body">キザでクールな一匹狼のロボロイド。<br>
+みんなとは違う行動をすることが多い。<br>
+安定感のある設計が自慢。</p>
+<div class="btn"><a href="/about/cast/#tab4" class="ani-reverseBtn">マジック キャストを見る</a></div>
+</div>
+</div>
+
+<div class="imgTxtBox clearfix jaggling">
+<div class="imgBox sp_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="ジャグリング"></div>
+<div class="txtBox">
+<h3 class="txtBox_title">ジャグリング<span></span></h3>
+<div class="imgBox pc_none"><img src="<?php echo THEME_URI; ?>/about/img/character/img_juggle.png" alt="ジャグリング"></div>
+<p class="txtBox_body">真面目だけれど要領が悪くて、<br>
+ちょっぴりドジなロボロイド。<br>
+ちょこちょこ動いては、<br>
+あちこちで機械を壊したりする。</p>
+<div class="btn"><a href="/about/cast/#tab5" class="ani-reverseBtn">ジャグリング キャストを見る</a></div>
 </div>
 </div>
 

@@ -19,7 +19,7 @@ global $jsLink_btm;
 $cssLink = '<link rel="stylesheet" href="'.THEME_CSS.'/press.css">';
 $jsLink_top = '';
 $jsLink_btm = '
-<script src="'.THEME_JS.'/press.js"></script>
+<!--<script src="'.THEME_JS.'/press.js"></script>
 <script>
 $(function(){
 	$(".tit").on("click", function() {
@@ -27,7 +27,7 @@ $(function(){
 		$(this).toggleClass("open");
 	});
 });
-</script>
+</script>-->
 ';
 get_header();
 ?>
@@ -146,14 +146,16 @@ if ($terms = get_the_terms($post->ID, 'news_category')) {
 
 <section class="contents">
 <div class="mainSubBox_block">
+<a href="<?php the_permalink(); ?>">
 <div class="tit">
 <h3 class="block_title"><?php the_title(); ?></h3>
 <p class="block_date"><time><?php the_time('Y.m.d'); ?></time> 更新</p>
 <p class="block_category"><?php echo rtrim($str, ", "); ?></p>
 </div>
-<div class="block_body">
+</a>
+<!--<div class="block_body">
 <?php the_content(); ?>
-</div>
+</div>-->
 </div>
 </section>
 
@@ -195,14 +197,16 @@ if ($terms = get_the_terms($post->ID, 'news_category')) {
 
 <section class="contents">
 <div class="mainSubBox_block">
+<a href="<?php the_permalink(); ?>">
 <div class="tit">
 <h3 class="block_title"><?php the_title(); ?></h3>
 <p class="block_date"><time><?php the_time('Y.m.d'); ?></time> 更新</p>
 <p class="block_category"><?php echo rtrim($str, ", "); ?></p>
 </div>
-<div class="block_body">
+</a>
+<!--<div class="block_body">
 <?php the_content(); ?>
-</div>
+</div>-->
 </div>
 </section>
 
