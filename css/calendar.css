@@ -2,45 +2,45 @@
 ## calendar #############################################################
 ----------------------------------------------------------------------- */
 
-#ticket .calenderWrapper {
+#ticket .calendarWrapper {
 	/*margin-top: 10px;*/
 	text-align: center;
 }
-#ticket .calenderWrapper .pc {
+#ticket .calendarWrapper .pc {
 	display: inline-block;
 }
-#ticket .calenderWrapper .sp {
+#ticket .calendarWrapper .sp {
 	display: none;
 }
-#ticket .calenderNavi {
+#ticket .calendarNavi {
 	margin-top: 16px;
 }
-#ticket .calenderNavi_item {
+#ticket .calendarNavi_item {
 	text-align: center;
 }
-#ticket .calenderNavi .prev {
+#ticket .calendarNavi .prev {
 	float: left;
 	text-align: left;
 }
-#ticket .calenderNavi .next {
+#ticket .calendarNavi .next {
 	float: right;
 	text-align: right;
 }
-#ticket .calenderNavi .prev.show,
-#ticket .calenderNavi .next.show {
+#ticket .calendarNavi .prev.show,
+#ticket .calendarNavi .next.show {
 	visibility: visible;
 }
-#ticket .calenderNavi .prev.hide,
-#ticket .calenderNavi .next.hide {
+#ticket .calendarNavi .prev.hide,
+#ticket .calendarNavi .next.hide {
 	visibility: hidden;
 }
-#ticket .calenderNavi .selectWrapper {
+#ticket .calendarNavi .selectWrapper {
 	position: relative;
 	display: inline-block;
 	border-radius: 1000px;
 	background: #fff;
 }
-#ticket .calenderNavi .selectWrapper:after {
+#ticket .calendarNavi .selectWrapper:after {
 	position: absolute;
 	top: 0;
 	right: 8px;
@@ -56,7 +56,7 @@
 	font-family: FontAwesome;
 	line-height: 1;
 }
-#ticket .calenderNavi select {
+#ticket .calendarNavi select {
 	position: relative;
 	z-index: 2;
 	padding: 0 40px 0 20px;
@@ -64,16 +64,16 @@
 	line-height: 44px;
 	cursor: pointer;
 }
-#ticket .calenderWrapper .update {
+#ticket .calendarWrapper .update {
 	text-align: right;
 }
-#ticket .calenderWrapper:first-child .calender {
+#ticket .calendarWrapper:first-child .calendar {
 	margin-top: 0;
 }
-#ticket .calenderWrapper .calender {
+#ticket .calendarWrapper .calendar {
 	width: 100%;
 }
-#ticket .calenderWrapper .calender_month {
+#ticket .calendarWrapper .calendar_month {
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-family: Avenir Next, Verdana, sans-serif;
@@ -81,32 +81,32 @@
 	line-height: 1;
 	/* margin-bottom: 5px; */
 }
-#ticket .calenderWrapper .calender_head {
+#ticket .calendarWrapper .calendar_head {
 	/*border-top: 1px solid #fff;
 	border-left: 1px solid #fff;*/
 	font-weight: bold;
 	padding: 3px 0;
 }
-#ticket .calenderWrapper .calender_body {
+#ticket .calendarWrapper .calendar_body {
 	border-top: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 }
-#ticket .calenderWrapper .calender li {
+#ticket .calendarWrapper .calendar li {
 	float: left;
 	width: 14.285%;
 	/* border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;*/
 }
-#ticket .calenderWrapper .calender_body li {
+#ticket .calendarWrapper .calendar_body li {
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	height:106px;
 	line-height: 1.5;
 }
-#ticket .calenderWrapper .calender_body li.otherday {
+#ticket .calendarWrapper .calendar_body li.otherday {
 	background:#eee;
 }
-#ticket .calenderWrapper .calender .day {
+#ticket .calendarWrapper .calendar .day {
 	display: block;
 	padding: 8px;
 	font-size: 16px;
@@ -115,49 +115,49 @@
 	font-weight: normal;
 }
 
-#ticket .calenderWrapper .calender .week {
+#ticket .calendarWrapper .calendar .week {
 	display: none;
 }
 
-#ticket .calenderWrapper .calender .matinee,
-#ticket .calenderWrapper .calender .soiree {
+#ticket .calendarWrapper .calendar .matinee,
+#ticket .calendarWrapper .calendar .soiree {
 	display: block;
 	padding: 4px 8px;
 }
-#ticket .calenderWrapper .calender .discount,
-#ticket .calenderWrapper .calender .kids {
+#ticket .calendarWrapper .calendar .discount,
+#ticket .calendarWrapper .calendar .kids {
 	width: 98%;
 	margin: 0 1px 0 1px;
 }
-#ticket .calenderWrapper .calender .discount {  background: #66ccff; }
-#ticket .calenderWrapper .calender .kids {  background: #ffcce8; }
-#ticket .calenderWrapper .calender .kids.soiree  {  background: none; }
+#ticket .calendarWrapper .calendar .discount {  background: #66ccff; }
+#ticket .calendarWrapper .calendar .kids {  background: #ffcce8; }
+#ticket .calendarWrapper .calendar .kids.soiree  {  background: none; }
 
-#ticket .calenderWrapper .calender .inner {
+#ticket .calendarWrapper .calendar .inner {
 	display: block;
 	padding: 4px 8px;
 }
-#ticket .calenderWrapper .calender .haveToSpace,
-#ticket .calenderWrapper .calender .few,
-#ticket .calenderWrapper .calender .noRoom,
-#ticket .calenderWrapper .calender .full {
+#ticket .calendarWrapper .calendar .haveToSpace,
+#ticket .calendarWrapper .calendar .few,
+#ticket .calendarWrapper .calendar .noRoom,
+#ticket .calendarWrapper .calendar .full {
 	padding: 0 8px;
 	border-radius: 1000px;
 	color: #fff;
 	display: block;
 }
-/* #ticket .calenderWrapper .calender .haveToSpace:hover,
-#ticket .calenderWrapper .calender .few:hover,
-#ticket .calenderWrapper .calender .noRoom:hover,
-#ticket .calenderWrapper .calender .full:hover {
+/* #ticket .calendarWrapper .calendar .haveToSpace:hover,
+#ticket .calendarWrapper .calendar .few:hover,
+#ticket .calendarWrapper .calendar .noRoom:hover,
+#ticket .calendarWrapper .calendar .full:hover {
 	opacity: 0.5;
 	-webkit-transition: all 0.4s ease;
 		transition: all 0.4s ease;
 } */
-#ticket .calenderWrapper .calender .haveToSpace {  background: #00cc00; }
-#ticket .calenderWrapper .calender .noRoom {  background: #00cc00; }/*ff9900*/
-#ticket .calenderWrapper .calender .few {  background: #ff0000; }
-#ticket .calenderWrapper .calender .full {  background: #666; }
+#ticket .calendarWrapper .calendar .haveToSpace {  background: #00cc00; }
+#ticket .calendarWrapper .calendar .noRoom {  background: #00cc00; }/*ff9900*/
+#ticket .calendarWrapper .calendar .few {  background: #ff0000; }
+#ticket .calendarWrapper .calendar .full {  background: #666; }
 
 #ticket .legend {
 	margin-top: 10px;
@@ -189,29 +189,29 @@
 #ticket .legend .kids {  color: #ffcce8; }
 
 @media screen and (max-width: 768px) {
-#ticket .calenderWrapper {
+#ticket .calendarWrapper {
 	margin: 0 -10px;
 }
-#ticket .calenderWrapper iframe {
+#ticket .calendarWrapper iframe {
 	margin: 0 auto;
 	width: 320px;
 }
-#ticket .calenderWrapper .pc {
+#ticket .calendarWrapper .pc {
 	display: none;
 }
-#ticket .calenderWrapper .sp {
+#ticket .calendarWrapper .sp {
 	display: inline-block;
 }
-#ticket .calenderWrapper .calender_head {
+#ticket .calendarWrapper .calendar_head {
 	display: none;
 }
 	
-#ticket .calenderWrapper .calender_body {
+#ticket .calendarWrapper .calendar_body {
 	border: none;
 	text-align: left;
 	margin: 0 10px;
 }
-#ticket .calenderWrapper .calender li {
+#ticket .calendarWrapper .calendar li {
 	float: none;
 	width: 100%;
 	height: auto;
@@ -221,41 +221,41 @@
 	border-right: none;
 	border-bottom: 1px solid #a28500;
 }
-#ticket .calenderWrapper .calender li:first-child {
+#ticket .calendarWrapper .calendar li:first-child {
 	border-top: none;
 }
-#ticket .calenderWrapper .calender .padding {
+#ticket .calendarWrapper .calendar .padding {
 	display: none;
 }
-#ticket .calenderWrapper .calender .day {
+#ticket .calendarWrapper .calendar .day {
 	display: inline-block;
 	width: 2em;
 	text-align: center;
 }
-#ticket .calenderWrapper .calender .week {
+#ticket .calendarWrapper .calendar .week {
 	display: inline-block;
 	margin-right: 3px;
 	/* width: 1.5em;*/
 }
-#ticket .calenderWrapper .calender .day,
-#ticket .calenderWrapper .calender .week {	
+#ticket .calendarWrapper .calendar .day,
+#ticket .calendarWrapper .calendar .week {	
 	padding: 11px 5px;
 	line-height: 1;
 }
-#ticket .calenderWrapper .calender .matinee {
+#ticket .calendarWrapper .calendar .matinee {
 	display: inline-block;
 	padding: 4px 24px;
 }
-#ticket .calenderWrapper .calender .soiree {
+#ticket .calendarWrapper .calendar .soiree {
 	display: inline-block;
 	padding: 4px 24px;
 }
-#ticket .calenderWrapper .calender_body li.otherday {
+#ticket .calendarWrapper .calendar_body li.otherday {
 	padding: 15px 15px 15px 0;
 	line-height: 1;
 }
-#ticket .calenderWrapper .calender_body li.otherday .day,
-#ticket .calenderWrapper .calender_body li.otherday .week {
+#ticket .calendarWrapper .calendar_body li.otherday .day,
+#ticket .calendarWrapper .calendar_body li.otherday .week {
 	padding: 0 5px;
 }
 #ticket .legend {
@@ -359,14 +359,14 @@
 	margin-left: 0;
 	text-align: center;
 }
-#ticket .calenderWrapper .calender .haveToSpace, #ticket .calenderWrapper .calender .few, #ticket .calenderWrapper .calender .noRoom, #ticket .calenderWrapper .calender .full {
+#ticket .calendarWrapper .calendar .haveToSpace, #ticket .calendarWrapper .calendar .few, #ticket .calendarWrapper .calendar .noRoom, #ticket .calendarWrapper .calendar .full {
 	padding: 5px;
 	display: block;
 	width: 100%;
 	line-height: 1;
 }
-#ticket .calenderWrapper .calender .matinee,
-#ticket .calenderWrapper .calender .soiree {
+#ticket .calendarWrapper .calendar .matinee,
+#ticket .calendarWrapper .calendar .soiree {
 	width: 45%;
 	display: inline-block;
 	padding: 6px 10px;
@@ -376,26 +376,26 @@
 
 /*edit*/
 
-#ticket .calenderWrapper .calender .haveToSpace::before,
-#ticket .calenderWrapper .calender .few::before,
-#ticket .calenderWrapper .calender .noRoom::before {
+#ticket .calendarWrapper .calendar .haveToSpace::before,
+#ticket .calendarWrapper .calendar .few::before,
+#ticket .calendarWrapper .calendar .noRoom::before {
   padding-right: 0.5em;
 }
 
-#ticket .calenderWrapper .calender .haveToSpace::before , #ticket .calenderWrapper .calender .noRoom::before {
+#ticket .calendarWrapper .calendar .haveToSpace::before , #ticket .calendarWrapper .calendar .noRoom::before {
   content: "○";
 }
 
-#ticket .calenderWrapper .calender .few::before {
+#ticket .calendarWrapper .calendar .few::before {
   content: "△";
 }
 
-#ticket .calenderWrapper .calender .suspend,
-#ticket .calenderWrapper .calender .haveToSpace,
-#ticket .calenderWrapper .calender .few,
-#ticket .calenderWrapper .calender .noRoom,
-#ticket .calenderWrapper .calender .full ,
-#ticket .calenderWrapper .calender .reserved {
+#ticket .calendarWrapper .calendar .suspend,
+#ticket .calendarWrapper .calendar .haveToSpace,
+#ticket .calendarWrapper .calendar .few,
+#ticket .calendarWrapper .calendar .noRoom,
+#ticket .calendarWrapper .calendar .full ,
+#ticket .calendarWrapper .calendar .reserved {
   font-size: 13px;
   padding: 0 8px;
   border-radius: 1000px;
@@ -403,24 +403,24 @@
   background: #a28500;
   display: block;
 }
-#ticket .calenderWrapper .calender_body li.otherday .suspend {
+#ticket .calendarWrapper .calendar_body li.otherday .suspend {
   display: block;
   margin: 3px 8px;
   background: #dddddd;
   color: #666666;
 }
-#ticket .calenderWrapper .calender .full ,
-#ticket .calenderWrapper .calender .reserved {
+#ticket .calendarWrapper .calendar .full ,
+#ticket .calendarWrapper .calendar .reserved {
   border: 1px solid #a28500;
   background: #fff;
   color: #a28500;
 }
-#ticket .calenderWrapper .calender .discount,
-#ticket .calenderWrapper .calender .kids {
+#ticket .calendarWrapper .calendar .discount,
+#ticket .calendarWrapper .calendar .kids {
   width: 98%;
   margin: 1px 1px 0 1px;
 }
-#ticket .calenderWrapper .calender_body li.otherday {
+#ticket .calendarWrapper .calendar_body li.otherday {
 	background: rgba(255,255,255,0.5) !important;
 }
 
@@ -444,11 +444,11 @@
 }
 
 @media screen and (max-width: 768px) {
-#ticket .calenderWrapper .calender .suspend,
-#ticket .calenderWrapper .calender .haveToSpace,
-#ticket .calenderWrapper .calender .few,
-#ticket .calenderWrapper .calender .noRoom,
-#ticket .calenderWrapper .calender .full {
+#ticket .calendarWrapper .calendar .suspend,
+#ticket .calendarWrapper .calendar .haveToSpace,
+#ticket .calendarWrapper .calendar .few,
+#ticket .calendarWrapper .calendar .noRoom,
+#ticket .calendarWrapper .calendar .full {
   padding: 5px 8px;
 }
 #ticket .legend li.state {
@@ -457,24 +457,25 @@
 #ticket .legend li:nth-child(3) {
 	display: block;
 }
-#ticket .calenderWrapper .calender .discount,
-#ticket .calenderWrapper .calender .kids {
+#ticket .calendarWrapper .calendar .discount,
+#ticket .calendarWrapper .calendar .kids {
   width: 45%;
 }
-#ticket .calenderWrapper .calender_body li.otherday .suspend {
+#ticket .calendarWrapper .calendar_body li.otherday .suspend {
 	width: 100%;
 	text-align: center;
 	margin: 5px 10px;
 	padding: 7px 10px 0;
 }
-#ticket .calenderWrapper .calender_body li {
+#ticket .calendarWrapper .calendar_body li {
 	min-height: 40px;
 }
-#ticket .calenderWrapper .calender_body li.otherday {
+#ticket .calendarWrapper .calendar_body li.otherday {
 	padding: 3px 0;
 }
-#ticket .calenderWrapper .calender_body li.otherday .day, #ticket .calenderWrapper .calender_body li.otherday .week {
+#ticket .calendarWrapper .calendar_body li.otherday .day, #ticket .calendarWrapper .calendar_body li.otherday .week {
 	padding: 11px 5px;
 }
 
 }
+
